@@ -1,9 +1,3 @@
-// const menuBtn = document.querySelector(".menu-btn");
-// menuBtn.addEventListener("click", (e) => {
-// document.body.classList.toggle("collapsed");
-// e.currentTarget.classList.toggle("fa-chevron-right");
-// e.currentTarget.classList.toggle("fa-chevron-left");
-// })
 
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -61,7 +55,22 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         if (isValid) {
+            let users = JSON.parse(localStorage.getItem("users")) || [];
+            const isDuplicate = users.some(user => user.email === email)
+            if (isDuplicate)
+            {
+                document.getElementById("emailError").textContent = "Email này đã được đăng ký";
+                return;
+            }
+            const newuser = {
+                "email": email,
+                "password": password
+            };
+            users.push(newuser)
+            localStorage.setItem("users", JSON.stringify(users));
+
             alert("Đăng ký thành công");
+            form.reset()
         }
     });
 });
