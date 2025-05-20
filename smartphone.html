@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartphone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/CSS/smartphone.css">
+    <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body style="display: contents;">
+    <div id="navbar"></div>
+    <!-- Viết tiếp tạo đây dùm nha -->
+    <!-- Slogan quote -->
+    <div class="container" style="position: relative;">
+        <div class="slogan row mt-3 mb-3">
+            <div class="col-9 slogan-left">
+                <h2><b>Samsung</b></h2>
+            </div>
+            <div class="col-3 slogan-right">
+                <h4><b>Được thiết kế ai cũng mê.</b></h4>
+            </div>
+        </div>
+        <!-- Slogan button -->
+        <div class="slogan-slide d-flex justify-content-center">
+            <div class="product-btn">
+                <button id="galaxyA" class="phone">
+                    <div class="phone-content">
+                        <img src="Images/galaxyA.avif" alt="Galaxy A">
+                        <span>Galaxy A</span>
+                    </div>
+                </button>
+                <button id="galaxyS" class="phone">
+                    <div class="phone-content">
+                        <img src="Images/S25Ultra.jpg" alt="Galaxy S">
+                        <span>Galaxy S</span>
+                    </div>
+                </button>
+                <button id="galaxyZ" class="phone">
+                    <div class="phone-content">
+                        <img src="Images/galaxyZ.avif" alt="Galaxy Z">
+                        <span>Galaxy Z</span>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div id="workingCarousel" class="carousel slide mt-3" data-bs-ride="carousel">
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button data-bs-target="#workingCarousel" data-bs-slide-to="0" class="active"></button>
+                <button data-bs-target="#workingCarousel" data-bs-slide-to="1"></button>
+                <button data-bs-target="#workingCarousel" data-bs-slide-to="2"></button>
+                <button data-bs-target="#workingCarousel" data-bs-slide-to="3"></button>
+                <button data-bs-target="#workingCarousel" data-bs-slide-to="4"></button>
+            </div>
+            <!-- Slides -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="video-container">
+                        <video id="Video" width="100%" height="auto" muted autoplay>
+                            <source src="mp4/HOME_P3_Main-KV_1440x640_pc_LTR.webm" type="video/mp4">
+                            Trình duyệt của bạn không hỗ trợ video.
+                        </video>
+                        <!-- Nút mua, tìm hiểu thêm trên video -->
+                        <div class="video-overlay">
+                            <button class="btn learn-more"><span class=btn-text>Tìm hiểu thêm</span></button>
+                            <button class="btn buy-now"><span>Mua ngay</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="item-container">
+                        <img src="/Images/Zfold6.webp" class="d-block w-100">
+                        <div class="product-name">
+                            <h1>Galaxy Z Fold 6</h1>
+                        </div>
+                        <div class="picture-overlay">
+                            <button class="btn learn-more"><span class=btn-text>Tìm hiểu thêm</span></button>
+                            <button class="btn buy-now"><span>Mua ngay</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="item-container">
+                        <img src="/Images/Galaxy_TabS10.webp" class="d-block w-100">
+                        <div class="product-name">
+                            <h1>Galaxy Tab S10 Series</h1>
+                        </div>
+                        <div class="picture-overlay">
+                            <button class="btn learn-more"><span class=btn-text>Tìm hiểu thêm</span></button>
+                            <button class="btn buy-now"><span>Mua ngay</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="item-container">
+                        <img src="/Images/Galaxy_WatchUltra_Carousel.jpg" class="d-block w-100">
+                        <div class="product-name-right">
+                            <h1>Galaxy Watch Ultra</h1>
+                        </div>
+                        <div class="picture-overlay-right">
+                            <button class="btn learn-more"><span class=btn-text>Tìm hiểu thêm</span></button>
+                            <button class="btn buy-now"><span>Mua ngay</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="item-container">
+                        <img src="/Images/Galaxy_Buds3Pro_Carousel.webp" class="d-block w-100">
+                        <div class="product-name">
+                            <h1>Galaxy Buds3 Pro</h1>
+                        </div>
+                        <div class="picture-overlay">
+                            <button class="btn learn-more"><span class=btn-text>Tìm hiểu thêm</span></button>
+                            <button class="btn buy-now"><span>Mua ngay</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Controls -->
+            <button class="carousel-control-prev" data-bs-target="#workingCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" data-bs-target="#workingCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+        <!-- Chi tiết sản phẩm -->
+        <div class="main-content">
+            <div class="intro">
+                <p align="center" class="m-5"><span class="color-explore">Khám phá</span> công nghệ của các thiết bị <span class="color-galaxy">Galaxy</span> thế hệ tiếp theo của chúng tôi</p>
+            </div>
+            <div class="detail-button-group d-flex justify-content-center mb-5">
+                <div class="detail-button">
+                    <button class="btn" onclick="changeContent('camera',this)"
+                    data-video="mp4/camera.webm"><b>Camera</b></button>
+                </div>
+                <div class="detail-button">
+                    <button class="btn" onclick="changeContent('ap',this)"
+                    data-video="mp4/ap.webm"><b>AP</b></button>
+                </div>
+                <div class="detail-button">
+                    <button class="btn" onclick="changeContent('pin',this)"
+                    data-video="mp4/pin.webm"><b>Battery</b></button>
+                </div>
+                <div class="detail-button">
+                    <button class="btn" onclick="changeContent('screen',this)"
+                    data-video="mp4/screen.webm"><b>Screen</b></button>
+                </div>
+            </div>
+
+            <div class="video-marketing-container position-relative mb-5">
+                <video class="mx-auto d-block" id="video-marketing" width="100%" height="auto" muted autoplay>
+                <source id="video-marketing-source" src="mp4/camera.webm" type="video/mp4">
+                        Trình duyệt của bạn không hỗ trợ video.
+                </video>
+                <div class="video-marketing-overlay" id="video-marketing-overlay">
+                                <!-- js sẽ viết thêm ở đây -->
+                </div>
+            </div>
+
+            <div id="detail-info" class="detail-info mt-5">
+                <!-- js sẽ viết thêm ở đây -->
+            </div>
+        </div>
+    </div>
+    <script src="navbar.js"></script>
+    <script src="smartphone.js"></script>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+ I. YÊU CẦU CHUNG
+1. Mỹ thuật:
+Giao diện hiện đại, chuyên nghiệp, mang phong cách công nghệ (đặc trưng của Samsung).
+
+Sử dụng màu sắc phù hợp (gợi ý: xanh dương, trắng, đen).
+
+Dùng icon, hình ảnh sản phẩm chất lượng, thống nhất font chữ toàn web.
+
+2. Kỹ thuật:
+Sử dụng HTML5, CSS3, JavaScript và Bootstrap 5.
+
+Website responsive, hiển thị tốt trên PC, tablet, mobile.
+
+JavaScript xử lý:
+
+Sự kiện người dùng, tương tác động (hover, click, chuyển trang,...)
+
+Form validation (kiểm tra đăng ký, đăng nhập)
+
+Tính toán giỏ hàng (tổng tiền, số lượng)
+
+Dữ liệu như:
+
+Người dùng (tài khoản)
+
+Sản phẩm đã thêm vào giỏ
+
+Đơn hàng
+→ lưu bằng localStorage.
+
+3. Chức năng chính:
+🔷 Trang chủ (index.html):
+Hiển thị banner quảng cáo (Carousel).
+
+Danh sách sản phẩm nổi bật (grid hoặc card).
+
+Thanh tìm kiếm theo tên sản phẩm / loại sản phẩm.
+
+🔷 Trang giới thiệu (about.html):
+Giới thiệu thương hiệu Samsung.
+
+Chính sách bảo hành, đổi trả.
+
+Thông tin liên hệ, hotline.
+
+🔷 Trang sản phẩm (products.html):
+Hiển thị danh sách theo từng loại: Điện thoại, Tablet, Đồng hồ, Phụ kiện.
+
+Mỗi sản phẩm có: hình ảnh, tên, mô tả ngắn, giá.
+
+Nút “Mua ngay” hoặc “Thêm vào giỏ”.
+
+🔷 Trang chi tiết sản phẩm (product-detail.html):
+Thông tin chi tiết về sản phẩm.
+
+Nút chọn số lượng, thêm vào giỏ hàng.
+
+🔷 Trang đăng ký / đăng nhập (register.html, login.html):
+Form đăng nhập (email, mật khẩu) có kiểm tra hợp lệ.
+
+Form đăng ký: họ tên, email, mật khẩu, xác nhận mật khẩu (check trùng email).
+
+Lưu thông tin đăng nhập vào localStorage.
+
+🔷 Trang giỏ hàng (cart.html):
+Hiển thị các sản phẩm đã thêm.
+
+Chỉnh sửa số lượng, xoá sản phẩm.
+
+Tự động tính tổng tiền.
+
+Nút "Đặt hàng".
+
+🔷 Trang quản lý đơn hàng (orders.html):
+Hiển thị danh sách đơn hàng đã đặt (lấy từ localStorage).
+
+Cho phép huỷ đơn hàng.
+
+4. Yêu cầu bổ sung:
+Sử dụng component Bootstrap:
+
+Navbar, Carousel, Card, Form, Modal.
+
+JavaScript xử lý:
+
+Form validation khi đăng ký, đăng nhập.
+
+Giỏ hàng (thêm, xoá, cập nhật số lượng).
+
+Popup thông báo đặt hàng thành công.
+
+🏆 II. TIÊU CHÍ ĐÁNH GIÁ
+1. Giao diện (20%)
+Thiết kế đẹp, hiện đại, tương thích nhiều thiết bị.
+
+Sử dụng đúng các thẻ HTML5: header, section, article, form, v.v.
+
+Bố cục rõ ràng, dễ sử dụng.
+
+2. Chức năng (30%)
+Đầy đủ tất cả các trang và tính năng như mô tả.
+
+JavaScript xử lý mượt mà, không lỗi.
+
+3. Code (40%)
+Viết code rõ ràng, có comment.
+
+Tách HTML/CSS/JS hợp lý.
+
+Sử dụng chuẩn HTML5, CSS3 và Bootstrap đúng cách.
+
+4. Trình bày (10%)
+File báo cáo (Word): mô tả ý tưởng, công nghệ dùng, cách triển khai.
+
+Slide thuyết trình (PowerPoint): ngắn gọn, rõ ràng.
+
+💻 III. GỢI Ý CÔNG NGHỆ
+Frontend: HTML5, CSS3, Bootstrap 5, JavaScript (thuần)
+
+Công cụ phát triển: Visual Studio Code
+
+Dữ liệu mẫu: lưu bằng localStorage, không cần backend

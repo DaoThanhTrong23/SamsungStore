@@ -1,0 +1,55 @@
+body
+{
+	font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.logo
+{
+	height: 25px;
+}
+nav {
+    padding: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+img
+{
+	width: 150px ;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none; 
+	color: black;
+    font-size: 15px;
+    padding: 10px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #55555517;
+    border-radius: 5px;
+}
+
+.menu_acount
+{
+    border: 1px solid black;
+    border-radius: 5px;
+    display: block;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}

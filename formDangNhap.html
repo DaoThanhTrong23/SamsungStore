@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/formDangNhap.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="header">
+    <h2>Samsung Account</h2>
+  </div>
+    <div class="form-wrapper">
+        <div class="static-text">
+          <img class="logo" src="/Images/Samsung_Black_icon.svg">
+          <h2>Đăng nhập để bắt đầu!</h2>
+          <p>Một tài khoản. Mọi thiết bị. Chỉ dành cho bạn.</p>
+        </div>
+        <form id="signup-form">
+          <div class="field-group">
+            <input type="text" id="email_login" autocomplete="off">
+            <label for="email">Email</label>
+            <div id="emailError" class="text-danger"></div>
+          </div>
+
+          <div class="field-group">
+            <input type="password" id="password_login">
+            <label for="password">Mật khẩu</label>
+            <div id="passwordError" class="text-danger"></div>
+          </div>
+
+          <button type="submit">Đăng nhập</button>
+        </form>
+        <span class="separator">or</span>
+        <div class="other-options">
+          <a href="#">
+            <span class="option-icon bi bi-google"></span>
+            Đăng nhập với Google
+          </a>
+          <a href="#">
+            <span class="option-icon bi bi-microsoft"></span>
+            Đăng nhập với Microsoft
+          </a>
+        </div>
+        <p class="login-link">Bạn chưa có tài khoản? <a href="formDangKy.html">Đăng ký ngay</a></p>
+    </div>
+    <footer>
+      <h2>Samsung Account</h2>
+      <p>Copyright &copy; 1995-2005 Samsung. All Right Reserved.</p>
+    </footer>
+    <script src="formDangKy.js"></script>
+</body>
+</html>

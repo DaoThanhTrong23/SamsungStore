@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/formDangKy.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="header">
+    <h2>Samsung Account</h2>
+  </div>
+    <div class="form-wrapper">
+        <div class="static-text">
+          <img class="logo" src="/Images/Samsung_Black_icon.svg">
+          <h2>Đăng ký ngay!</h2>
+          <p>Thiết lập tài khoản của bạn và mở khoá những khả năng vô tận.</p>
+        </div>
+        <form id="signup-form">
+          <div class="field-group">
+            <input type="text" id="email" autocomplete="off">
+            <label for="email">Email</label>
+            <div id="emailError" class="text-danger"></div>
+          </div>
+
+          <div class="field-group">
+            <input type="password" id="password">
+            <label for="password">Mật khẩu</label>
+            <div id="passwordError" class="text-danger"></div>
+          </div>
+
+          <div class="field-group">
+            <input type="password" id="confirm-password">
+            <label for="confirm-password">Xác nhận mật khẩu</label>
+            <div id="confirmPasswordError" class="text-danger"></div>
+          </div>
+
+          <div class="agree-checkbox">
+            <input type="checkbox" id="terms-condition">
+            <label for="terms-condition">Tôi đồng ý với <a href="#">các điều khoản và điều kiện.</a></label>
+            <div id="termsError" class="text-danger"></div>
+          </div>
+
+          <button type="submit">Đăng ký</button>
+        </form>
+        <span class="separator">or</span>
+        <div class="other-options">
+          <a href="#">
+            <span class="option-icon bi bi-google"></span>
+            Đăng nhập với Google
+          </a>
+          <a href="#">
+            <span class="option-icon bi bi-microsoft"></span>
+            Đăng nhập với Microsoft
+          </a>
+        </div>
+        <p class="login-link">Bạn đã có tài khoản? <a href="formDangNhap.html">Đăng nhập ngay</a></p>
+    </div>
+    <footer>
+      <h2>Samsung Account</h2>
+      <p>Copyright &copy; 1995-2005 Samsung. All Right Reserved.</p>
+    </footer>
+    <script src="JS/formDangKy.js"></script>
+</body>
+</html>
