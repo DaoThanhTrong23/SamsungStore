@@ -1,0 +1,43 @@
+body
+{
+    margin: 0;
+    padding: 0;   
+}
+.container h1
+{
+    font-weight: 600;
+    position: relative;
+    margin-top:50px;
+}
+.list_type_watch
+{
+    text-align:center;
+}
+.type_watch
+{
+    display: inline-flex;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 1px 1px 5px rgba(143, 143, 143, 0.26) ;
+    text-align:start
+}
+.type_watch img
+{
+    height: 100px;
+    width: auto;
+}
+.type-watch h4
+{
+    font-weight: 600;
+}
+.carousel-item img
+{
+    border-radius: 10px;
+}

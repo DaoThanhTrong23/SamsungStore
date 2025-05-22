@@ -7,18 +7,26 @@
 	<link rel="stylesheet" href="CSS/stylesNavbar.css">
 </head>
 <body>
-	<nav>
+	<div class="nav">
 		<ul>
 			<li>
-				<a href="index.html">
-					<img class="logo" src="/Images/Samsung_Black_icon.svg">
-				</a>
+				<a href="index.html"><img class="logo" src="/Images/Samsung_Black_icon.svg"></a>
 			</li>
-			<li><a href="index.html">Cửa hàng</a></li>
-			<li><a href="smartphone.html">SmartPhone</a></li>
-			<li><a href="">TabLet</a></li>
-			<li><a href="">SmartWatch</a></li>
-			<li><a href="">Phụ kiện</a></li>
+			<li class="menu"  id="cuahangMenu">
+				<a href="index.html">Cửa hàng</a>
+			</li>
+			<li class="menu" id="smartphoneMenu">
+				<a href="smartphone.html">SmartPhone</a>
+			</li>
+			<li class="menu"  id="tabletMenu">
+				<a href="">TabLet</a>
+			</li>
+			<li class="menu"  id="smarthwatchMenu">
+				<a href="smartwatch.html">SmartWatch</a>
+			</li>
+			<li class="menu"  id="phukienMenu">
+				<a href="">Phụ kiện</a>
+			</li>
 			<li>
 				<a href="">
 					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
@@ -62,7 +70,157 @@
 			</li>
 			
 		</ul>
-	</nav>
+		<!-- menu dropdown trang chủ -->
+		<div class="menu_drd" id="cuahangDropdown">
+			<ul class="d-block">
+				<li>Mua hàng</li>
+				<li><a href="#sp_noi_bat">Tất cả sản phẩm mới nhất</a></li>
+				<li><a>SmartPhone</a></li>
+				<li><a>TabLet</a></li>
+				<li><a>SmartWatch</a></li>
+				<li><a>Phụ kiện</a></li>
+			</ul>
+		</div>
+		<!-- menu dropdown smartphone -->
+		<div class="menu_drd" id="smartphoneDropdown" >
+			<ul class="d-block w-100">
+				<li>
+					<a>Sản phẩm mới nhất S series</a> 
+				</li>
+				<li>
+					<a>Galaxy S25 Ultra</a>
+				</li>
+				<li>
+					<a>Galaxy S25 edge</a>
+				</li>
+				<li>
+					<a>Galaxy S25+</a>
+				</li>
+				<li>
+					<a>Galaxy S25</a>
+				</li>
+			</ul>
+			<ul class="d-block w-100">
+				<li>
+					<a>Sản phẩm mới nhất Z series</a> 
+				</li>
+				<li>
+					<a>Galaxy Z Fold6</a>
+				</li>
+				<li>
+					<a>Galaxy Z Flip6</a>
+				</li>
+			</ul>
+			<ul class="d-block w-100">
+				<li>
+					<a>Sản phẩm mới nhất A series</a> 
+				</li>
+				<li>
+					<a>Galaxy A56 5G</a>
+				</li>
+				<li>
+					<a>Galaxy A36 5G</a>
+				</li>
+				<li>
+					<a>Galaxy A26 5G</a>
+				</li>
+						
+			</ul>
+		</div>
+		<!-- menu dropdown tablet -->
+		<div class="menu_drd" id="tabletDropdown" >
+			<ul class="d-block">
+				<li>
+					<a>Galaxy Tab S series</a>
+				</li>
+				<li>
+					<a>
+						Tab S10 Ultra 5G
+					</a>
+				</li>
+				<li>
+					<a>Tab S10 Ultra WiFi</a>
+				</li>
+				<li>
+					<a>Tab S10 Plus 5G</a>
+				</li>
+				<li>
+					<a>Tab S10 Plus WiFi</a>
+				</li>
+			</ul>
+			<ul class="d-block">
+				<li>
+					<a>Galaxy Tab A series</a>
+				</li>
+				<li>
+					<a>
+						Tab A9+ 5G
+					</a>
+				</li>
+				<li>
+					<a>Tab A9+ WiFi</a>
+				</li>
+				<li>
+					<a>Tab A9 5G</a>
+				</li>
+				<li>
+					<a>Tab A9 (LTE)</a>
+				</li>
+			</ul>	
+		</div>
+		<!-- menu dropdown smartwwatch -->
+		<div class="menu_drd" id="smartwatchDropdown" >
+			<ul class="d-block">
+				<li>
+					<a>Galaxy Watch Ultra series</a>
+				</li>
+				<li>
+					<a>
+						Galaxy Watch Ultra
+					</a>
+				</li>
+				<li>
+					<a>Galaxy Watch Ultra (LTE)</a>
+				</li>
+			</ul>
+			<ul class="d-block">
+				<li>
+					<a>Galaxy Watch series</a>
+				</li>
+				<li>
+					<a>
+						Galaxy Watch7
+					</a>
+				</li>
+				<li>
+					<a>Galaxy Watch7 (LTE)</a>
+				</li>
+			</ul>
+			<ul class="d-block">
+				<li>
+					<a>Galaxy Watch Classic series</a>
+				</li>
+				<li>
+					<a>
+						Galaxy Watch6 Classic
+					</a>
+				</li>
+				<li>
+					<a>Galaxy Watch6 Classic (LTE)</a>
+				</li>
+			</ul>
+		</div>
+		<!-- menu dropdown phụ kiện -->
+		<div class="menu_drd" id="phukienDropdown" >
+			<ul class="d-block">
+				<li><a>Tất cả phụ kiện</a></li>
+				<li><a><span>SmartPhone</span></a></li>
+				<li><a><span>TabLet</span></a></li>
+				<li><a><span>SmartWatch</span></a></li>
+				<li><a><span>Phụ kiện</span></a></li>
+			</ul>	
+		</div>
+	</div>
 	<script src="JS/navbar.js"></script>
 	
 </body>

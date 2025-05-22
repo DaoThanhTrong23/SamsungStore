@@ -1,0 +1,356 @@
+
+html
+{
+	scroll-behavior: smooth;
+}
+.container{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.slogan
+{
+	padding-top: 100px;
+}
+.slogan_text h2{
+	font-size: 40px;
+	font-weight: 550;
+	color: gray;
+}
+.slogan span{
+	color: black;
+}
+.ps_support{
+	display: inline-flex;
+	text-decoration: none;
+	color: black;
+}
+.ps_support img{
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+}
+.ps_support_caption{
+	width: 300px;
+	padding: 5px;
+	margin-left: 10px;
+}
+.ps_support_caption h{
+	font-size: 16px;
+	
+}
+.ps_support_caption span{
+	color: rgb(19, 139, 250);
+}
+.slide_card{
+	display: flex;
+	justify-content: space-around;
+	margin: 50px 0;
+	padding-top: 60px;
+}
+.a_card{
+	text-align: center;
+	text-decoration: none;
+	color: black;
+}
+.a_card h5{
+	padding: 0;
+	margin: 0;
+	font-weight: 550;
+}
+.a_card  div{
+	width: 150px;
+	height: 100px;
+}
+.a_card div img{
+	height: 90%;
+	width: auto;
+}
+.a_card:hover
+{
+	color: rgb(0, 0, 187);
+}
+.slide-btn {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: white;
+	border: 1px solid gray;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	z-index: 10;
+}
+#slide-left {
+	left: -20px;
+}
+#slide-right {
+	right: -20px;
+}
+
+.san_pham_noi_bat{
+	position: relative;
+}
+.san_pham_noi_bat h1
+{
+	color: gray;
+	font-weight: 600;
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+.san_pham_noi_bat h1 span
+{
+	color: black;
+}
+.slide_san_pham_noi_bat
+{
+	display: flex;
+	justify-content: space-around;
+	white-space: nowrap;
+	padding: 15px;
+	color: grey;
+	overflow-x:hidden;
+
+}
+.card_sanphamnoibat
+{
+	position: relative;
+	height: 550px;
+	width: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	border-radius: 8px;
+	box-shadow: 1px 1px 10px 1px rgba(136, 136, 136, 0.3);
+	transition: transform 0.5s;
+	margin-right: 30px;
+}
+.card_sanphamnoibat img{
+	display: block;
+	width: 75%;
+	margin-top: 50px;
+}
+.card_sanphamnoibat div
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: 10px;
+	margin-left: 20px;
+	color: black;
+}
+.card_sanphamnoibat div h2{
+	padding: 0;
+	margin: 0;
+}
+.card_sanphamnoibat:hover{
+	transform: scale(1.03);
+}
+/* Fold6 */
+.fold6
+{
+	background-color: rgb(211, 211, 211);
+}
+/* Zlip6 */
+.zlip6
+{
+	background-color: black;
+}
+.zlip6 div h2
+{
+	color: white;
+}
+.zlip6 div h5{
+	color: white;
+}
+.zlip6 div p {
+	color: white;
+}
+/* Tab S10 */
+.tabs10
+{
+	background-color: black;
+}
+.tabs10 div h2
+{
+	color: white;
+}
+.tabs10 div h5{
+	color: white;
+}
+.tabs10 div p {
+	color: white;
+}
+/* Watch Ultra*/
+.watchUltra
+{
+	background-image: url(../Images/bg_watchUltra.png);
+}
+.watchUltra img{
+	margin-top: 70px;
+}
+.watchUltra div h2
+{
+	color: white;
+}
+.watchUltra div h5{
+	color: white;
+}
+.watchUltra div p {
+	color: white;
+}
+
+/* video */
+
+.video_rv
+{
+	position: relative;
+	margin: 0;
+}
+.video-buttons {
+  	position: absolute;
+  	top: 70%;
+  	left: 19%;
+  	transform: translateX(-50%);
+  	z-index: 2;
+  	display: flex;
+  	gap: 20px;
+	z-index: 4;
+}
+
+.video-buttons .btn
+{
+	border-radius: 20px;
+}
+.product
+{
+	text-decoration: none;
+	
+}
+.product
+{
+	background-color: white;
+	border: 1px solid gray;
+	color: black;
+	margin: 0 15px;
+}
+.icon_star
+{
+	height: 20px;
+	width: auto;
+}
+#scroll-left
+{
+	border-radius: 50% !important;
+	border: 1px solid black !important;
+	height: 40px !important;
+	width: 40px !important;
+	left: -20px !important;
+}
+#scroll-right
+{
+	border-radius: 50% !important;
+	border: 1px solid black !important;
+	height: 40px !important;
+	width: 40px !important;
+	right: -20px !important;
+}
+.card
+{	
+	border: none !important;
+	border-radius: 20px !important;
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px 2px rgba(136, 136, 136, 0.3);
+	background-color: white;
+	color: black;
+	text-decoration: none;
+}
+.card-body {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+
+.xem_tat_ca
+{
+	width: fit-content !important;
+	margin-top: 30px !important;
+	color: white !important;
+	border: 2px solid rgb(255, 255, 255) !important;
+	border-radius: 30px !important;
+}
+.xem_tat_ca:hover
+{
+	background-color: rgb(255, 255, 255) !important;
+	color: rgb(0, 0, 0) !important;
+}
+
+.btn_mua_ngay
+{
+	background-color: black;
+	color: white;
+	border-radius: 20px;
+	padding: 6px 50px;
+	margin: 10px;
+}
+.btn_mua_ngay:hover
+{
+	background-color: white;
+	color: black;
+}
+.card-header
+{
+	background-color: rgba(255, 255, 255, 0) !important;
+	border: none !important;
+}
+.button-tablet
+{
+	margin-top:30px;
+}
+.button-tablet .btn-primary
+{
+	border-radius: 20px;
+}
+.button-tablet .btn-outline-light
+{
+	border-radius: 20px; border: 1px solid black; color: black;
+}
+.button-tablet .btn-outline-light:hover
+{
+	color: white;
+	background-color: black;
+
+}
+#scroll-left_tablet
+{
+	border-radius: 50% !important;
+	border: 1px solid black !important;
+	height: 40px !important;
+	width: 40px !important;
+	left: -25px !important;
+}
+#scroll-right_tablet
+{
+	border-radius: 50% !important;
+	border: 1px solid black !important;
+	height: 40px !important;
+	width: 40px !important;
+	right: -25px !important;
+}
+.xem_tat_ca_tablet
+{
+	width: fit-content !important;
+	margin-top: 30px !important;
+	color: rgb(2, 2, 2) !important;
+	border: 2px solid rgb(0, 0, 0) !important;
+	border-radius: 30px !important;
+}
+.xem_tat_ca_tablet:hover
+{
+	background-color: rgb(0, 0, 0) !important;
+	color: rgb(255, 255, 255) !important;
+}

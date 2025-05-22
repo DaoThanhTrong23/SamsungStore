@@ -1,151 +1,405 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="CSS/stylesDasboard.css">
+	<link rel="stylesheet" href="CSS/stylesIndex.css">
+	<link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
+
 	<title>Trang chủ</title>
 </head>
-<body>
-	<div class="container">
-		<header>
-			<div id="navbar"></div>
-		</header>
-		<main>
-			<div class="slogan">
-				<div class="slogan_text">
-					<h><span>Tới SamSung Store.</span>Lên đời công nghệ.</h>
-				</div>
-				
+
+<body style="display: contents;">
+	<header>
+		<div id="navbar"></div>
+	</header>
+	<div class="container d-block">
+		<div class="slogan row">
+			<div class=" slogan_text col-6 ">
+				<h2><span>Tới SamSung Store.</span> Lên đời công nghệ.</h2>
+			</div>
+			<div class="col-2"></div>
+			<div class="col-4">
 				<a href="#" class="ps_support">
-					<img src="Images/cabi.jpg" >
+					<img src="Images/cabi.jpg" alt="Hỗ trợ mua sắm">
 					<div class="ps_support_caption">
-						<h>Bạn cần hỗ trợ mua sắm?<br>
-						<span>Giải đáp</span></h>
+						<h5>Bạn cần hỗ trợ mua sắm?<br><span>Giải đáp</span></h5>
 					</div>
 				</a>
 			</div>
-			<div class="slide_card">
+		</div>
+		<div class=" row ">
+			<div class=" col-12 slide_card">
 				<a class="a_card" href="">
-					<div>
-						<img src="Images/s25Ultra.webp">
-					</div>
-					<h3>Galaxy S</h3>
+					<div><img src="Images/s25Ultra.webp" alt="Galaxy S25 Ultra"></div>
+					<h5>Galaxy S</h5>
 				</a>
 				<a class="a_card" href="">
-					<div>
-						<img src="Images/galaxyA.avif">
-					</div>
-					<h3>Galaxy A</h3>
+					<div><img src="Images/galaxyA.avif" alt="Galaxy A"></div>
+					<h5>Galaxy A</h5>
 				</a>
 				<a class="a_card" href="">
-					<div>
-						<img src="Images/galaxyZ.avif">
-					</div>
-					<h3>Galaxy Z</h3>
+					<div><img src="Images/galaxyZ.avif" alt="Galaxy Z"></div>
+					<h5>Galaxy Z</h5>
 				</a>
 				<a class="a_card" href="">
-					<div>
-						<img src="Images/tabletS.jpg">
-					</div>
-					<h3>Galaxy Tab</h3>	
+					<div><img src="Images/tabletS.jpg" alt="Galaxy Tab"></div>
+					<h5>Galaxy Tab</h5>
+				</a>
+				<a class="a_card" href="smartwatch.html">
+					<div><img src="Images/smartwatch.png" alt="Galaxy Watch"></div>
+					<h5>Galaxy Watch</h5>
 				</a>
 				<a class="a_card" href="">
-					<div>
-						<img src="Images/smartwatch.png">
-					</div>
-					<h3>Galaxy Watch</h3>
-
+					<div><img src="Images/galaxyBuds.avif" alt="Galaxy Buds"></div>
+					<h5>Galaxy Buds</h5>
 				</a>
 				<a class="a_card" href="">
-					<div>
-						<img src="Images/galaxyBuds.avif">
-					</div>
-					<h3>Galaxy Buds</h3>
+					<div><img src="Images/phukien.avif" alt="Phụ kiện"></div>
+					<h5>Phụ kiện</h5>
 				</a>
-				<a class="a_card" href="">
-					<div>
-						<img src="Images/phukien.avif">
-					</div>
-					<h3>Phụ kiện</h3>
-
-				</a>
-				
 			</div>
-			<div class="san_pham_noi_bat">
-				<h1><span>Sản phẩm nổi bật.</span><br> Với hệ sinh thái SamSung.</h1>
-				<div class="slide_san_pham_noi_bat">
+		</div>
+		<div class="row">
+			<div class="col-12 san_pham_noi_bat">
+				<h1><span>Sản phẩm nổi bật.</span><br>Với hệ sinh thái SamSung.</h1>
+			</div>
+		</div>
+		<div class="row" id="sp_noi_bat">
+			<div class="col-12 san_pham_noi_bat">
+				<div class="slide_san_pham_noi_bat" id="carousel">
 					<a href="#" class="a_card_sanphamnoibat">
 						<div class="card_sanphamnoibat">
-							<img src="Images/S25Ultra.jpg">
+							<img src="Images/S25Ultra.jpg" alt="Galaxy S25Ultra">
 							<div>
-								<h1>Galaxy S25Ultra</h3>
-								<h3>Đỉnh cao công nghệ AI</h4>
-								<p>Chỉ từ 27.990.000đ 
+								<h2>Galaxy S25Ultra</h2>
+								<h5>Đỉnh cao công nghệ AI</h5>
+								<p>Chỉ từ 27.990.000đ</p>
 							</div>
 						</div>
 					</a>
-
 					<a href="#" class="a_card_sanphamnoibat">
 						<div class="card_sanphamnoibat fold6">
-							<img src="Images/GalaxyZFold6.jpg">
+							<img src="Images/GalaxyZFold6.jpg" alt="Galaxy Z Fold 6">
 							<div>
-								<h1>Galaxy Z Fold 6</h3>
-								<h3>Hiệu năng như một chiếc PC.</h4>
-								<p>Chỉ từ 37.690.000đ 
+								<h2>Galaxy Z Fold 6</h2>
+								<h5>Hiệu năng như một chiếc PC.</h5>
+								<p>Chỉ từ 37.690.000đ</p>
 							</div>
 						</div>
 					</a>
-
 					<a href="#" class="a_card_sanphamnoibat">
 						<div class="card_sanphamnoibat zlip6">
-							<img src="Images/zlip6.png">
+							<img src="Images/zlip6.png" alt="Galaxy Z Flip 6">
 							<div>
-								<h1>Galaxy Z Flip 6</h3>
-								<h3>Thiết kế màn hình gập, mỏng nhẹ<br> và nổi bật.</h4>
-								<p>Chỉ từ 20.990.000đ 
+								<h2>Galaxy Z Flip 6</h2>
+								<h5>Thiết kế màn hình gập, mỏng nhẹ.</h5>
+								<p>Chỉ từ 20.990.000đ</p>
 							</div>
 						</div>
 					</a>
 					<a href="#" class="a_card_sanphamnoibat">
 						<div class="card_sanphamnoibat tabs10">
-							<img src="Images/TabS10Ultra.jpeg">
+							<img src="Images/TabS10Ultra.jpeg" alt="Galaxy Tab S10 Ultra">
 							<div>
-								<h1>Galaxy Tab S10 Ultra</h3>
-								<h3>Màn hình vượt trội.</h4>
-								<p>Chỉ từ 26.190.000đ 
+								<h2>Galaxy Tab S10 Ultra</h2>
+								<h5>Màn hình vượt trội.</h5>
+								<p>Chỉ từ 26.190.000đ</p>
 							</div>
 						</div>
 					</a>
-
 					<a href="#" class="a_card_sanphamnoibat">
 						<div class="card_sanphamnoibat watchUltra">
-							<img src="Images/watchUltra.png">
+							<img src="Images/watchUltra.png" alt="Galaxy Watch Ultra">
 							<div>
-								<h1>Galaxy Buds3 Pro</h3>
-								<h3>Hoà mình khám phá đại dương.</h4>
-								<p>Chỉ từ 14.090.000đ 
+								<h2>Galaxy Watch Ultra</h2>
+								<h5>Hoà mình khám phá đại dương.</h5>
+								<p>Chỉ từ 14.090.000đ</p>
 							</div>
 						</div>
 					</a>
-
 					<a href="#" class="a_card_sanphamnoibat">
 						<div class="card_sanphamnoibat">
-							<img src="Images/buds3pro.jpg">
+							<img src="Images/buds3pro.jpg" alt="Galaxy Buds3 Pro">
 							<div>
-								<h1>Galaxy Watch Ultra</h3>
-								<h3>Phá vỡ rào cản ngôn ngữ với AI</h4>
-								<p>Chỉ từ 3.490.000đ 
+								<h2>Galaxy Buds3 Pro</h2>
+								<h5>Phá vỡ rào cản ngôn ngữ với AI</h5>
+								<p></p>
 							</div>
 						</div>
 					</a>
-
+					<a href="#" class="a_card_sanphamnoibat">
+						<div class="card_sanphamnoibat">
+							<img src="Images/phukienall.avif" alt="Galaxy Buds3 Pro">
+							<div>
+								<h2>Phụ kiện Galaxy</h2>
+								<h5>Cá nhân hóa Galaxy theo sở thích </h5>
+								<p>Chỉ từ 3.490.000đ</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<button id="slide-left" class="slide-btn">&#10094;</button>
+				<button id="slide-right" class="slide-btn">&#10095;</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 mt-5">
+				<h4><strong>SmartPhone mới nhất</strong></h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 video_rv p-0">
+				<video class="w-100" autoplay muted loop playsinline>
+					<source src="mp4/HOME_P3_Main-KV_1440x640_pc_LTR.webm" type="video/mp4">
+					Trình duyệt của bạn không hỗ trợ thẻ video.
+				</video>
+				<div class="video-buttons">
+					<button class="btn btn-primary">Mua ngay</button>
+					<button class="btn btn-outline-light">Tìm hiểu thêm</button>
 				</div>
 			</div>
-		</main>
+		</div>
+
+		<div class="row py-4" style="background-color: rgb(0, 0, 0);">
+			<div class="col-12 position-relative">
+				<!-- Khu vực slider -->
+				<div class="d-flex overflow-hidden px-5" id="product-slider"
+					style="scroll-behavior: smooth; scroll-snap-type: x mandatory;">
+					<!-- Mỗi sản phẩm -->
+					<a class="card mx-4"
+						style="flex: 0 0 auto; scroll-snap-align: start; width: 250px; text-align: center;">
+						<div class="card-header" style="height: 270px;">
+							<div class=""
+								style="position: relative; background-color: #2189FF; color: white;border-radius: 20px;width: fit-content;padding: 2px;padding-left: 10px;padding-right: 10px;">
+								Mới</div>
+							<img src="Images/smartphones25edge.png" class="card-img-top">
+						</div>
+						<div class="card-body">
+							<h5><strong>Galaxy S25 Edge 12GB</strong></h5>
+							<p>Màu sắc: Bạc titan</p>
+							<h5><strong>Giá: 29.990.000 VNĐ</strong></h5>
+							<p>Ưu đãi 3.500.000 (giá gốc <s>33.490.000VNĐ</s>)</p>
+							<button class="btn_mua_ngay">Mua ngay</button>
+						</div>
+					</a>
+					<a class="card mx-4"
+						style="flex: 0 0 auto; scroll-snap-align: start; width: 250px; text-align: center;">
+						<div class="card-header" style="height: 270px;">
+							<div class=""
+								style="position: relative; background-color: #2189FF; color: white;border-radius: 20px;width: fit-content;padding: 2px;padding-left: 10px;padding-right: 10px;">
+								Mới</div>
+
+							<img src="Images/S25Ultra.jpg" class="card-img-top">
+						</div>
+						<div class="card-body">
+							<h5><strong>Galaxy S25 Ultra 5G 256GB</strong></h5>
+							<p>Màu sắc: Xám titan</p>
+							<h5><strong>Giá: 28.990.000 VNĐ</strong></h5>
+							<p>Ưu đãi 5.000.000 (giá gốc <s>33.990.000VNĐ</s>)</p>
+							<button class="btn_mua_ngay">Mua ngay</button>
+						</div>
+					</a>
+					<a class="card mx-4"
+						style="flex: 0 0 auto; scroll-snap-align: start; width: 250px; text-align: center;">
+						<div class="card-header" style="height: 270px;">
+							<img src="Images/s25+.avif" class="card-img-top">
+						</div>
+						<div class="card-body">
+							<h5><strong>Galaxy S25+ 512GB</strong></h5>
+							<p>Màu sắc: Xanh navy</p>
+							<h5><strong>Giá: 29.490.000 VNĐ</strong></h5>
+							<p>Ưu đãi 1.000.000 (giá gốc <s>30.490.000VNĐ</s>)</p>
+							<button class="btn_mua_ngay">Mua ngay</button>
+						</div>
+					</a>
+					<a class="card mx-4"
+						style="flex: 0 0 auto; scroll-snap-align: start; width: 250px; text-align: center;">
+						<div class="card-header" style="height: 270px;">
+							<img src="Images/s25.avif" class="card-img-top">
+						</div>
+						<div class="card-body">
+							<h5><strong>Galaxy S25 512GB</strong></h5>
+							<p>Màu sắc: Bạc Shadow</p>
+							<h5><strong>Giá: 25.490.000 VNĐ</strong></h5>
+							<p>Ưu đãi 1.000.000 (giá gốc <s>26.490.000VNĐ</s>)</p>
+							<button class="btn_mua_ngay">Mua ngay</button>
+						</div>
+					</a>
+					<a class="card mx-4"
+						style="flex: 0 0 auto; scroll-snap-align: start; width: 250px; text-align: center;">
+						<div class="card-header" style="height: 270px;">
+							<img src="Images/S24FE.avif" class="card-img-top">
+						</div>
+						<div class="card-body">
+							<h5><strong>Galaxy S24 FE 256GB</strong></h5>
+							<p>Màu sắc: Xanh Topaz</p>
+							<h5><strong>Giá: 15.990.000 VNĐ</strong></h5>
+							<p>Ưu đãi 2.500.000 (giá gốc <s>18.490.000VNĐ</s>)</p>
+							<button class="btn_mua_ngay">Mua ngay</button>
+						</div>
+					</a>
+					<a class="card mx-4"
+						style="flex: 0 0 auto; scroll-snap-align: start; width: 250px; text-align: center;">
+						<div class="card-header" style="height: 270px;">
+							<img src="Images/s24ultra.avif" class="card-img-top">
+						</div>
+						<div class="card-body">
+							<h5><strong> S24 Ultra 512GB</strong></h5>
+							<p>Màu sắc: Xám titan</p>
+							<h5><strong>Giá: 24.490.000 VNĐ</strong></h5>
+							<p>Ưu đãi 13.000.000 (giá gốc <s>37.490.000VNĐ</s>)</p>
+							<button class="btn_mua_ngay">Mua ngay</button>
+						</div>
+					</a>
+				</div>
+				<div class="d-flex justify-content-center mt-3">
+					<a class="btn xem_tat_ca px-3">Xem tất cả</a>
+				</div>
+				<button id="scroll-left"
+					class="btn btn-light position-absolute start-0 top-50 translate-middle-y z-10">&#10094;</button>
+
+				<!-- Nút phải -->
+				<button id="scroll-right"
+					class="btn btn-light position-absolute end-0 top-50 translate-middle-y z-3">&#10095;</button>
+			</div>
+		</div>
+		<div class="row" style="margin-top: 100px;">
+			<h4><strong>Tablet mới nhất</strong></h4>
+		</div>
+
+		<div class="row">
+			<div class="col-12 p-0" style="position: relative">
+				<img class="w-100" src="Images/galaxytab_panel.avif">
+				<div style="position: absolute; top: 50%;left: 8%;">
+					<h1 style="font-size: 50px;">
+						<strong>Galaxy Tab S10 Ultra</strong>
+					</h1>
+					<h3>Phát thảo thông minh, dễ dàng</h3>
+
+					<div class="button-tablet">
+						<button class="btn btn-primary">Mua ngay</button>
+						<button class="btn btn-outline-light">Tìm hiểu thêm</button>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+		<div class="row p-3" style="background-color: rgb(244,244,244);">
+			<div class="col-12 position-relative">
+				<!-- Khu vực slider -->
+				<div class="d-flex overflow-hidden px-5" id="product-slider_tablet"
+					style="scroll-behavior: smooth; scroll-snap-type: x mandatory;">
+					<!-- Mỗi sản phẩm -->
+					<a class="card mx-4"
+						style="flex: 0 0 auto; scroll-snap-align: start; width: 250px; text-align: center;">
+						<div class="card-header" style="height: 270px;">
+							<div class=""
+								style="position: relative; background-color: #2189FF; color: white;border-radius: 20px;width: fit-content;padding: 2px;padding-left: 10px;padding-right: 10px;">
+								Mới</div>
+							<img src="Images/tabs10ultra.jpg" class="card-img-top">
+						</div>
+						<div class="card-body ">
+							<h5><strong>Galaxy Tab S10 Ultra 5G 256GB</strong></h5>
+							<p>Màu sắc: Xám Moonstone</p>
+							<h5><strong>Giá: 29.990.000 VNĐ</strong></h5>
+							<p>Ưu đãi 4.000.000 (giá gốc <s>33.990.000VNĐ</s>)</p>
+							<button class="btn_mua_ngay">Mua ngay</button>
+						</div>
+					</a>
+					<a class="card mx-4"
+						style="flex: 0 0 auto; scroll-snap-align: start; width: 250px; text-align: center;">
+						<div class="card-header" style="height: 270px;">
+							<div class=""
+								style="position: relative; background-color: #2189FF; color: white;border-radius: 20px;width: fit-content;padding: 2px;padding-left: 10px;padding-right: 10px;">
+								Mới</div>
+
+							<img src="Images/TabS10Ultra_1.jpeg" class="card-img-top">
+						</div>
+						<div class="card-body">
+							<h5><strong>Galaxy Tab S10 Ultra WiFi 256GB</strong></h5>
+							<p>Màu sắc: Bạc Platium</p>
+							<h5><strong>Giá: 26.990.000 VNĐ</strong></h5>
+							<p>Ưu đãi 4.000.000 (giá gốc <s>30.990.000VNĐ</s>)</p>
+							<button class="btn_mua_ngay">Mua ngay</button>
+						</div>
+					</a>
+					<a class="card mx-4"
+						style="flex: 0 0 auto; scroll-snap-align: start; width: 250px; text-align: center;">
+						<div class="card-header" style="height: 270px;">
+							<img src="Images/galaxytabs10plus_1.jpg" class="card-img-top">
+						</div>
+						<div class="card-body">
+							<h5><strong>Galaxy Tab S10+ 5G 256GB</strong></h5>
+							<p>Màu sắc: Bạc Platinum</p>
+							<h5><strong>Giá: 24.990.000 VNĐ</strong></h5>
+							<p>Ưu đãi 4.000.000 (giá gốc <s>28.990.000VNĐ</s>)</p>
+							<button class="btn_mua_ngay">Mua ngay</button>
+						</div>
+					</a>
+					<a class="card mx-4"
+						style="flex: 0 0 auto; scroll-snap-align: start; width: 250px; text-align: center;">
+						<div class="card-header" style="height: 270px;">
+							<img src="Images/glaxytab10plus.jpg" class="card-img-top">
+						</div>
+						<div class="card-body">
+							<h5><strong>Galaxy Tab S10 256GB</strong></h5>
+							<p>Màu sắc: Xám Moonstone</p>
+							<h5><strong>Giá: 21.990.000 VNĐ</strong></h5>
+							<p>Ưu đãi 3.999.700 (giá gốc <s>25.989.700VNĐ</s>)</p>
+							<button class="btn_mua_ngay">Mua ngay</button>
+						</div>
+					</a>
+					<a class="card mx-4"
+						style="flex: 0 0 auto; scroll-snap-align: start; width: 250px; text-align: center;">
+						<div class="card-header" style="height: 270px;">
+							<img src="Images/galaxytabs10fe.png" class="card-img-top">
+						</div>
+						<div class="card-body">
+							<h5><strong>Galaxy Tab S10 FE+ WiFi 128GB</strong></h5>
+							<p>Màu sắc: Xanh Sky</p>
+							<h5><strong>Giá: 15.090.000 VNĐ</strong></h5>
+							<p>Ưu đãi 899.600 (giá gốc <s>15.989.600VNĐ</s>)</p>
+							<button class="btn_mua_ngay">Mua ngay</button>
+						</div>
+					</a>
+					<a class="card mx-4"
+						style="flex: 0 0 auto; scroll-snap-align: start; width: 250px; text-align: center;">
+						<div class="card-header" style="height: 270px;">
+							<img src="Images/galaxytabs10fe.png" class="card-img-top">
+						</div>
+						<div class="card-body">
+							<h5><strong>Galaxy Tab S10 FE+ 5G 128GB</strong></h5>
+							<p>Màu sắc: Xanh Sky</p>
+							<h5><strong>Giá: 17.990.000 VNĐ</strong></h5>
+							<p>Ưu đãi 1.000.000 (giá gốc <s>18.990.000VNĐ</s>)</p>
+							<button class="btn_mua_ngay">Mua ngay</button>
+						</div>
+					</a>
+				</div>
+				<div class="d-flex justify-content-center mt-3" >
+					<a class="btn xem_tat_ca_tablet px-3">Xem tất cả</a>
+				</div>
+				<button id="scroll-left_tablet"
+					class="btn btn-light position-absolute start-0 top-50 translate-middle-y z-10">&#10094;</button>
+
+				<!-- Nút phải -->
+				<button id="scroll-right_tablet"
+					class="btn btn-light position-absolute end-0 top-50 translate-middle-y z-3">&#10095;</button>
+			</div>
+
+		</div>
+
 		<footer>
 		</footer>
-		<script src="JS/navbar.js"></script>
+
 	</div>
+	<script src="JS/index.js"></script>
+	<script src="JS/navbar.js"></script>
+	<script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+	<script src="bootstrap-5.0.2-dist/js/bootstrap.js"></script>
 </body>
+
 </html>
