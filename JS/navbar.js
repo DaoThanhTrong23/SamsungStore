@@ -22,6 +22,9 @@ document.addEventListener("DOMContentLoaded", function () {
             const smartwatchtMenu = document.getElementById("smarthwatchMenu");
             const smartwatchDropdown = document.getElementById("smartwatchDropdown");
 
+            const taingheMenu = document.getElementById("taingheMenu");
+            const taingheDropdown = document.getElementById("taingheDropdown");
+
             const phukienMenu = document.getElementById("phukienMenu");
             const phukienDropdown = document.getElementById("phukienDropdown");
 
@@ -31,15 +34,16 @@ document.addEventListener("DOMContentLoaded", function () {
                 tabletDropdown.style.display = "none";
                 smartwatchDropdown.style.display = "none";
                 phukienDropdown.style.display = "none";
-                }
+                taingheDropdown.style.display = "none";
+            }
 
             hideAllDropdowns()
-            
+
             // show menu của hàng
             if (cuahangMenu && cuahangDropdown) {
                 cuahangMenu.addEventListener("mouseenter", () => {
                     hideAllDropdowns()
-                    cuahangDropdown.style.display = "flex";  
+                    cuahangDropdown.style.display = "flex";
 
                 });
                 cuahangMenu.addEventListener("mouseleave", () => {
@@ -139,7 +143,34 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
 
-             // show menu phụ kiện
+
+            // show menu tai nghe
+            if (taingheMenu && taingheDropdown) {
+                taingheMenu.addEventListener("mouseenter", () => {
+                    hideAllDropdowns()
+                    taingheDropdown.style.display = "flex";
+                });
+                taingheMenu.addEventListener("mouseleave", () => {
+                    setTimeout(() => {
+                        if (!taingheDropdown.matches(':hover')) {
+                            taingheDropdown.style.display = "none";
+                        }
+                    }, 200);
+                });
+
+                taingheDropdown.addEventListener("mouseleave", () => {
+                    taingheDropdown.style.display = "none";
+                });
+                taingheDropdown.addEventListener("mouseenter", () => {
+                    hideAllDropdowns()
+                    taingheDropdown.style.display = "flex";
+                });
+            } else {
+                console.warn("Không tìm thấy phần tử taingheMenu hoặc taingheDropdown");
+            }
+
+
+            // show menu phụ kiện
             if (phukienMenu && phukienDropdown) {
                 phukienMenu.addEventListener("mouseenter", () => {
                     hideAllDropdowns()
