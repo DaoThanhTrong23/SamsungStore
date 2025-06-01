@@ -1,4 +1,21 @@
-
+@font-face {
+  font-family: 'SamsungOne-400';
+  src: url('../Font/SamsungOne-400.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SamsungOne-700';
+  src: url('../Font/SamsungOne-700.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SamsungOne-Sharp';
+  src: url('../Font/SamsungSharpSans-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 .main {
     width: 100%;
     display: block;
@@ -30,7 +47,7 @@ h1, h2 {
 .slogan-slide button {
     gap: 20px;
     background-color: #f9f9f9;
-    border: none;
+    border: transparent;
     border-radius: 15px;
     width: 220px;
     height: 150px;
@@ -41,8 +58,8 @@ h1, h2 {
 }
 
 .slogan-slide button:hover {
-    transform: scale(1.05);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: solid 1px black;
 }
 
 .slogan-slide span {
@@ -101,14 +118,14 @@ video {
 }
 
 /* ===== "MUA NGAY" BUTTON ===== */
-.video-overlay button.buy-now, .picture-overlay-right button.buy-now{
+.video-overlay button.btn_mua_ngay, .picture-overlay-right button.btn_mua_ngay{
     background-color: white;
     color: black;
     border: 1px solid transparent;
     border-radius: 25px;
 }
 
-.video-overlay button.buy-now:hover, .picture-overlay-right button.buy-now:hover {
+.video-overlay button.btn_mua_ngay:hover, .picture-overlay-right button.btn_mua_ngay:hover {
     background-color: black;
     color: white;
     border: 1px solid white;
@@ -179,20 +196,20 @@ video {
     gap: 20px;
     z-index: 10;
     font-weight: bold;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+    font-family: 'SamsungOne-Sharp', sans-serif ;
 }
 
 .product-name-right {
     color: white;
     position: absolute;
     top: 50%;
-    left: 70%;
+    left: 68%;
     transform: translate(-50%, -50%);
     display: flex;
     gap: 20px;
     z-index: 10;
     font-weight: bold;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+    font-family: 'SamsungOne-Sharp', sans-serif ;
 }
 
 .picture-overlay {
@@ -216,14 +233,14 @@ video {
 }
 
 /* ===== "MUA NGAY" BUTTON ===== */
-.picture-overlay button.buy-now {
+.picture-overlay button.btn_mua_ngay {
     background-color: black;
     color: white;
     border: 1px solid transparent;
     border-radius: 25px;
 }
 
-.picture-overlay button.buy-now:hover {
+.picture-overlay button.btn_mua_ngay:hover {
     background-color: white;
     color: black;
     border: 1px solid black;
@@ -317,7 +334,7 @@ video {
 }
 
 .intro p {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+    font-family: 'SamsungOne-Sharp', sans-serif ;
     font-size: 40px; 
     color: lightgray
 }
@@ -335,7 +352,7 @@ video {
 .detail-info {
     width: 90%;
     margin: 0 auto;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+    font-family: 'SamsungOne-Sharp', sans-serif ;
 }
 .detail-info h2{
     font-weight: bold;
@@ -366,7 +383,7 @@ video {
     transform: translateX(-50%);
     padding: 10px;
 
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+    font-family: 'SamsungOne-Sharp', sans-serif ;
     font-size: clamp(25px, 2.5vw, 60px);
     font-weight: 500;
     color: white;
@@ -381,4 +398,99 @@ video {
 
     white-space: normal;
     word-break: break-word; 
+}
+
+
+#product {
+    padding: 25px;
+    margin-top: 20px;
+    background-color: black;
+    border-radius: 10px;
+}
+/* ==== Responsive cho điện thoại nhỏ ==== */
+@media (max-width: 576px) {
+    .slogan-left h2, .slogan-right h4 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .slogan-slide {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slogan-slide button {
+        width: 90%;
+        height: auto;
+    }
+
+    .video-overlay,
+    .picture-overlay,
+    .picture-overlay-right {
+        flex-direction: column;
+        left: 50% !important;
+        top: 80% !important;
+        transform: translate(-50%, -50%);
+    }
+
+    .video-marketing-overlay {
+        font-size: 20px;
+        width: 90%;
+    }
+
+    .intro p {
+        font-size: 24px;
+        padding: 0 10px;
+    }
+
+    .detail-button-group {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .detail-button .btn {
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    #product-slider a.card {
+        width: 90% !important;
+        margin: 0 auto 20px;
+    }
+
+    #scroll-left,
+    #scroll-right {
+        display: none; /* Ẩn nút cuộn khi ở mobile */
+    }
+}
+
+/* ==== Tablet (576px - 992px) ==== */
+@media (min-width: 577px) and (max-width: 992px) {
+    .slogan-slide {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .slogan-slide button {
+        width: 45%;
+        margin-bottom: 15px;
+    }
+
+    .detail-button-group {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .detail-button .btn {
+        margin: 10px;
+    }
+
+    .video-marketing-overlay {
+        width: 80%;
+        font-size: 24px;
+    }
+
+    #product-slider a.card {
+        width: 45% !important;
+    }
 }

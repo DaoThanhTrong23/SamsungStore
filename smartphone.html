@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smartphone</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/CSS/font.css">
     <link rel="stylesheet" href="/CSS/smartphone.css">
+    <link rel="stylesheet" href="CSS/stylesIndex.css">
     <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body style="display: contents;">
@@ -24,12 +26,6 @@
         <!-- Slogan button -->
         <div class="slogan-slide d-flex justify-content-center">
             <div class="product-btn">
-                <button id="galaxyA" class="phone">
-                    <div class="phone-content">
-                        <img src="Images/galaxyA.avif" alt="Galaxy A">
-                        <span>Galaxy A</span>
-                    </div>
-                </button>
                 <button id="galaxyS" class="phone">
                     <div class="phone-content">
                         <img src="Images/S25Ultra.jpg" alt="Galaxy S">
@@ -40,6 +36,12 @@
                     <div class="phone-content">
                         <img src="Images/galaxyZ.avif" alt="Galaxy Z">
                         <span>Galaxy Z</span>
+                    </div>
+                </button>
+                <button id="galaxyA" class="phone">
+                    <div class="phone-content">
+                        <img src="Images/galaxyA.avif" alt="Galaxy A">
+                        <span>Galaxy A</span>
                     </div>
                 </button>
             </div>
@@ -64,7 +66,7 @@
                         <!-- Nút mua, tìm hiểu thêm trên video -->
                         <div class="video-overlay">
                             <button class="btn learn-more"><span class=btn-text>Tìm hiểu thêm</span></button>
-                            <button class="btn buy-now"><span>Mua ngay</span></button>
+                            <button class="btn btn_mua_ngay"><span>Mua ngay</span></button>
                         </div>
                     </div>
                 </div>
@@ -76,7 +78,7 @@
                         </div>
                         <div class="picture-overlay">
                             <button class="btn learn-more"><span class=btn-text>Tìm hiểu thêm</span></button>
-                            <button class="btn buy-now"><span>Mua ngay</span></button>
+                            <button class="btn btn_mua_ngay"><span>Mua ngay</span></button>
                         </div>
                     </div>
                 </div>
@@ -88,7 +90,7 @@
                         </div>
                         <div class="picture-overlay">
                             <button class="btn learn-more"><span class=btn-text>Tìm hiểu thêm</span></button>
-                            <button class="btn buy-now"><span>Mua ngay</span></button>
+                            <button class="btn btn_mua_ngay"><span>Mua ngay</span></button>
                         </div>
                     </div>
                 </div>
@@ -100,7 +102,7 @@
                         </div>
                         <div class="picture-overlay-right">
                             <button class="btn learn-more"><span class=btn-text>Tìm hiểu thêm</span></button>
-                            <button class="btn buy-now"><span>Mua ngay</span></button>
+                            <button class="btn btn_mua_ngay"><span>Mua ngay</span></button>
                         </div>
                     </div>
                 </div>
@@ -112,7 +114,7 @@
                         </div>
                         <div class="picture-overlay">
                             <button class="btn learn-more"><span class=btn-text>Tìm hiểu thêm</span></button>
-                            <button class="btn buy-now"><span>Mua ngay</span></button>
+                            <button class="btn btn_mua_ngay"><span>Mua ngay</span></button>
                         </div>
                     </div>
                 </div>
@@ -163,9 +165,131 @@
                 <!-- js sẽ viết thêm ở đây -->
             </div>
         </div>
+        
+        <div class="row py-4" id="product">
+			<div class="col-12 position-relative">
+				<!-- Khu vực slider -->
+				<div class="d-flex overflow-hidden px-5" id="product-slider"
+					style="scroll-behavior: smooth; scroll-snap-type: x mandatory;">
+					<!-- Mỗi sản phẩm -->
+					<a class="card mx-4"
+						style="flex: 0 0 auto; scroll-snap-align: start; width: 250px; text-align: center;">
+						<div class="card-header" style="height: 270px;">
+							<div class=""
+								style="position: absolute; background-color: #2189FF; color: white;border-radius: 20px;width: fit-content;padding: 2px;padding-left: 10px;padding-right: 10px; left: 10px; top: 10px;">
+								Mới</div>
+							<img src="Images/smartphones25edge.png" class="card-img-top">
+						</div>
+						<div class="card-body">
+							<h5><strong>Galaxy S25 Edge 12GB</strong></h5>
+							<p>Màu sắc: Bạc titan</p>
+							<h5><strong>Giá: 29.990.000 VNĐ</strong></h5>
+							<p>Ưu đãi 3.500.000 (giá gốc <s>33.490.000VNĐ</s>)</p>
+							<button class="btn_mua_ngay">Mua ngay</button>
+						</div>
+					</a>
+					<a class="card mx-4"
+						style="flex: 0 0 auto; scroll-snap-align: start; width: 250px; text-align: center;">
+						<div class="card-header" style="height: 270px;">
+							<div class=""
+								style="position: absolute; background-color: #2189FF; color: white;border-radius: 20px;width: fit-content;padding: 2px;padding-left: 10px;padding-right: 10px; left: 10px; top: 10px;">
+								Mới</div>
+
+							<img src="Images/S25Ultra.jpg" class="card-img-top">
+						</div>
+						<div class="card-body">
+							<h5><strong>Galaxy S25 Ultra 5G 256GB</strong></h5>
+							<p>Màu sắc: Xám titan</p>
+							<h5><strong>Giá: 28.990.000 VNĐ</strong></h5>
+							<p>Ưu đãi 5.000.000 (giá gốc <s>33.990.000VNĐ</s>)</p>
+							<button class="btn_mua_ngay">Mua ngay</button>
+						</div>
+					</a>
+					<a class="card mx-4"
+						style="flex: 0 0 auto; scroll-snap-align: start; width: 250px; text-align: center;">
+						<div class="card-header" style="height: 270px;">
+							<div class=""
+								style="position: absolute; background-color: #2189FF; color: white;border-radius: 20px;width: fit-content;padding: 2px;padding-left: 10px;padding-right: 10px; left: 10px; top: 10px;">
+								Mới</div>
+							<img src="Images/s25+.avif" class="card-img-top">
+						</div>
+						<div class="card-body">
+							<h5><strong>Galaxy S25+ 512GB</strong></h5>
+							<p>Màu sắc: Xanh navy</p>
+							<h5><strong>Giá: 29.490.000 VNĐ</strong></h5>
+							<p>Ưu đãi 1.000.000 (giá gốc <s>30.490.000VNĐ</s>)</p>
+							<button class="btn_mua_ngay">Mua ngay</button>
+						</div>
+					</a>
+					<a class="card mx-4"
+						style="flex: 0 0 auto; scroll-snap-align: start; width: 250px; text-align: center;">
+						<div class="card-header" style="height: 270px;">
+							<div class=""
+								style="position: absolute; background-color: #2189FF; color: white;border-radius: 20px;width: fit-content;padding: 2px;padding-left: 10px;padding-right: 10px; left: 10px; top: 10px;">
+								Mới</div>
+							<img src="Images/s25.avif" class="card-img-top">
+						</div>
+						<div class="card-body">
+							<h5><strong>Galaxy S25 512GB</strong></h5>
+							<p>Màu sắc: Bạc Shadow</p>
+							<h5><strong>Giá: 25.490.000 VNĐ</strong></h5>
+							<p>Ưu đãi 1.000.000 (giá gốc <s>26.490.000VNĐ</s>)</p>
+							<button class="btn_mua_ngay">Mua ngay</button>
+						</div>
+					</a>
+					<a class="card mx-4"
+						style="flex: 0 0 auto; scroll-snap-align: start; width: 250px; text-align: center;">
+						<div class="card-header" style="height: 270px;">
+							<img src="Images/S24FE.avif" class="card-img-top">
+						</div>
+						<div class="card-body">
+							<h5><strong>Galaxy S24 FE 256GB</strong></h5>
+							<p>Màu sắc: Xanh Topaz</p>
+							<h5><strong>Giá: 15.990.000 VNĐ</strong></h5>
+							<p>Ưu đãi 2.500.000 (giá gốc <s>18.490.000VNĐ</s>)</p>
+							<button class="btn_mua_ngay">Mua ngay</button>
+						</div>
+					</a>
+					<a class="card mx-4"
+						style="flex: 0 0 auto; scroll-snap-align: start; width: 250px; text-align: center;">
+						<div class="card-header" style="height: 270px;">
+							<img src="Images/s24ultra.avif" class="card-img-top">
+						</div>
+						<div class="card-body">
+							<h5><strong> S24 Ultra 512GB</strong></h5>
+							<p>Màu sắc: Xám titan</p>
+							<h5><strong>Giá: 24.490.000 VNĐ</strong></h5>
+							<p>Ưu đãi 13.000.000 (giá gốc <s>37.490.000VNĐ</s>)</p>
+							<button class="btn_mua_ngay">Mua ngay</button>
+						</div>
+					</a>
+				</div>
+				<div class="d-flex justify-content-center mt-3">
+					<a class="btn xem_tat_ca px-3">Xem tất cả</a>
+				</div>
+                <!-- Nút trái -->
+				<button id="scroll-left"
+					class="btn btn-light position-absolute start-0 top-50 translate-middle-y z-10">&#10094;</button>
+
+				<!-- Nút phải -->
+				<button id="scroll-right"
+					class="btn btn-light position-absolute end-0 top-50 translate-middle-y z-3">&#10095;</button>
+			</div>
+		</div>
     </div>
+    <script src="JS/themGioHang.js"></script>
     <script src="JS/navbar.js"></script>
     <script src="JS/smartphone.js"></script>
+    <script>
+        const slider = document.getElementById("product-slider");
+        document.getElementById("scroll-left").onclick = () => {
+            slider.scrollBy({ left: -300, behavior: 'smooth' });
+        };
+        document.getElementById("scroll-right").onclick = () => {
+            slider.scrollBy({ left: 300, behavior: 'smooth' });
+        };
+    </script>
+
     <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
     <script src="bootstrap-5.0.2-dist/js/bootstrap.js"></script>
 </body>
