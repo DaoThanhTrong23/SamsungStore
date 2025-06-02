@@ -34,7 +34,48 @@ document.addEventListener("DOMContentLoaded", () => {
 
             localStorage.setItem("cart", JSON.stringify(cart));
 
-            alert(`Đã thêm "${product.name} (${product.color})" vào giỏ hàng.`);
+            showToast(`Đã thêm "${product.name} (${product.color})" vào giỏ hàng.`);
         });
     });
 });
+
+function showToast(message) {
+    // Tạo phần tử toast
+    const toast = document.createElement("div");
+    toast.innerHTML = `
+        <i class="fa-solid fa-circle-check" style="font-size: 70px;"></i>
+        <span style="font-size: 20px; margin-top: 10px;">${message}</span>
+    `;
+
+    // Áp dụng style đúng cách
+    Object.assign(toast.style, {
+        position: "fixed",
+        top: "50%",
+        left: "50%",
+        transform: "translate(-50%, -50%)",
+        backgroundColor: "#333",
+        color: "#fff",
+        padding: "20px 30px",
+        borderRadius: "8px",
+        fontSize: "14px",
+        opacity: "1",
+        pointerEvents: "auto",
+        transition: "opacity 0.3s ease",
+        zIndex: "9999",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        textAlign: "center",
+        maxWidth: "90%",
+        boxSizing: "border-box"
+    });
+
+    document.body.appendChild(toast);
+
+    // Tự ẩn sau 3 giây
+    setTimeout(() => {
+        toast.style.opacity = 0;
+        toast.style.pointerEvents = "none";
+        setTimeout(() => toast.remove(), 300);
+    }, 3000);
+}
