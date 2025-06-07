@@ -1,78 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<link rel="stylesheet" href="CSS/stylesNavbar.css">
+	<link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+
 </head>
+
 <body>
-	<div class="nav">
-		<ul>
-			<li>
-				<a href="index.html"><img class="logo" src="/Images/Samsung_Black_icon.svg"></a>
-			</li>
-			<li class="menu"  id="cuahangMenu">
-				<a href="index.html">Cửa hàng</a>
-			</li>
-			<li class="menu" id="smartphoneMenu">
-				<a href="smartphone.html">Điện thoại Galaxy</a>
-			</li>
-			<li class="menu"  id="tabletMenu">
-				<a href="">Galaxy Tab</a>
-			</li>
-			<li class="menu"  id="smarthwatchMenu">
-				<a href="smartwatch.html">Galaxy Watch</a>
-			</li>
-			<li class="menu"  id="taingheMenu">
-				<a href="">Galaxy Buds</a>
-			</li>
-			<li class="menu"  id="phukienMenu">
-				<a href="">Phụ kiện</a>
-			</li>
-			<li>
-				<a href="">
-					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
-						<circle cx="8" cy="8" r="6"></circle>
-  						<line x1="25" y1="25" x2="13" y2="12"></line>
-					</svg>
-				</a>
-			</li>
-			<li>
-				<a href="">
-					<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
-						<circle cx="11" cy="6" r="5"></circle>
-  						<rect x = "3" y = "5" width="16" height = "16" rx="2" ry="2" ba fill="white"></rect>
-					</svg>
-				</a>
-			</li>
-			<li class="menu">
-				<a href="#">
-  					<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
-    					<path d="M20 21v-2a4 4 0 0 0-3-3.87"/>
-    					<path d="M4 21v-2a4 4 0 0 1 3-3.87"/>
-    					<circle cx="12" cy="9" r="5"/>
-  					</svg>	
-				</a>
-				<ul class="dropdown">
+	<div class="nav py-3">
+		<div class="row">
+			<div class="col-12 text-center col-md-2 col-lg-2 ">
+				<a href="index.html" class="my-auto"><img class="logo" src="/Images/Samsung_Black_icon.svg"></a>
+			</div>
+			<div class="text-center col-12 col-md-10 col-lg-10">
+				<ul>
+					<li class="menu" id="cuahangMenu">
+						<a href="index.html">Cửa hàng</a>
+					</li>
+					<li class="menu" id="smartphoneMenu">
+						<a href="smartphone.html">Điện thoại Galaxy</a>
+					</li>
+					<li class="menu" id="tabletMenu">
+						<a href="">Galaxy Tab</a>
+					</li>
+					<li class="menu" id="smarthwatchMenu">
+						<a href="smartwatch.html">Galaxy Watch</a>
+					</li>
+					<li class="menu" id="taingheMenu">
+						<a href="buds.html">Galaxy Buds</a>
+					</li>
+					<li class="menu" id="phukienMenu">
+						<a href="">Phụ kiện</a>
+					</li>
 					<li>
-						<a href="formDangKy.html">
-							Đăng ký
+						<a href="">
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"
+								stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+								class="feather feather-search">
+								<circle cx="8" cy="8" r="6"></circle>
+								<line x1="25" y1="25" x2="13" y2="12"></line>
+							</svg>
 						</a>
 					</li>
 					<li>
-						<a href="formDangNhap.html">
-							Đăng nhập
+						<a href="">
+							<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="none"
+								stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+								class="feather feather-search">
+								<circle cx="11" cy="6" r="5"></circle>
+								<rect x="3" y="5" width="16" height="16" rx="2" ry="2" ba fill="white"></rect>
+							</svg>
 						</a>
 					</li>
-					<li>
-						<hr>
-						<h5 id="ten_dang_nhap" style="color: black;"></h5>
+					<li class="menu">
+						<a href="#">
+							<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="none"
+								stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+								class="feather feather-user">
+								<path d="M20 21v-2a4 4 0 0 0-3-3.87" />
+								<path d="M4 21v-2a4 4 0 0 1 3-3.87" />
+								<circle cx="12" cy="9" r="5" />
+							</svg>
+						</a>
+						<ul class="dropdown">
+							<li>
+								<a href="formDangKy.html">
+									Đăng ký
+								</a>
+							</li>
+							<li>
+								<a href="formDangNhap.html">
+									Đăng nhập
+								</a>
+							</li>
+							<li>
+								<hr>
+								<h5 id="ten_dang_nhap" style="color: black;"></h5>
+							</li>
+						</ul>
 					</li>
 				</ul>
-			</li>
-			
-		</ul>
+			</div>
+
+		</div>
+
 		<!-- menu dropdown trang chủ -->
 		<div class="menu_drd" id="cuahangDropdown">
 			<ul class="d-block">
@@ -85,10 +100,10 @@
 			</ul>
 		</div>
 		<!-- menu dropdown smartphone -->
-		<div class="menu_drd" id="smartphoneDropdown" >
+		<div class="menu_drd" id="smartphoneDropdown">
 			<ul class="d-block w-100">
 				<li>
-					<a style="font-weight: 700; font-size: 18px;">Sản phẩm mới nhất S series</a> 
+					<a style="font-weight: 700; font-size: 18px;">Sản phẩm mới nhất S series</a>
 				</li>
 				<li>
 					<a>Galaxy S25 Ultra</a>
@@ -105,7 +120,7 @@
 			</ul>
 			<ul class="d-block w-100">
 				<li>
-					<a style="font-weight: 700; font-size: 18px;">Sản phẩm mới nhất Z series</a> 
+					<a style="font-weight: 700; font-size: 18px;">Sản phẩm mới nhất Z series</a>
 				</li>
 				<li>
 					<a>Galaxy Z Fold6</a>
@@ -116,7 +131,7 @@
 			</ul>
 			<ul class="d-block w-100">
 				<li>
-					<a style="font-weight: 700; font-size: 18px;">Sản phẩm mới nhất A series</a> 
+					<a style="font-weight: 700; font-size: 18px;">Sản phẩm mới nhất A series</a>
 				</li>
 				<li>
 					<a>Galaxy A56 5G</a>
@@ -127,11 +142,11 @@
 				<li>
 					<a>Galaxy A26 5G</a>
 				</li>
-						
+
 			</ul>
 		</div>
 		<!-- menu dropdown tablet -->
-		<div class="menu_drd" id="tabletDropdown" >
+		<div class="menu_drd" id="tabletDropdown">
 			<ul class="d-block">
 				<li>
 					<a style="font-weight: 700; font-size: 18px;">Galaxy Tab S series</a>
@@ -169,10 +184,10 @@
 				<li>
 					<a>Tab A9 (LTE)</a>
 				</li>
-			</ul>	
+			</ul>
 		</div>
 		<!-- menu dropdown smartwwatch -->
-		<div class="menu_drd" id="smartwatchDropdown" >
+		<div class="menu_drd" id="smartwatchDropdown">
 			<ul class="d-block">
 				<li>
 					<a style="font-weight: 700; font-size: 18px;">Galaxy Watch Ultra series</a>
@@ -214,7 +229,7 @@
 			</ul>
 		</div>
 		<!-- menu dropdown tai nghe -->
-		<div class="menu_drd" id="taingheDropdown" >
+		<div class="menu_drd" id="taingheDropdown">
 			<ul class="d-block">
 				<li>
 					<a style="font-weight: 700; font-size: 18px;">Galaxy Buds Pro series</a>
@@ -229,9 +244,9 @@
 						Galaxy Buds Pro
 					</a>
 				</li>
-				
+
 			</ul>
-			
+
 			<ul class="d-block">
 				<li>
 					<a style="font-weight: 700; font-size: 18px;">Galaxy Buds series</a>
@@ -257,16 +272,18 @@
 			</ul>
 		</div>
 		<!-- menu dropdown phụ kiện -->
-		<div class="menu_drd" id="phukienDropdown" >
+		<div class="menu_drd" id="phukienDropdown">
 			<ul class="d-block">
 				<li><a style="font-weight: 700; font-size: 18px;"> Tất cả phụ kiện</a></li>
 				<li><a><span>Điện thoại Galaxy</span></a></li>
 				<li><a><span>Galaxy Tab</span></a></li>
 				<li><a><span>Galaxy Watch</span></a></li>
-			</ul>	
+			</ul>
 		</div>
 	</div>
 	<script src="JS/navbar.js"></script>
-	
+	<script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+
 </body>
+
 </html>

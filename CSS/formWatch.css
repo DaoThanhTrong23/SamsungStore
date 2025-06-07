@@ -11,8 +11,8 @@ body {
 }
 
 .row {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .type_watch {
@@ -215,7 +215,36 @@ body {
     padding-right: 30%;
 }
 
+.product-card {
+  width: 250px;
+  scroll-snap-align: start;
+  transition: transform 0.2s ease-in-out;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
 
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.footer
+{
+	margin-top: 50px;
+    font-size: 14px;
+}
+.footer .row
+{	
+	border-top: 1px solid gray;
+	padding: 10px !important;
+    margin: 0px;
+	
+}
+.btn_mua_ngay
+{
+    padding: 3px !important;
+    width: 70%;
+}
 
 @keyframes expandLine {
     0% {
