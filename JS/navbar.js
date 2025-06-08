@@ -44,12 +44,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 cuahangMenu.addEventListener("mouseenter", () => {
                     hideAllDropdowns()
                     cuahangDropdown.style.display = "flex";
+                    
 
                 });
                 cuahangMenu.addEventListener("mouseleave", () => {
                     setTimeout(() => {
                         if (!cuahangDropdown.matches(':hover')) {
                             cuahangDropdown.style.display = "none";
+                        
                         }
                     }, 200);
                 });

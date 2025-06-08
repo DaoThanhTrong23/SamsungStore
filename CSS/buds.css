@@ -1,0 +1,56 @@
+.card {
+    border-radius: 10px !important;
+    box-shadow: 2px 3px 5px rgba(158, 158, 158, 0.267);
+}
+
+a {
+    transition: transform 0.3s ease;
+}
+
+a:hover {
+    transform: scale(1.03);
+}
+
+.btn-dark {
+    border: 2px solid black !important;
+    border-radius: 20px !important;
+}
+
+.btn-dark:hover {
+    color: black !important;
+    border: 2px solid black;
+    background-color: white !important;
+}
+
+.dangthinhhanh .card .btn-dark {
+    transform: translateY(30px);
+    opacity: 0;
+    transition: transform 0.4s, opacity 0.3s;
+}
+
+.dangthinhhanh .card:hover .btn-dark {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.dangthinhhanh .card img {
+    transition: transform 0.4s ease;
+}
+
+.dangthinhhanh .card:hover img {
+    transform: scale(1.08);
+    /* Phóng to nhẹ khi hover */
+}
+
+.footer
+{
+	margin-top: 50px;
+    font-size: 14px;
+}
+.footer .row
+{	
+	border-top: 1px solid gray;
+	padding: 10px !important;
+    margin: 0px;
+	
+}
