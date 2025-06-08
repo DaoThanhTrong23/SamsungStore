@@ -40,6 +40,7 @@ img
     text-decoration: none; 
 	color: black;
     font-size: 15px;
+    padding: 10px;
     display: block;
 }
 
@@ -74,24 +75,21 @@ img
 .menu_drd
 {
     display: none;
-    position:relative;
+    position:absolute;
     padding-left: 100px;
     padding-right: 20px;
     background-color: white;
     width: 100%;
     border-bottom: 1px solid gray;
+    border-radius: 5px;
     z-index: 100;
-    top: 0;
 }
 .menu_drd ul 
 {
     padding: 10px;
-  
+    margin: 10px;
 }
 .menu_drd ul li a
 {
     font-size: 16px;
 }
-
-
-
