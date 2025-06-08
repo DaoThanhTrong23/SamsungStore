@@ -54,5 +54,54 @@
         "mauSac" : "Xanh mint",
         "gia" : 25990000,
         "hinhAnh" : "/Images/galaxyZ.avif"
+    },
+    {
+        "tenSanPham" : "Galaxy Z Fold 6",
+        "loai" : "Z",
+        "mauSac" : "Xám Titan",
+        "gia" : 25990000,
+        "hinhAnh" : "/Images/galaxyZfold6.avif"
+    },
+    {
+        "tenSanPham" : "Galaxy Z Flip 6",
+        "loai" : "Z",
+        "mauSac" : "Xanh mint",
+        "gia" : 25990000,
+        "hinhAnh" : "/Images/galaxyZflip6.avif"
+    },
+    {
+        "tenSanPham" : "Galaxy A36",
+        "loai" : "A",
+        "mauSac" : "Xanh mint",
+        "gia" : 25990000,
+        "hinhAnh" : "/Images/galaxyA36.webp"
+    },
+    {
+        "tenSanPham" : "Galaxy A26",
+        "loai" : "A",
+        "mauSac" : "Xanh mint",
+        "gia" : 25990000,
+        "hinhAnh" : "/Images/galaxyA26.webp"
+    },
+    {
+        "tenSanPham" : "Galaxy A56",
+        "loai" : "A",
+        "mauSac" : "Xanh mint",
+        "gia" : 25990000,
+        "hinhAnh" : "/Images/galaxyA56.webp"
+    },
+    {
+        "tenSanPham" : "Galaxy A06",
+        "loai" : "A",
+        "mauSac" : "Xanh mint",
+        "gia" : 25990000,
+        "hinhAnh" : "/Images/galaxyA06.webp"
+    },
+    {
+        "tenSanPham" : "Galaxy A16",
+        "loai" : "A",
+        "mauSac" : "Xanh mint",
+        "gia" : 25990000,
+        "hinhAnh" : "/Images/galaxyA16.avif"
     }
 ]

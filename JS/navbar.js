@@ -4,198 +4,77 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(data => {
             document.getElementById("navbar").innerHTML = data;
 
+            // Hiển thị tên người dùng nếu đã đăng nhập
             const loggedUser = JSON.parse(localStorage.getItem("loggedInUser"));
             const tenDangNhapEl = document.getElementById("ten_dang_nhap");
             if (loggedUser && tenDangNhapEl) {
                 tenDangNhapEl.textContent = "Xin chào: " + loggedUser.email;
             }
 
-            const cuahangMenu = document.getElementById("cuahangMenu");
-            const cuahangDropdown = document.getElementById("cuahangDropdown");
-
-            const smartphoneMenu = document.getElementById("smartphoneMenu");
-            const smartphoneDropdown = document.getElementById("smartphoneDropdown");
-
-            const tabletMenu = document.getElementById("tabletMenu");
-            const tabletDropdown = document.getElementById("tabletDropdown");
-
-            const smartwatchtMenu = document.getElementById("smarthwatchMenu");
-            const smartwatchDropdown = document.getElementById("smartwatchDropdown");
-
-            const taingheMenu = document.getElementById("taingheMenu");
-            const taingheDropdown = document.getElementById("taingheDropdown");
-
-            const phukienMenu = document.getElementById("phukienMenu");
-            const phukienDropdown = document.getElementById("phukienDropdown");
+            // Setup menu dropdowns
+            const menus = [
+                ["cuahangMenu", "cuahangDropdown"],
+                ["smartphoneMenu", "smartphoneDropdown"],
+                ["tabletMenu", "tabletDropdown"],
+                ["smarthwatchMenu", "smartwatchDropdown"],
+                ["taingheMenu", "taingheDropdown"],
+                ["phukienMenu", "phukienDropdown"]
+            ];
 
             function hideAllDropdowns() {
-                cuahangDropdown.style.display = "none";
-                smartphoneDropdown.style.display = "none";
-                tabletDropdown.style.display = "none";
-                smartwatchDropdown.style.display = "none";
-                phukienDropdown.style.display = "none";
-                taingheDropdown.style.display = "none";
+                menus.forEach(([_, dropdownId]) => {
+                    const dropdown = document.getElementById(dropdownId);
+                    if (dropdown) dropdown.style.display = "none";
+                });
             }
 
-            hideAllDropdowns()
-
-            // show menu của hàng
-            if (cuahangMenu && cuahangDropdown) {
-                cuahangMenu.addEventListener("mouseenter", () => {
-                    hideAllDropdowns()
-                    cuahangDropdown.style.display = "flex";
-                    
-
-                });
-                cuahangMenu.addEventListener("mouseleave", () => {
-                    setTimeout(() => {
-                        if (!cuahangDropdown.matches(':hover')) {
-                            cuahangDropdown.style.display = "none";
-                        
-                        }
-                    }, 200);
-                });
-
-                cuahangDropdown.addEventListener("mouseleave", () => {
-                    cuahangDropdown.style.display = "none";
-                });
-                cuahangDropdown.addEventListener("mouseenter", () => {
-                    hideAllDropdowns()
-                    cuahangDropdown.style.display = "flex";
-
-                });
-            } else {
-                console.warn("Không tìm thấy phần tử cuahangMenu hoặc cuahangDropdown");
+            function setupMenuEvents(menuId, dropdownId) {
+                const menu = document.getElementById(menuId);
+                const dropdown = document.getElementById(dropdownId);
+                if (menu && dropdown) {
+                    menu.addEventListener("mouseenter", () => {
+                        hideAllDropdowns();
+                        dropdown.style.display = "flex";
+                    });
+                    menu.addEventListener("mouseleave", () => {
+                        setTimeout(() => {
+                            if (!dropdown.matches(':hover')) {
+                                dropdown.style.display = "none";
+                            }
+                        }, 200);
+                    });
+                    dropdown.addEventListener("mouseenter", () => {
+                        dropdown.style.display = "flex";
+                    });
+                    dropdown.addEventListener("mouseleave", () => {
+                        dropdown.style.display = "none";
+                    });
+                }
             }
 
-            // show menu smartphone
-            if (smartphoneMenu && smartphoneDropdown) {
-                smartphoneMenu.addEventListener("mouseenter", () => {
-                    hideAllDropdowns()
-                    smartphoneDropdown.style.display = "flex";
+            menus.forEach(([menuId, dropdownId]) => setupMenuEvents(menuId, dropdownId));
 
-                });
-                smartphoneMenu.addEventListener("mouseleave", () => {
-                    setTimeout(() => {
-                        if (!smartphoneDropdown.matches(':hover')) {
-                            smartphoneDropdown.style.display = "none";
-                        }
-                    }, 200);
-                });
-
-                smartphoneDropdown.addEventListener("mouseleave", () => {
-                    smartphoneDropdown.style.display = "none";
-                });
-                smartphoneDropdown.addEventListener("mouseenter", () => {
-                    hideAllDropdowns()
-                    smartphoneDropdown.style.display = "flex";
-                });
-            } else {
-                console.warn("Không tìm thấy phần tử smartphoneMenu hoặc smartphoneDropdown");
-            }
-
-            // show menu tablet
-            if (tabletMenu && tabletDropdown) {
-                tabletMenu.addEventListener("mouseenter", () => {
-                    hideAllDropdowns()
-                    tabletDropdown.style.display = "flex";
-                });
-                tabletMenu.addEventListener("mouseleave", () => {
-                    setTimeout(() => {
-                        if (!tabletDropdown.matches(':hover')) {
-                            tabletDropdown.style.display = "none";
-                        }
-                    }, 200);
-                });
-
-                tabletDropdown.addEventListener("mouseleave", () => {
-                    tabletDropdown.style.display = "none";
-                });
-                tabletDropdown.addEventListener("mouseenter", () => {
-                    hideAllDropdowns()
-                    tabletDropdown.style.display = "flex";
-                });
-            } else {
-                console.warn("Không tìm thấy phần tử tabletMenu hoặc tabletDropdown");
-            }
-
-            // show menu smartwatch
-            if (smartwatchtMenu && smartwatchDropdown) {
-                smartwatchtMenu.addEventListener("mouseenter", () => {
-                    hideAllDropdowns()
-                    smartwatchDropdown.style.display = "flex";
-                });
-                smartwatchtMenu.addEventListener("mouseleave", () => {
-                    setTimeout(() => {
-                        if (!smartwatchDropdown.matches(':hover')) {
-                            smartwatchDropdown.style.display = "none";
-                        }
-                    }, 200);
-                });
-
-                smartwatchDropdown.addEventListener("mouseleave", () => {
-                    smartwatchDropdown.style.display = "none";
-                });
-                smartwatchDropdown.addEventListener("mouseenter", () => {
-                    hideAllDropdowns()
-                    smartwatchDropdown.style.display = "flex";
-                });
-            } else {
-                console.warn("Không tìm thấy phần tử smartwatchtMenu hoặc smartwatchDropdown");
-            }
-
-
-
-            // show menu tai nghe
-            if (taingheMenu && taingheDropdown) {
-                taingheMenu.addEventListener("mouseenter", () => {
-                    hideAllDropdowns()
-                    taingheDropdown.style.display = "flex";
-                });
-                taingheMenu.addEventListener("mouseleave", () => {
-                    setTimeout(() => {
-                        if (!taingheDropdown.matches(':hover')) {
-                            taingheDropdown.style.display = "none";
-                        }
-                    }, 200);
-                });
-
-                taingheDropdown.addEventListener("mouseleave", () => {
-                    taingheDropdown.style.display = "none";
-                });
-                taingheDropdown.addEventListener("mouseenter", () => {
-                    hideAllDropdowns()
-                    taingheDropdown.style.display = "flex";
-                });
-            } else {
-                console.warn("Không tìm thấy phần tử taingheMenu hoặc taingheDropdown");
-            }
-
-
-            // show menu phụ kiện
-            if (phukienMenu && phukienDropdown) {
-                phukienMenu.addEventListener("mouseenter", () => {
-                    hideAllDropdowns()
-                    phukienDropdown.style.display = "flex";
-                });
-                phukienMenu.addEventListener("mouseleave", () => {
-                    setTimeout(() => {
-                        if (!phukienDropdown.matches(':hover')) {
-                            phukienDropdown.style.display = "none";
-                        }
-                    }, 200);
-                });
-
-                phukienDropdown.addEventListener("mouseleave", () => {
-                    phukienDropdown.style.display = "none";
-                });
-                phukienDropdown.addEventListener("mouseenter", () => {
-                    hideAllDropdowns()
-                    phukienDropdown.style.display = "flex";
-                });
-            } else {
-                console.warn("Không tìm thấy phần tử phukienMenu hoặc phukienDropdown");
-            }
+            // Gọi cập nhật số giỏ hàng
+            window.capNhatSoLuongGioHang();
         })
-        .catch(error => console.error("Error loading navbar:", error));
+        .catch(error => console.error("Lỗi tải navbar:", error));
 });
+
+window.capNhatSoLuongGioHang = function () {
+    const cartCount = document.getElementById("cart-count");
+    if (!cartCount) return;
+
+    try {
+        const cart = JSON.parse(localStorage.getItem("cart")) || [];
+        const totalQuantity = cart.reduce((sum, item) => sum + (item.quantity || 0), 0);
+
+        if (totalQuantity > 0) {
+            cartCount.textContent = totalQuantity;
+            cartCount.style.display = "flex";
+        } else {
+            cartCount.style.display = "none";
+        }
+    } catch (e) {
+        cartCount.style.display = "none";
+    }
+};

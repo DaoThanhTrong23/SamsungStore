@@ -8,13 +8,13 @@ document.addEventListener("click", function (e) {
         const priceText = Array.from(card.querySelectorAll("h5 strong"))
             .map(e => e.innerText)
             .find(t => t.includes("VNĐ")) || "";
-        const price = parseInt(priceText.replace(/\D/g, ""), 10); // lấy số
+        const price = parseInt(priceText.replace(/\D/g, ""), 10);
 
         const product = {
-            name: name,
-            color: color,
-            price: price,
-            img: img,
+            name,
+            color,
+            price,
+            img,
             quantity: 1,
         };
 
@@ -27,20 +27,23 @@ document.addEventListener("click", function (e) {
         }
 
         localStorage.setItem("cart", JSON.stringify(cart));
+
+        // Gọi cập nhật bubble ngay sau khi thêm
+        if (typeof window.capNhatSoLuongGioHang === "function") {
+            window.capNhatSoLuongGioHang();
+        }
+
         showToast(`Đã thêm "${product.name} (${product.color})" vào giỏ hàng.`);
     }
 });
 
-
 function showToast(message) {
-    // Tạo phần tử toast
     const toast = document.createElement("div");
     toast.innerHTML = `
         <i class="fa-solid fa-circle-check" style="font-size: 70px;"></i>
         <span style="font-size: 20px; margin-top: 10px;">${message}</span>
     `;
 
-    // Áp dụng style đúng cách
     Object.assign(toast.style, {
         position: "fixed",
         top: "50%",
@@ -65,7 +68,6 @@ function showToast(message) {
 
     document.body.appendChild(toast);
 
-    // Tự ẩn sau 3 giây
     setTimeout(() => {
         toast.style.opacity = 0;
         toast.style.pointerEvents = "none";
