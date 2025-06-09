@@ -1,0 +1,95 @@
+.number-input {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    width: fit-content;
+}
+
+.number-input input {
+    width: 60px;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 8px 10px;
+}
+
+.number-input button {
+    background-color: #f0f0f0;
+    border: none;
+    width: 35px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.number-input button:hover {
+    background-color: #ddd;
+}
+
+.number-input .decrease {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.number-input .increase {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Delete button */
+.delete-btn {
+    float: right;
+    background: none;
+    border: none;
+    padding: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    border-radius: 50%;
+}
+
+.delete-btn i {
+    color: #666; /* màu xám Samsung */
+    font-size: 18px;
+}
+
+.delete-btn:hover {
+    background-color: #f2f2f2; /* nền nhẹ khi hover */
+}
+
+.delete-btn:hover i {
+    color: black; /* đậm lên khi hover */
+}
+
+/* payment css */
+form.mt-2 label {
+    width: 100%;
+    margin-bottom: 5px;    
+    gap: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form.mt-2 label:has(input[type="radio"]:checked) {
+  background-color: #e0f0ff; /* Nền xanh nhạt */
+  border-color: #1e90ff;     /* Viền xanh */
+}
+#bills {
+  height: 400px; /* hoặc bao nhiêu bạn muốn */
+  overflow-y: auto; /* cuộn nếu nội dung vượt quá */
+  max-width: 400px; /* tùy chỉnh chiều rộng nếu cần */
+  position: sticky;
+  top: 20px; /* giữ cố định khi cuộn */
+}

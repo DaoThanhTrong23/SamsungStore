@@ -1,0 +1,679 @@
+/* Reset và base styles */
+body {
+    
+    overflow-x: hidden;
+    background-color: #f8f9fa;
+    justify-content: center;
+    
+}
+
+/* Banner */
+.banner-container {
+    background-image: url('../Images/banner.jpg'); /* <-- Nếu file CSS nằm trong thư mục CSS */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 30px ;
+    border-radius: 10px;
+    position: relative;
+    color: white;
+    width:95%;
+}
+
+.banner-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    z-index: 0;
+}
+
+.banner-container .container {
+    position: relative;
+    z-index: 1;
+}
+h2 {
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+/* Danh mục ngang */
+.category-container {
+    width: 100%;
+    max-width: 1200px;  /* hoặc tùy kích thước bạn muốn */
+    margin: 0 auto;
+    overflow-x: auto;
+    padding: 30px 0;
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+}
+
+
+.category-container:hover::-webkit-scrollbar-thumb {
+    background: #555;
+}
+
+.category-scroll {
+    display: flex;
+    gap: 30px;
+    min-width: max-content;
+}
+
+.category-box {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 160px;
+    padding: 15px 10px;
+    text-align: center;
+    border-radius: 8px;
+    background: #ffffff;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    cursor: pointer;
+}
+
+.category-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+}
+
+.category-icon {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.category-box:hover .category-icon {
+    transform: scale(1.1);
+}
+
+.category-text {
+    font-size: 13px;
+    line-height: 1.4;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 2.8em;
+    word-break: break-word;
+    color: #333;
+}
+@media (max-width: 1024px) {
+    .category-box {
+        width: 120px;  /* giảm kích thước hộp */
+        padding: 10px 8px;
+    }
+
+    .category-icon {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 8px;
+    }
+
+    .category-text {
+        font-size: 11px;
+        height: 2.2em;
+    }
+}
+
+/* Nếu muốn nhỏ hơn nữa (ví dụ trên điện thoại) */
+@media (max-width: 600px) {
+    .category-box {
+        width: 100px;
+        padding: 8px 6px;
+    }
+
+    .category-icon {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 6px;
+    }
+
+    .category-text {
+        font-size: 10px;
+        height: 2em;
+    }
+}
+
+
+/*Tien ich*/
+.image-container {
+  display: flex;
+  justify-content: center;  
+  flex-wrap: wrap;          
+  gap: 20px;
+  max-width: 1300px;        
+  margin: 0 auto;           
+}
+
+.image-box{
+    position: relative;
+    width: 250px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+  .image-box .text {
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 18px;
+      text-align: center;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      
+  }
+
+  /*hot*/
+  .hot-container {
+    background-image: url('../Images/hot1.jpg'); /* <-- Nếu file CSS nằm trong thư mục CSS */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 30px ;
+    position: relative;
+    color: white;
+    width:100%;
+    max-width: 1000px;
+}
+.hot-content{
+    position: absolute;
+    bottom: 20px;
+    left:20px;
+    text-align:left;
+}
+.tieude-hot{
+    color:black;
+    font-size: 30px;
+    font-weight: bold;
+}
+.mota-hot{
+    color: black;
+    font-size: 10px;
+    margin-top: 10px;
+}
+.hot1-container {
+    background-image: url('../Images/hot2.jpg'); /* <-- Nếu file CSS nằm trong thư mục CSS */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 30px ;
+    position: relative;
+    color: white;
+    width:100%;
+    max-width: 1000px;
+}
+.hot2-container {
+    background-image: url('../Images/hot3.jpg'); /* <-- Nếu file CSS nằm trong thư mục CSS */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 30px ;
+    position: relative;
+    color: white;
+    width:100%;
+    max-width: 1000px;
+}
+/*sp*/
+.product-list {
+  margin-top: 30px;
+  border-radius: 20px;
+  margin-bottom: 80px;
+}
+
+.product-card {
+  width: 200px;
+  height: 476px;
+  background-color: white;
+  position: relative;
+  border-radius: 10px;
+}
+
+.product-img {
+  width: 100%;
+  height: auto;
+}
+
+.badge-new {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #2563eb; /* Màu xanh */
+  color: white;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+.color-circlexam {
+  width: 20px;
+  height: 20px;
+  background-color: #555; /* màu xanh đồng hồ */
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: transform 0.2s, border 0.2s;
+  border: 2px solid transparent;
+}
+
+.price {
+  font-size: 18px;
+  color: black;
+}
+
+.stars {
+  font-size: 14px;
+  color: orange;
+}
+
+/* sp2 */
+
+.feature-item {
+  width: 160px;
+  margin:0 auto;
+  font-size: 12px;
+}
+
+.feature-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+/* sp3 */
+.tabs {
+  display: flex;
+  border-radius: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.tablinks {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  padding: 1rem;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.2s ease;
+  background-color: black;
+  color: white;
+}
+.tablinks:hover {
+
+  background: #555;
+  color: #fff;
+}
+.tablinks.active {
+  background: black;
+  color: #fff;
+}
+.tabcontent {
+  display: none;
+}
+.tabcontent p {
+  color: #333;
+  font-size: 16px;
+}
+.tabcontent.active {
+  display: block;
+}
+
+/* bang1 */
+.specs-table {
+  overflow-x: auto;
+  height: 520px;
+}
+
+.specs-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  max-width: 1200px;
+  min-width: 600px;
+}
+
+.specs-table th,
+.specs-table td {
+  padding: 12px;
+  text-align: center;
+}
+
+.specs-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.specs-table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+@media(max-width: 768px) {
+    .specs-table th,
+    .specs-table td{
+        font-size:0.85rem;
+        padding: 8px;
+    }
+}
+/*anh bang1 */
+.product-cardpc {
+  width: 300px;
+  height: 476px;
+  background-color: white;
+  position: relative;
+  border-radius: 10px;
+}
+.promo-card {
+  width: 300px;
+  height: 476px;
+  background-color: white;
+  position: relative;
+}
+
+.promo-image-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.promo-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.promo-text {
+  position: absolute;
+  top: 10px;         /* đưa chữ lên trên cùng */
+  left: 10px;        /* thụt lề bên trái */
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  text-align: left;
+}
+.badge-newhot {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #ec2020; /* Màu xanh */
+  color: white;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+.product-cardsp {
+  width: 200px;
+  height: 476px;
+  background-color: white;
+  position: relative;
+  border-radius: 10px;
+}
+
+/* bang2 */
+.table-container {
+    max-width:1200px;
+    margin: 0 auto;
+    width: 100%;
+    overflow-x:auto;
+    box-sizing: border-box;
+}
+.color-circle1 {
+  width: 20px;
+  height: 20px;
+  background-color: black; /* màu đen */
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: transform 0.2s, border 0.2s;
+  border: 2px solid transparent;
+}
+
+.color-circle2 {
+  width: 20px;
+  height: 20px;
+  background-color: white; /* màu trắng */
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: transform 0.2s, border 0.2s;
+  border: 1px solid ; /* thêm border nhẹ để dễ nhìn */
+}
+
+.color-circle3 {
+  width: 20px;
+  height: 20px;
+  background-color: skyblue; /* xanh trời */
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: transform 0.2s, border 0.2s;
+  border: 2px solid transparent;
+}
+.color-circlecam {
+  width: 20px;
+  height: 20px;
+  background-color: orange;
+  border-radius: 50%;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: transform 0.2s, border 0.2s;
+  border: 2px solid transparent;
+}
+.color-circlebe {
+  width: 20px;
+  height: 20px;
+  background-color: bisque; /* màu đen */
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: transform 0.2s, border 0.2s;
+  border: 2px solid transparent;
+}
+.circle-container {
+  display: flex;
+  justify-content: center; /* hoặc 'center' nếu muốn căn giữa */
+  align-items: center; 
+  width:110px;/* căn giữa theo chiều dọc */
+  margin:0 30px auto;
+}
+
+.color-circlecam.selected {
+  border: 2px solid red;
+  transform: scale(1.1);
+}
+.color-circle1.selected {
+  border: 2px solid red;
+  transform: scale(1.1);
+}
+.color-circle2.selected {
+  border: 2px solid red;
+  transform: scale(1.1);
+}
+.color-circle3.selected {
+  border: 2px solid red;
+  transform: scale(1.1);
+}
+.color-circlebe.selected {
+  border: 2px solid red;
+  transform: scale(1.1);
+}
+.color-circlexam.selected {
+  border: 2px solid red;
+  transform: scale(1.1);
+}
+
+
+/*footer */
+.footer
+{
+	margin-top: 50px;
+    width:100%;
+}
+.footer .row
+{	
+	border-top: 1px solid gray;
+	padding: 10px !important;
+	
+}
+/* tang 2 */
+hr{
+  max-width: 1300px;
+  margin: 10px auto 70px;
+  width: 1100px;
+}
+
+/*Anh sp1 */
+.hotnen1-container {
+    background-image: url('../Images/nen1.jpg'); /* <-- Nếu file CSS nằm trong thư mục CSS */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 30px ;
+    position: relative;
+    color: white;
+    width:100%;
+    max-width: 1000px;
+}
+.tieudelon{
+  text-align: center;
+  font-weight: bold;
+  /* Responsive theo chiều rộng màn hình */
+  margin: 30px 0;
+  line-height: 1.3;
+}
+
+.tieudesp{
+  margin:0 auto 0 90px
+}
+/*Nut button */
+.button-group {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.filter-button {
+  padding: 8px 16px;
+  border: 1px solid black;
+  border-radius: 999px;
+  background-color: white;
+  width: 200px;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.filter-button.active {
+  background-color: #f2f2f2; /* Nền xám nhạt */
+  color: gray; /* Màu chữ đen */
+  font-weight: normal;
+}
+.hotsanpham1-container {
+    background-image: url('../Images/sanpham1.png'); /* <-- Nếu file CSS nằm trong thư mục CSS */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 90px auto 30px ;
+    position: relative;
+    color: white;
+    width:100%;
+    max-width: 1300px;
+}
+.hotsanpham2-container {
+    background-image: url('../Images/sanpham2.png'); /* <-- Nếu file CSS nằm trong thư mục CSS */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:  90px auto 30px ;
+    position: relative;
+    color: white;
+    width:100%;
+    max-width: 1300px;
+}
+.hotsanpham3-container {
+    background-image: url('../Images/sanpham3.png'); /* <-- Nếu file CSS nằm trong thư mục CSS */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 90px auto 30px ;
+    position: relative;
+    color: white;
+    width:100%;
+    max-width: 1300px;
+}
+.hotsanpham4-container {
+    background-image: url('../Images/sanpham4.png'); /* <-- Nếu file CSS nằm trong thư mục CSS */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 90px auto 30px ;
+    position: relative;
+    color: white;
+    width:100%;
+    max-width: 1300px;
+}

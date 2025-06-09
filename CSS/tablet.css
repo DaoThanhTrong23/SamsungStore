@@ -1,0 +1,457 @@
+.main {
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+}
+
+/* ===== HEADINGS ===== */
+h1, h2 {
+    position: relative;
+    margin: 0 auto;
+}
+
+/* ===== SLOGAN SECTION ===== */
+.slogan-text {
+    margin-left: 100px;
+}
+
+.slogan-slide {
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.slogan-slide img {
+    width: 120px; 
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.slogan-slide button {
+    gap: 20px;
+    background-color: #f9f9f9;
+    border: none;
+    border-radius: 15px;
+    width: 250px; 
+    height: 180px; 
+    padding: 15px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.slogan-slide button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.slogan-slide span {
+    font-size: 18px; 
+    font-weight: 500;
+    color: #333;
+    margin-left: 10px;
+    flex: 1;
+    text-align: center;
+}
+
+/* ===== VIDEO SECTION ===== */
+.video-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+video {
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 70%;
+    left: 19%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 20px;
+    z-index: 10;
+}
+
+.picture-overlay-right {
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 20px;
+    z-index: 10;
+}
+
+/* ===== BUTTON STYLES ===== */
+.video-overlay .btn, 
+.picture-overlay-right .btn,
+.picture-overlay .btn {
+    padding: 12px 24px; 
+    font-size: 16px; 
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.video-overlay button.buy-now, 
+.picture-overlay-right button.buy-now {
+    background-color: white;
+    color: black;
+    border: 1px solid transparent;
+    border-radius: 25px;
+}
+
+.video-overlay button.buy-now:hover, 
+.picture-overlay-right button.buy-now:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+
+.video-overlay .learn-more, 
+.picture-overlay-right .learn-more {
+    background: none;
+    border: none;
+    color: white;
+    position: relative;
+}
+
+
+.product-name {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    font-weight: bold;
+    font-size: 2.5rem; 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.product-name-right {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    font-weight: bold;
+    font-size: 2.5rem; 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.picture-overlay {
+    position: absolute;
+    top: 70%;
+    left: 24%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 20px;
+    z-index: 10;
+}
+
+
+.carousel-control-prev-icon, 
+.carousel-control-next-icon {
+    background-color: rgba(48, 45, 45, 0.5);
+    border-radius: 50%;
+    width: 50px; 
+    height: 50px; 
+}
+
+
+.detail-button .btn {
+    border-bottom: solid 3px lightgray;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: 18px; 
+}
+
+.detail-button .btn:hover {
+    border-bottom: solid 3px black;
+}
+
+.detail-button .active {
+    border-bottom: solid 3px black;
+}
+
+
+.intro p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 42px; 
+    color: lightgray;
+    margin: 50px 0;
+}
+
+.color-explore, 
+.color-galaxy {
+    color: black;
+}
+
+
+.detail-button-group {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    padding: 15px 0;
+}
+
+
+.detail-info {
+    width: 90%;
+    margin: 0 auto;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.detail-info h2 {
+    font-weight: bold;
+    font-size: 2.2rem; 
+    padding: 15px;
+}
+
+.detail-info p {
+    font-size: 1.1rem; 
+    text-align: justify;
+    padding: 15px;
+    line-height: 1.6;
+}
+
+.detail-info img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+
+.video-marketing-overlay {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: clamp(28px, 3vw, 65px); 
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    z-index: 10;
+    width: 50%;
+    max-width: 700px;
+}
+.card
+{	
+	border: none !important;
+	border-radius: 20px !important;
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px 2px rgba(136, 136, 136, 0.3);
+	background-color: white;
+	color: black;
+	text-decoration: none;
+}
+.btn_mua_ngay
+{
+	background-color: black;
+	color: white;
+	border-radius: 20px;
+	padding: 6px 50px;
+	margin: 10px;
+}
+.btn_mua_ngay:hover
+{
+	background-color: white;
+	color: black;
+}
+.search-container {
+    margin: 20px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    
+    overflow: hidden;
+    border:none;
+}
+
+.search-input {
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+}
+
+.search-button {
+    padding: 12px 25px;
+    border: none;
+    background-color: #000;
+}
+
+.carousel-item {
+    transition: transform 0.6s ease-in-out;
+}
+
+.carousel-indicators {
+    position: relative;
+    margin-top: 20px;
+}
+
+.carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    border: none;
+    margin: 0 5px;
+}
+
+.carousel-indicators button.active {
+    background-color: #333;
+}
+
+
+.search-container {
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 30px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+.search-input {
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.search-button {
+    padding: 12px 25px;
+    border: none;
+    background-color: #000;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #333;
+}
+
+
+.product-btn button {
+    transition: all 0.3s;
+}
+
+.product-btn button.active {
+    background-color: #000;
+    color: white;
+}
+
+.product-btn button.active img {
+    filter: brightness(0) invert(1);
+}
+
+
+.new-badge {
+    position: absolute;
+    background-color: #2189FF;
+    color: white;
+    border-radius: 20px;
+    width: fit-content;
+    padding: 2px 10px;
+    left: 10px;
+    top: 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+/* Carousel style */
+.single-card-slider {
+    gap: 20px;
+    padding: 0 40px !important;
+}
+
+.single-card-slider .card {
+    scroll-snap-align: center;
+    min-width: calc(100% - 40px);
+    margin: 0 10px;
+}
+
+.carousel-arrow {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.carousel-arrow:hover {
+    opacity: 1;
+}
+
+.product-carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.product-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  gap: 20px;
+}
+.card-header
+{
+	background-color: rgba(255, 255, 255, 0) !important;
+	border: none !important;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+    
+}
+.card-body {
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.xem_tat_ca_tablet
+{
+	width: fit-content !important;
+	margin-top: 30px !important;
+	color: rgb(2, 2, 2) !important;
+	border: 2px solid rgb(0, 0, 0) !important;
+	border-radius: 30px !important;
+}
+.xem_tat_ca_tablet:hover
+{
+	background-color: rgb(0, 0, 0) !important;
+	color: rgb(255, 255, 255) !important;
+}
+@media (max-width: 768px) {
+    .footer .row > [class^="col-"] {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    .footer {
+        width: 100% !important;
+        padding: 0 10px;
+    }
+}

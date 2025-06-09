@@ -10,10 +10,10 @@
 
 </head>
 
-<body>
-	<div class="nav py-3">
+<body class="w-100">
+	<div class="nav py-3 w-100">
 		<div class="row">
-			<div class="col-12 text-center col-md-2 col-lg-2 ">
+			<div class="col-12 text-center col-md-1 col-lg-1 ">
 				<a href="index.html" class="my-auto"><img class="logo" src="/Images/Samsung_Black_icon.svg"></a>
 			</div>
 			<div class="text-center col-12 col-md-10 col-lg-10">
@@ -25,7 +25,7 @@
 						<a href="smartphone.html">Điện thoại Galaxy</a>
 					</li>
 					<li class="menu" id="tabletMenu">
-						<a href="">Galaxy Tab</a>
+						<a href="tablet.html">Galaxy Tab</a>
 					</li>
 					<li class="menu" id="smarthwatchMenu">
 						<a href="smartwatch.html">Galaxy Watch</a>
@@ -34,9 +34,13 @@
 						<a href="buds.html">Galaxy Buds</a>
 					</li>
 					<li class="menu" id="phukienMenu">
-						<a href="">Phụ kiện</a>
+						<a href="phukien.html">Phụ kiện</a>
 					</li>
-					<li>
+					<li class="menu" id="">
+						<a href="about.html">Thông tin</a>
+					</li>
+					<!-- đem cái này xuống -->
+					<!-- <li class="tool">
 						<a href="">
 							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"
 								stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
@@ -46,17 +50,74 @@
 							</svg>
 						</a>
 					</li>
-					<li>
-						<a href="">
+					<li class="tool" style="position:relative;">
+						<a href="gioHang.html" id="cart-icon">
 							<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="none"
 								stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
 								class="feather feather-search">
 								<circle cx="11" cy="6" r="5"></circle>
 								<rect x="3" y="5" width="16" height="16" rx="2" ry="2" ba fill="white"></rect>
 							</svg>
+							<span id="cart-count" class="cart-badge" style="display: none; top: -5px; right: -5px;">0</span>
+
 						</a>
 					</li>
-					<li class="menu">
+					<li class="menu tool">
+						<a href="#">
+							<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="none"
+								stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+								class="feather feather-user">
+								<path d="M20 21v-2a4 4 0 0 0-3-3.87" />
+								<path d="M4 21v-2a4 4 0 0 1 3-3.87" />
+								<circle cx="12" cy="9" r="5" />
+							</svg>
+						</a>
+						<ul class="dropdown">
+							<li>
+								<a href="formDangKy.html">
+									Đăng ký
+								</a>
+							</li>
+							<li>
+								<a href="formDangNhap.html">
+									Đăng nhập
+								</a>
+							</li>
+							<li>
+								<hr>
+								<h5 id="ten_dang_nhap" style="color: black;"></h5>
+							</li>
+						</ul>
+					</li> -->
+				</ul>
+			</div>
+
+			<div class="text-center col-12 col-md-1 col-lg-1">
+				<ul>
+					<!-- đem cái này xuống -->
+					<li class="tool">
+						<a href="">
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"
+								stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+								class="feather feather-search">
+								<circle cx="8" cy="8" r="6"></circle>
+								<line x1="25" y1="25" x2="13" y2="12"></line>
+							</svg>
+						</a>
+					</li>
+					<li class="tool" style="position:relative;">
+						<a href="gioHang.html" id="cart-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="none"
+								stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+								class="feather feather-search">
+								<circle cx="11" cy="6" r="5"></circle>
+								<rect x="3" y="5" width="16" height="16" rx="2" ry="2" ba fill="white"></rect>
+							</svg>
+							<span id="cart-count" class="cart-badge" style="display: none; top: -5px; right: -5px;">0</span>
+
+						</a>
+					</li>
+					<li class="menu tool">
 						<a href="#">
 							<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="none"
 								stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"

@@ -1,0 +1,250 @@
+/* 
+*::before,
+*::after {
+  box-sizing: border-box;
+}  */
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgb(244, 244, 244);
+  border-radius: 20px;
+
+}
+.row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto;
+  justify-items: stretch;
+  align-items: stretch;
+}
+.card {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px rgba(136, 136, 136, 0.2);
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+
+/* Hover hiệu ứng */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+.ds_sanpham .row
+{
+  gap: 10px;
+}
+/* Card header */
+.card-header {
+  position: relative;
+  height: 270px; 
+  overflow: hidden;
+  border-bottom: 1px solid #eee;
+  padding: 0;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-header div {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #7065F0;
+  color: white;
+  padding: 4px 12px;
+  font-weight: 500;
+  border-radius: 20px;
+  font-size: 13px;
+  z-index: 10;
+}
+
+/* Ảnh */
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  max-height: 270px;
+  display: block;
+  object-fit: contain;
+  padding: 15px;
+}
+
+/* Body card */
+.card-body {
+  padding: 20px 15px 15px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Nút mua */
+.btn_mua_ngay {
+  margin-top: 12px;
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 12px 0;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.btn_mua_ngay:hover {
+  background-color: #333;
+}
+
+/* Responsive */
+/* Tablet */
+@media (max-width: 991px) {
+  .row {
+    grid-template-columns: repeat(2, 1fr); /* 2 cột */
+  }
+  .card-header {
+    height: 230px;
+  }
+  .card-img-top {
+    max-height: 230px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .container {
+    padding: 15px;
+    border-radius: 10px;
+  }
+  .row {
+    grid-template-columns: 1fr; /* 1 cột */
+  }
+  .card-header {
+    height: 160px;
+  }
+  .card-img-top {
+    max-height: 160px;
+  }
+  .card-body {
+    padding: 15px 10px;
+  }
+  .btn_mua_ngay {
+    padding: 10px 0;
+    font-size: 14px;
+  }
+}
+
+
+.card-header {
+  background-color: rgba(255, 255, 255, 0) !important;
+  border: none !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+@media (max-width: 991px) {
+  .row {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .row {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+}
+
+.row {
+  align-items: stretch;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 550px; 
+}
+
+.card-header {
+  height: 270px;
+  flex-shrink: 0;
+}
+
+.card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 15px;
+}
+
+@media (max-width: 991px) {
+  .card {
+    min-height: 500px;
+  }
+  .card-header {
+    height: 230px;
+  }
+}
+
+@media (max-width: 767px) {
+  .card {
+    min-height: 450px;
+  }
+  .card-header {
+    height: 160px;
+  }
+}
+.btn_mua_ngay:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+.tablet:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.02);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: none;
+}
+.tablet{
+  border: rgb(244, 244, 244);
+}

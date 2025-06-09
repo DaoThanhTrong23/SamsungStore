@@ -1,0 +1,107 @@
+[
+    {
+        "tenSanPham" : "Galaxy S25 Edge 12GB",
+        "loai" : "S",
+        "mauSac" : "Bạc Titan",
+        "gia" : 29990000,
+        "hinhAnh" : "/Images/smartphones25edge.png"
+    }, 
+    {
+        "tenSanPham" : "Galaxy S25 Ultra 5G 256GB",
+        "loai" : "S",
+        "mauSac" : "Xám Titan",
+        "gia" : 28990000,
+        "hinhAnh" : "/Images/S25Ultra.jpg"
+    }, 
+    {
+        "tenSanPham" : "Galaxy S25 512GB",
+        "loai" : "S",
+        "mauSac" : "Bạc shadow",
+        "gia" : 25490000,
+        "hinhAnh" : "/Images/s25.avif"
+    }, 
+    {
+        "tenSanPham" : "Galaxy S24 FE 256GB",
+        "loai" : "S",
+        "mauSac" : "Xanh Topaz",
+        "gia" : 15990000,
+        "hinhAnh" : "/Images/S24FE.avif"
+    }, 
+    {
+        "tenSanPham" : "S24 Ultra 512GB",
+        "loai" : "S",
+        "mauSac" : "Xám Titan",
+        "gia" : 24490000,
+        "hinhAnh" : "/Images/s24ultra.avif"
+    }, 
+    {
+        "tenSanPham" : "Galaxy S25+ 512GB",
+        "loai" : "S",
+        "mauSac" : "Xanh navy",
+        "gia" : 29490000,
+        "hinhAnh" : "/Images/s25+.avif"
+    },
+    {
+        "tenSanPham" : "Galaxy A36",
+        "loai" : "A",
+        "mauSac" : "Bạc",
+        "gia" : 20490000,
+        "hinhAnh" : "/Images/galaxyA.avif"
+    },
+    {
+        "tenSanPham" : "Galaxy Z Flip",
+        "loai" : "Z",
+        "mauSac" : "Xanh mint",
+        "gia" : 25990000,
+        "hinhAnh" : "/Images/galaxyZ.avif"
+    },
+    {
+        "tenSanPham" : "Galaxy Z Fold 6",
+        "loai" : "Z",
+        "mauSac" : "Xám Titan",
+        "gia" : 25990000,
+        "hinhAnh" : "/Images/galaxyZfold6.avif"
+    },
+    {
+        "tenSanPham" : "Galaxy Z Flip 6",
+        "loai" : "Z",
+        "mauSac" : "Xanh mint",
+        "gia" : 25990000,
+        "hinhAnh" : "/Images/galaxyZflip6.avif"
+    },
+    {
+        "tenSanPham" : "Galaxy A36",
+        "loai" : "A",
+        "mauSac" : "Xanh mint",
+        "gia" : 25990000,
+        "hinhAnh" : "/Images/galaxyA36.webp"
+    },
+    {
+        "tenSanPham" : "Galaxy A26",
+        "loai" : "A",
+        "mauSac" : "Xanh mint",
+        "gia" : 25990000,
+        "hinhAnh" : "/Images/galaxyA26.webp"
+    },
+    {
+        "tenSanPham" : "Galaxy A56",
+        "loai" : "A",
+        "mauSac" : "Xanh mint",
+        "gia" : 25990000,
+        "hinhAnh" : "/Images/galaxyA56.webp"
+    },
+    {
+        "tenSanPham" : "Galaxy A06",
+        "loai" : "A",
+        "mauSac" : "Xanh mint",
+        "gia" : 25990000,
+        "hinhAnh" : "/Images/galaxyA06.webp"
+    },
+    {
+        "tenSanPham" : "Galaxy A16",
+        "loai" : "A",
+        "mauSac" : "Xanh mint",
+        "gia" : 25990000,
+        "hinhAnh" : "/Images/galaxyA16.avif"
+    }
+]
