@@ -72,6 +72,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // (Tuỳ chọn) Hiển thị tổng tiền
-    const bills = document.getElementById("bills");
-    bills.innerHTML = `<h4>Tổng tiền: ${total.toLocaleString()} VND</h4>`;
+        // Hiển thị tổng tiền
+    const percent100 = document.getElementById("percent100");
+    const percent90 = document.getElementById("percent90");
+    const percent10 = document.getElementById("percent10");
+
+    percent100.innerText = total.toLocaleString() + " VNĐ";
+    percent90.innerText = (total * 0.9).toLocaleString() + " VNĐ";
+    percent10.innerText = (total * 0.1).toLocaleString() + " VNĐ";
+
 });

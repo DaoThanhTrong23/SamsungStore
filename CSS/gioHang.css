@@ -69,3 +69,27 @@ input[type=number]::-webkit-outer-spin-button {
 .delete-btn:hover i {
     color: black; /* đậm lên khi hover */
 }
+
+/* payment css */
+form.mt-2 label {
+    width: 100%;
+    margin-bottom: 5px;    
+    gap: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form.mt-2 label:has(input[type="radio"]:checked) {
+  background-color: #e0f0ff; /* Nền xanh nhạt */
+  border-color: #1e90ff;     /* Viền xanh */
+}
+#bills {
+  height: 400px; /* hoặc bao nhiêu bạn muốn */
+  overflow-y: auto; /* cuộn nếu nội dung vượt quá */
+  max-width: 400px; /* tùy chỉnh chiều rộng nếu cần */
+  position: sticky;
+  top: 20px; /* giữ cố định khi cuộn */
+}
