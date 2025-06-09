@@ -12,31 +12,31 @@
 
 <body class="w-100">
 	<div class="nav py-3 w-100">
-		<div class="row">
-			<div class="col-12 text-center col-md-1 col-lg-1 ">
+		<div class="row " style="width: fit-content;">
+			<div class="col-12 text-center col-md-1 col-lg-1">
 				<a href="index.html" class="my-auto"><img class="logo" src="/Images/Samsung_Black_icon.svg"></a>
 			</div>
 			<div class="text-center col-12 col-md-10 col-lg-10">
 				<ul>
-					<li class="menu" id="cuahangMenu">
+					<li class="menu px-3" id="cuahangMenu">
 						<a href="index.html">Cửa hàng</a>
 					</li>
-					<li class="menu" id="smartphoneMenu">
+					<li class="menu px-3" id="smartphoneMenu">
 						<a href="smartphone.html">Điện thoại Galaxy</a>
 					</li>
-					<li class="menu" id="tabletMenu">
+					<li class="menu px-3" id="tabletMenu">
 						<a href="tablet.html">Galaxy Tab</a>
 					</li>
-					<li class="menu" id="smarthwatchMenu">
+					<li class="menu px-3" id="smarthwatchMenu">
 						<a href="smartwatch.html">Galaxy Watch</a>
 					</li>
-					<li class="menu" id="taingheMenu">
+					<li class="menu px-3" id="taingheMenu">
 						<a href="buds.html">Galaxy Buds</a>
 					</li>
-					<li class="menu" id="phukienMenu">
+					<li class="menu px-3" id="phukienMenu">
 						<a href="phukien.html">Phụ kiện</a>
 					</li>
-					<li class="menu" id="">
+					<li class="menu px-3" id="">
 						<a href="about.html">Thông tin</a>
 					</li>
 					<!-- đem cái này xuống -->
@@ -95,7 +95,7 @@
 			<div class="text-center col-12 col-md-1 col-lg-1">
 				<ul>
 					<!-- đem cái này xuống -->
-					<li class="tool">
+					<!-- <li class="tool">
 						<a href="">
 							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"
 								stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
@@ -104,8 +104,8 @@
 								<line x1="25" y1="25" x2="13" y2="12"></line>
 							</svg>
 						</a>
-					</li>
-					<li class="tool" style="position:relative;">
+					</li> -->
+					<li class="tool px-3" style="position:relative;">
 						<a href="gioHang.html" id="cart-icon">
 							<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="none"
 								stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
@@ -113,7 +113,8 @@
 								<circle cx="11" cy="6" r="5"></circle>
 								<rect x="3" y="5" width="16" height="16" rx="2" ry="2" ba fill="white"></rect>
 							</svg>
-							<span id="cart-count" class="cart-badge" style="display: none; top: -5px; right: -5px;">0</span>
+							<span id="cart-count" class="cart-badge"
+								style="display: none; top: -5px; right: -5px;">0</span>
 
 						</a>
 					</li>
@@ -127,20 +128,20 @@
 								<circle cx="12" cy="9" r="5" />
 							</svg>
 						</a>
-						<ul class="dropdown">
-							<li>
-								<a href="formDangKy.html">
+						<ul class="dropdown " style="width: fit-content;">
+							<li class="p-1" style="text-align: start;">
+								<a href="formDangKy.html" style="font-size: 16px; font-weight: 500;">
 									Đăng ký
 								</a>
 							</li>
-							<li>
-								<a href="formDangNhap.html">
+							<li class="p-1" style="text-align: start;">
+								<a href="formDangNhap.html" style="font-size: 16px; font-weight: 500;">
 									Đăng nhập
 								</a>
 							</li>
-							<li>
+							<li style="text-align: start;">
 								<hr>
-								<h5 id="ten_dang_nhap" style="color: black;"></h5>
+								<h5 style="white-space: normal; word-wrap: break-word;" id="ten_dang_nhap" style="color: black;"></h5>
 							</li>
 						</ul>
 					</li>
@@ -150,8 +151,8 @@
 		</div>
 
 		<!-- menu dropdown trang chủ -->
-		<div class="menu_drd" id="cuahangDropdown">
-			<ul class="d-block">
+		<div class="menu_drd justify-content-center" id="cuahangDropdown">
+			<ul class="d-block w-50">
 				<li><a style="font-weight: 700; font-size: 18px;" href="#sp_noi_bat">Tất cả sản phẩm mới nhất</a></li>
 				<li><a>Điện thoại thông minh Galaxy</a></li>
 				<li><a>Galaxy Tab</a></li>
@@ -161,185 +162,195 @@
 			</ul>
 		</div>
 		<!-- menu dropdown smartphone -->
-		<div class="menu_drd" id="smartphoneDropdown">
-			<ul class="d-block w-100">
-				<li>
-					<a style="font-weight: 700; font-size: 18px;">Sản phẩm mới nhất S series</a>
-				</li>
-				<li>
-					<a>Galaxy S25 Ultra</a>
-				</li>
-				<li>
-					<a>Galaxy S25 edge</a>
-				</li>
-				<li>
-					<a>Galaxy S25+</a>
-				</li>
-				<li>
-					<a>Galaxy S25</a>
-				</li>
-			</ul>
-			<ul class="d-block w-100">
-				<li>
-					<a style="font-weight: 700; font-size: 18px;">Sản phẩm mới nhất Z series</a>
-				</li>
-				<li>
-					<a>Galaxy Z Fold6</a>
-				</li>
-				<li>
-					<a>Galaxy Z Flip6</a>
-				</li>
-			</ul>
-			<ul class="d-block w-100">
-				<li>
-					<a style="font-weight: 700; font-size: 18px;">Sản phẩm mới nhất A series</a>
-				</li>
-				<li>
-					<a>Galaxy A56 5G</a>
-				</li>
-				<li>
-					<a>Galaxy A36 5G</a>
-				</li>
-				<li>
-					<a>Galaxy A26 5G</a>
-				</li>
+		<div class="menu_drd justify-content-center" id="smartphoneDropdown">
+			<div class="w-50 d-flex">
+				<ul class="d-block px-5">
+					<li>
+						<a style="font-weight: 700; font-size: 18px;">Sản phẩm mới nhất S series</a>
+					</li>
+					<li>
+						<a>Galaxy S25 Ultra</a>
+					</li>
+					<li>
+						<a>Galaxy S25 edge</a>
+					</li>
+					<li>
+						<a>Galaxy S25+</a>
+					</li>
+					<li>
+						<a>Galaxy S25</a>
+					</li>
+				</ul>
+				<ul class="d-block px-5">
+					<li>
+						<a style="font-weight: 700; font-size: 18px;">Sản phẩm mới nhất Z series</a>
+					</li>
+					<li>
+						<a>Galaxy Z Fold6</a>
+					</li>
+					<li>
+						<a>Galaxy Z Flip6</a>
+					</li>
+				</ul>
+				<ul class="d-block px-5">
+					<li>
+						<a style="font-weight: 700; font-size: 18px;">Sản phẩm mới nhất A series</a>
+					</li>
+					<li>
+						<a>Galaxy A56 5G</a>
+					</li>
+					<li>
+						<a>Galaxy A36 5G</a>
+					</li>
+					<li>
+						<a>Galaxy A26 5G</a>
+					</li>
 
-			</ul>
+				</ul>
+			</div>
 		</div>
 		<!-- menu dropdown tablet -->
-		<div class="menu_drd" id="tabletDropdown">
-			<ul class="d-block">
-				<li>
-					<a style="font-weight: 700; font-size: 18px;">Galaxy Tab S series</a>
-				</li>
-				<li>
-					<a>
-						Tab S10 Ultra 5G
-					</a>
-				</li>
-				<li>
-					<a>Tab S10 Ultra WiFi</a>
-				</li>
-				<li>
-					<a>Tab S10 Plus 5G</a>
-				</li>
-				<li>
-					<a>Tab S10 Plus WiFi</a>
-				</li>
-			</ul>
-			<ul class="d-block">
-				<li>
-					<a style="font-weight: 700; font-size: 18px;">Galaxy Tab A series</a>
-				</li>
-				<li>
-					<a>
-						Tab A9+ 5G
-					</a>
-				</li>
-				<li>
-					<a>Tab A9+ WiFi</a>
-				</li>
-				<li>
-					<a>Tab A9 5G</a>
-				</li>
-				<li>
-					<a>Tab A9 (LTE)</a>
-				</li>
-			</ul>
+		<div class="menu_drd justify-content-center" id="tabletDropdown">
+			<div class="w-50 d-flex ">
+				<ul class="d-block px-5">
+					<li>
+						<a style="font-weight: 700; font-size: 18px;">Galaxy Tab S series</a>
+					</li>
+					<li>
+						<a>
+							Tab S10 Ultra 5G
+						</a>
+					</li>
+					<li>
+						<a>Tab S10 Ultra WiFi</a>
+					</li>
+					<li>
+						<a>Tab S10 Plus 5G</a>
+					</li>
+					<li>
+						<a>Tab S10 Plus WiFi</a>
+					</li>
+				</ul>
+				<ul class="d-block px-5">
+					<li>
+						<a style="font-weight: 700; font-size: 18px;">Galaxy Tab A series</a>
+					</li>
+					<li>
+						<a>
+							Tab A9+ 5G
+						</a>
+					</li>
+					<li>
+						<a>Tab A9+ WiFi</a>
+					</li>
+					<li>
+						<a>Tab A9 5G</a>
+					</li>
+					<li>
+						<a>Tab A9 (LTE)</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 		<!-- menu dropdown smartwwatch -->
-		<div class="menu_drd" id="smartwatchDropdown">
-			<ul class="d-block">
-				<li>
-					<a style="font-weight: 700; font-size: 18px;">Galaxy Watch Ultra series</a>
-				</li>
-				<li>
-					<a>
-						Galaxy Watch Ultra
-					</a>
-				</li>
-				<li>
-					<a>Galaxy Watch Ultra (LTE)</a>
-				</li>
-			</ul>
-			<ul class="d-block">
-				<li>
-					<a style="font-weight: 700; font-size: 18px;">Galaxy Watch series</a>
-				</li>
-				<li>
-					<a>
-						Galaxy Watch7
-					</a>
-				</li>
-				<li>
-					<a>Galaxy Watch7 (LTE)</a>
-				</li>
-			</ul>
-			<ul class="d-block">
-				<li>
-					<a style="font-weight: 700; font-size: 18px;">Galaxy Watch Classic series</a>
-				</li>
-				<li>
-					<a>
-						Galaxy Watch6 Classic
-					</a>
-				</li>
-				<li>
-					<a>Galaxy Watch6 Classic (LTE)</a>
-				</li>
-			</ul>
+		<div class="menu_drd justify-content-center" id="smartwatchDropdown">
+			<div class="d-flex w-50">
+				<ul class="d-block px-5">
+					<li>
+						<a style="font-weight: 700; font-size: 18px;">Galaxy Watch Ultra series</a>
+					</li>
+					<li>
+						<a>
+							Galaxy Watch Ultra
+						</a>
+					</li>
+					<li>
+						<a>Galaxy Watch Ultra (LTE)</a>
+					</li>
+				</ul>
+				<ul class="d-block px-5">
+					<li>
+						<a style="font-weight: 700; font-size: 18px;">Galaxy Watch series</a>
+					</li>
+					<li>
+						<a>
+							Galaxy Watch7
+						</a>
+					</li>
+					<li>
+						<a>Galaxy Watch7 (LTE)</a>
+					</li>
+				</ul>
+				<ul class="d-block px-5">
+					<li>
+						<a style="font-weight: 700; font-size: 18px;">Galaxy Watch Classic series</a>
+					</li>
+					<li>
+						<a>
+							Galaxy Watch6 Classic
+						</a>
+					</li>
+					<li>
+						<a>Galaxy Watch6 Classic (LTE)</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 		<!-- menu dropdown tai nghe -->
-		<div class="menu_drd" id="taingheDropdown">
-			<ul class="d-block">
-				<li>
-					<a style="font-weight: 700; font-size: 18px;">Galaxy Buds Pro series</a>
-				</li>
-				<li>
-					<a>
-						Galaxy Buds3 Pro
-					</a>
-				</li>
-				<li>
-					<a>
-						Galaxy Buds Pro
-					</a>
-				</li>
+		<div class="menu_drd justify-content-center" id="taingheDropdown">
+			<div class="w-50 d-flex">
+				<ul class="d-block px-5">
+					<li>
+						<a style="font-weight: 700; font-size: 18px;">Galaxy Buds Pro series</a>
+					</li>
+					<li>
+						<a>
+							Galaxy Buds3 Pro
+						</a>
+					</li>
+					<li>
+						<a>
+							Galaxy Buds Pro
+						</a>
+					</li>
 
-			</ul>
+				</ul>
 
-			<ul class="d-block">
-				<li>
-					<a style="font-weight: 700; font-size: 18px;">Galaxy Buds series</a>
-				</li>
-				<li>
-					<a>
-						Galaxy Buds3
-					</a>
-				</li>
-				<li>
-					<a>Galaxy Buds2</a>
-				</li>
-			</ul>
-			<ul class="d-block">
-				<li>
-					<a style="font-weight: 700; font-size: 18px;">Galaxy Buds FE series</a>
-				</li>
-				<li>
-					<a>
-						Galaxy Buds FE
-					</a>
-				</li>
-			</ul>
+				<ul class="d-block px-5">
+					<li>
+						<a style="font-weight: 700; font-size: 18px;">Galaxy Buds series</a>
+					</li>
+					<li>
+						<a>
+							Galaxy Buds3
+						</a>
+					</li>
+					<li>
+						<a>Galaxy Buds2</a>
+					</li>
+				</ul>
+				<ul class="d-block px-5">
+					<li>
+						<a style="font-weight: 700; font-size: 18px;">Galaxy Buds FE series</a>
+					</li>
+					<li>
+						<a>
+							Galaxy Buds FE
+						</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 		<!-- menu dropdown phụ kiện -->
-		<div class="menu_drd" id="phukienDropdown">
-			<ul class="d-block">
-				<li><a style="font-weight: 700; font-size: 18px;"> Tất cả phụ kiện</a></li>
-				<li><a><span>Điện thoại Galaxy</span></a></li>
-				<li><a><span>Galaxy Tab</span></a></li>
-				<li><a><span>Galaxy Watch</span></a></li>
-			</ul>
+		<div class="menu_drd justify-content-center" id="phukienDropdown">
+			<div class="w-50 ">
+				<ul class="d-block">
+					<li><a style="font-weight: 700; font-size: 18px;"> Tất cả phụ kiện</a></li>
+					<li><a><span>Điện thoại Galaxy</span></a></li>
+					<li><a><span>Galaxy Tab</span></a></li>
+					<li><a><span>Galaxy Watch</span></a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
 	<script src="JS/navbar.js"></script>

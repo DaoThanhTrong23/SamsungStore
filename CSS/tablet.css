@@ -5,7 +5,8 @@
 }
 
 /* ===== HEADINGS ===== */
-h1, h2 {
+h1,
+h2 {
     position: relative;
     margin: 0 auto;
 }
@@ -21,7 +22,7 @@ h1, h2 {
 }
 
 .slogan-slide img {
-    width: 120px; 
+    width: 120px;
     height: auto;
     margin-bottom: 10px;
 }
@@ -31,8 +32,8 @@ h1, h2 {
     background-color: #f9f9f9;
     border: none;
     border-radius: 15px;
-    width: 250px; 
-    height: 180px; 
+    width: 250px;
+    height: 180px;
     padding: 15px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     cursor: pointer;
@@ -44,7 +45,7 @@ h1, h2 {
 }
 
 .slogan-slide span {
-    font-size: 18px; 
+    font-size: 18px;
     font-weight: 500;
     color: #333;
     margin-left: 10px;
@@ -90,11 +91,11 @@ video {
 }
 
 /* ===== BUTTON STYLES ===== */
-.video-overlay .btn, 
+.video-overlay .btn,
 .picture-overlay-right .btn,
 .picture-overlay .btn {
-    padding: 12px 24px; 
-    font-size: 16px; 
+    padding: 12px 24px;
+    font-size: 16px;
     font-weight: bold;
     border-radius: 15px;
     cursor: pointer;
@@ -102,7 +103,7 @@ video {
 }
 
 
-.video-overlay button.buy-now, 
+.video-overlay button.buy-now,
 .picture-overlay-right button.buy-now {
     background-color: white;
     color: black;
@@ -110,7 +111,7 @@ video {
     border-radius: 25px;
 }
 
-.video-overlay button.buy-now:hover, 
+.video-overlay button.buy-now:hover,
 .picture-overlay-right button.buy-now:hover {
     background-color: black;
     color: white;
@@ -118,7 +119,7 @@ video {
 }
 
 
-.video-overlay .learn-more, 
+.video-overlay .learn-more,
 .picture-overlay-right .learn-more {
     background: none;
     border: none;
@@ -134,7 +135,7 @@ video {
     transform: translate(-50%, -50%);
     z-index: 10;
     font-weight: bold;
-    font-size: 2.5rem; 
+    font-size: 2.5rem;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
@@ -146,7 +147,7 @@ video {
     transform: translate(-50%, -50%);
     z-index: 10;
     font-weight: bold;
-    font-size: 2.5rem; 
+    font-size: 2.5rem;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
@@ -161,12 +162,12 @@ video {
 }
 
 
-.carousel-control-prev-icon, 
+.carousel-control-prev-icon,
 .carousel-control-next-icon {
     background-color: rgba(48, 45, 45, 0.5);
     border-radius: 50%;
-    width: 50px; 
-    height: 50px; 
+    width: 50px;
+    height: 50px;
 }
 
 
@@ -174,7 +175,7 @@ video {
     border-bottom: solid 3px lightgray;
     margin-left: 30px;
     margin-top: 30px;
-    font-size: 18px; 
+    font-size: 18px;
 }
 
 .detail-button .btn:hover {
@@ -188,12 +189,12 @@ video {
 
 .intro p {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    font-size: 42px; 
+    font-size: 42px;
     color: lightgray;
     margin: 50px 0;
 }
 
-.color-explore, 
+.color-explore,
 .color-galaxy {
     color: black;
 }
@@ -216,12 +217,12 @@ video {
 
 .detail-info h2 {
     font-weight: bold;
-    font-size: 2.2rem; 
+    font-size: 2.2rem;
     padding: 15px;
 }
 
 .detail-info p {
-    font-size: 1.1rem; 
+    font-size: 1.1rem;
     text-align: justify;
     padding: 15px;
     line-height: 1.6;
@@ -240,7 +241,7 @@ video {
     transform: translateX(-50%);
     padding: 15px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    font-size: clamp(28px, 3vw, 65px); 
+    font-size: clamp(28px, 3vw, 65px);
     font-weight: 500;
     color: white;
     text-align: center;
@@ -248,35 +249,36 @@ video {
     width: 50%;
     max-width: 700px;
 }
-.card
-{	
-	border: none !important;
-	border-radius: 20px !important;
-	border-radius: 10px;
-	box-shadow: 2px 2px 2px 2px rgba(136, 136, 136, 0.3);
-	background-color: white;
-	color: black;
-	text-decoration: none;
+
+.card {
+    border: none !important;
+    border-radius: 20px !important;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(136, 136, 136, 0.3);
+    background-color: white;
+    color: black;
+    text-decoration: none;
 }
-.btn_mua_ngay
-{
-	background-color: black;
-	color: white;
-	border-radius: 20px;
-	padding: 6px 50px;
-	margin: 10px;
+
+.btn_mua_ngay {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 6px 50px;
+    margin: 10px;
 }
-.btn_mua_ngay:hover
-{
-	background-color: white;
-	color: black;
+
+.btn_mua_ngay:hover {
+    background-color: white;
+    color: black;
 }
+
 .search-container {
     margin: 20px 0;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
     overflow: hidden;
-    border:none;
+    border: none;
 }
 
 .search-input {
@@ -368,6 +370,7 @@ video {
     font-size: 0.8rem;
     font-weight: bold;
 }
+
 /* Carousel style */
 .single-card-slider {
     gap: 20px;
@@ -387,7 +390,7 @@ video {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     opacity: 0.8;
     transition: opacity 0.3s;
 }
@@ -397,32 +400,33 @@ video {
 }
 
 .product-carousel {
-  position: relative;
-  display: flex;
-  align-items: center;
-  background: #f4f4f4;
-  padding: 20px;
-  border-radius: 10px;
-  overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .product-slider {
-  display: flex;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
-  gap: 20px;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
 }
-.card-header
-{
-	background-color: rgba(255, 255, 255, 0) !important;
-	border: none !important;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-    
+
+.card-header {
+    background-color: rgba(255, 255, 255, 0) !important;
+    border: none !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
 }
+
 .card-body {
     min-height: 250px;
     display: flex;
@@ -430,28 +434,27 @@ video {
     justify-content: space-between;
 }
 
-.xem_tat_ca_tablet
-{
-	width: fit-content !important;
-	margin-top: 30px !important;
-	color: rgb(2, 2, 2) !important;
-	border: 2px solid rgb(0, 0, 0) !important;
-	border-radius: 30px !important;
+.xem_tat_ca_tablet {
+    width: fit-content !important;
+    margin-top: 30px !important;
+    color: rgb(2, 2, 2) !important;
+    border: 2px solid rgb(0, 0, 0) !important;
+    border-radius: 30px !important;
 }
-.xem_tat_ca_tablet:hover
-{
-	background-color: rgb(0, 0, 0) !important;
-	color: rgb(255, 255, 255) !important;
+
+.xem_tat_ca_tablet:hover {
+    background-color: rgb(0, 0, 0) !important;
+    color: rgb(255, 255, 255) !important;
 }
-@media (max-width: 768px) {
-    .footer .row > [class^="col-"] {
-        flex: 0 0 100%;
-        max-width: 100%;
-        margin-bottom: 1rem;
-        text-align: center;
-    }
-    .footer {
-        width: 100% !important;
-        padding: 0 10px;
-    }
+
+.footer {
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+.footer .row {
+    border-top: 1px solid gray;
+    padding: 10px !important;
+    margin: 0px;
+
 }

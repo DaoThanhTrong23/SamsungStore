@@ -13,6 +13,7 @@
   border-radius: 20px;
 
 }
+
 .row {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -20,6 +21,7 @@
   justify-items: stretch;
   align-items: stretch;
 }
+
 .card {
   border: none;
   border-radius: 20px;
@@ -40,14 +42,15 @@
   transform: translateY(-5px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
-.ds_sanpham .row
-{
+
+.ds_sanpham .row {
   gap: 10px;
 }
+
 /* Card header */
 .card-header {
   position: relative;
-  height: 270px; 
+  height: 270px;
   overflow: hidden;
   border-bottom: 1px solid #eee;
   padding: 0;
@@ -113,11 +116,14 @@
 /* Tablet */
 @media (max-width: 991px) {
   .row {
-    grid-template-columns: repeat(2, 1fr); /* 2 cột */
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 cột */
   }
+
   .card-header {
     height: 230px;
   }
+
   .card-img-top {
     max-height: 230px;
   }
@@ -129,18 +135,24 @@
     padding: 15px;
     border-radius: 10px;
   }
+
   .row {
-    grid-template-columns: 1fr; /* 1 cột */
+    grid-template-columns: 1fr;
+    /* 1 cột */
   }
+
   .card-header {
     height: 160px;
   }
+
   .card-img-top {
     max-height: 160px;
   }
+
   .card-body {
     padding: 15px 10px;
   }
+
   .btn_mua_ngay {
     padding: 10px 0;
     font-size: 14px;
@@ -156,6 +168,7 @@
   align-items: center;
   position: relative;
 }
+
 @media (max-width: 991px) {
   .row {
     grid-template-columns: repeat(2, 1fr);
@@ -194,11 +207,12 @@
   height: auto;
   object-fit: contain;
 }
+
 .card {
   height: 100%;
   display: flex;
   flex-direction: column;
-  min-height: 550px; 
+  min-height: 550px;
 }
 
 .card-header {
@@ -218,6 +232,7 @@
   .card {
     min-height: 500px;
   }
+
   .card-header {
     height: 230px;
   }
@@ -227,10 +242,12 @@
   .card {
     min-height: 450px;
   }
+
   .card-header {
     height: 160px;
   }
 }
+
 .btn_mua_ngay:hover {
   background-color: white;
   color: black;
@@ -238,6 +255,7 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
+
 .tablet:hover {
   background-color: #f0f0f0;
   transform: scale(1.02);
@@ -245,6 +263,19 @@
   transition: all 0.3s ease;
   border: none;
 }
-.tablet{
+
+.tablet {
   border: rgb(244, 244, 244);
+}
+
+.footer {
+  margin-top: 50px;
+  font-size: 14px;
+}
+
+.footer .row {
+  border-top: 1px solid gray;
+  padding: 10px !important;
+  margin: 0px;
+
 }

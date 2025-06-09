@@ -1,5 +1,7 @@
 document.addEventListener("click", function (e) {
+    // e.preventDefault()
     if (e.target.classList.contains("btn_mua_ngay")) {
+        e.preventDefault()
         const card = e.target.closest(".card");
 
         const img = card.parentElement.querySelector("img")?.getAttribute("src") || "";
@@ -33,7 +35,7 @@ document.addEventListener("click", function (e) {
             window.capNhatSoLuongGioHang();
         }
 
-        showToast(`Đã thêm "${product.name} (${product.color})" vào giỏ hàng.`);
+        showToast(`Đã thêm ${product.name} (${product.color}) vào giỏ hàng.`);
     }
 });
 

@@ -31,9 +31,9 @@ img
     justify-content: center;
 }
 
-.nav ul li {
-    margin: 0 10px;
-}
+/* .nav ul li {
+    margin: 0 13px;
+} */
 
 .nav ul li a {
     text-decoration: none; 

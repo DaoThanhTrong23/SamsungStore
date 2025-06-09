@@ -1,184 +1,187 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phụ Kiện</title>
-    <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="CSS/stylesphukien.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phụ Kiện</title>
+  <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="CSS/stylesphukien.css">
 </head>
+
 <body style="display: contents;">
-    <div id="navbar"></div>
-    <br>
+  <div id="navbar"></div>
+  <br>
+  <div class="container">
     <div class="hotnen1-container">
-      <div class="hot-content">    
+      <div class="hot-content">
       </div>
     </div>
     <h1 class="tieudelon">Cực kì phong cách<br>Bạn thật siêu phong cách</h1>
     <!--Nut button-->
     <div class="button-group">
-        <button class="filter-button" onclick="scrollToSection('oplung')" >Ốp lưng bảo vệ</button>
-        <button class="filter-button" onclick="scrollToSection('watch')">Galaxy Watch</button>
-        <button class="filter-button" onclick="scrollToSection('buds')">Tai nghe Galaxy Buds</button>
-        <button class="filter-button" onclick="scrollToSection('sac')">Bộ sạc & SmartTag2</button>
+      <button class="filter-button" onclick="scrollToSection('oplung')">Ốp lưng bảo vệ</button>
+      <button class="filter-button" onclick="scrollToSection('watch')">Galaxy Watch</button>
+      <button class="filter-button" onclick="scrollToSection('buds')">Tai nghe Galaxy Buds</button>
+      <button class="filter-button" onclick="scrollToSection('sac')">Bộ sạc & SmartTag2</button>
     </div>
     <hr>
 
     <!--Op Lung-->
     <Section id="oplung">
-    <p class="text-center h1 fw-bold">Ốp lưng & Vỏ</p>
-    <p class="text-center text-muted">Bảo vệ điện thoại của bạn với những ốp lưng và vỏ mới nhất</p>
-    <div class="hotsanpham1-container">
-    </div>
-    <div class="product-list container d-flex flex-wrap justify-content-center gap-4">
-      <div class="product-card text-center p-3 rounded shadow ">
-        <img src="Images/case1.png" class="product-img mb-2" alt="Galaxy Watch">
-        <h6 class="fw-bold">Ốp lưng Trong suốt Clear Magner Case cho Galaxy S25 Edge</h6>
-        <p class="text-muted mb-1">Màu sắc: Trong suốt</p>
-        <div class="color-circle2 mb-2" onclick="selectCircle(this)"></div>
-        <p class="price fw-bold">753.000 VND</p>
-        <div class="stars mb-2">⭐⭐⭐⭐☆ <span class="text-muted">(3484)</span></div>
-        <button class="btn btn-dark rounded-pill px-4">Mua ngay</button>
+      <p class="text-center h1 fw-bold">Ốp lưng & Vỏ</p>
+      <p class="text-center text-muted">Bảo vệ điện thoại của bạn với những ốp lưng và vỏ mới nhất</p>
+      <div class="hotsanpham1-container">
       </div>
-      <div class="product-card text-center p-3 rounded shadow">
-      <div class="badge-new">giảm giá</div>
-        <img src="Images/case2.png" class="product-img mb-2" alt="Galaxy Watch">
-        <h6 class="fw-bold">Ốp lưng Silicone Galaxy S25 Edge</h6>
-        <p class="text-muted mb-1">Màu sắc: Sky Blue</p>
-        <div class="color-circle3 mb-2" onclick="selectCircle(this)"></div>
-        <p class="price fw-bold">483.000 VND</p>
-        <span class="text-decoration-line-through">690.000 VND</span>
-        <div class="stars mb-2">⭐⭐⭐⭐☆ <span class="text-muted">(3909)</span></div>
-        <button class="btn btn-dark rounded-pill px-4">Mua ngay</button>
-      </div>
-      <div class="features d-flex justify-content-center gap-5 flex-wrap text-center">
-        <div class="product-card text-center p-3 rounded shadow">
-          <div class="badge-new">giảm giá</div>
-          <img src="Images/case3.png" class="product-img mb-2" alt="Galaxy Watch">
-          <h6 class="fw-bold">Ốp lưng Flipsuit siêu bảo vệ Galaxy S25 Ultra</h6>
-          <p class="text-muted mb-1">Màu sắc: Đen</p>
-          <div class="color-circle1 mb-2" onclick="selectCircle(this)"></div>
-          <p class="price fw-bold">1.090.000 VND</p>
-          <span class="text-decoration-line-through">1.770.000 VND</span>
-          <div class="stars mb-2">⭐⭐⭐⭐☆ <span class="text-muted">(3391)</span></div>
-          <button class="btn btn-dark rounded-pill px-4">Mua ngay</button>
-        </div>
-      </div>
-      <div class="features d-flex justify-content-center gap-5 flex-wrap text-center">
-        <div class="product-card text-center p-3 rounded shadow">
-          <div class="badge-new">giảm giá</div>
-          <img src="Images/case4.png" class="product-img mb-2" alt="Galaxy Watch">
-          <h6 class="fw-bold">Ốp lưng Flipsuit Galaxy S25 Ultra</h6>
-          <p class="text-muted mb-1">Màu sắc: Trắng</p>
+      <div class="product-list container d-flex flex-wrap justify-content-center gap-4">
+        <div class="product-card text-center p-3 rounded shadow ">
+          <img src="Images/case1.png" class="product-img mb-2" alt="Galaxy Watch">
+          <h6 class="fw-bold">Ốp lưng Trong suốt Clear Magner Case cho Galaxy S25 Edge</h6>
+          <p class="text-muted mb-1">Màu sắc: Trong suốt</p>
           <div class="color-circle2 mb-2" onclick="selectCircle(this)"></div>
-          <p class="price fw-bold">545.000 VND</p>
-          <span class="text-decoration-line-through">1.070.000 VND</span>
-          <div class="stars mb-2">⭐⭐⭐⭐☆ <span class="text-muted">(3391)</span></div>
+          <p class="price fw-bold">753.000 VND</p>
+          <div class="stars mb-2">⭐⭐⭐⭐☆ <span class="text-muted">(3484)</span></div>
           <button class="btn btn-dark rounded-pill px-4">Mua ngay</button>
         </div>
-      </div>
-      <div class="features d-flex justify-content-center gap-5 flex-wrap text-center">
-        <div class="product-card text-center p-3 rounded shadow">
-          <div class="badge-new">giảm giá</div>
-          <img src="Images/case5.png" class="product-img mb-2" alt="Galaxy Watch">
-          <h6 class="fw-bold">Ốp lưng Flipsuit Galaxy S25 Ultra</h6>
-          <p class="text-muted mb-1">Màu sắc: Đen</p>
-          <div class="circle-container">
-            <div class="color-circle1 mb-2" onclick="selectCircle(this)"></div>
-            <div class="color-circle2 mb-2" onclick="selectCircle(this)"></div>
-          </div>
-          <p class="price fw-bold">890.000 VND</p>
-          <span class="text-decoration-line-through">1.270.000 VND</span>
-          <div class="stars mb-2">⭐⭐⭐⭐☆ <span class="text-muted">(3091)</span></div>
-          <button class="btn btn-dark rounded-pill px-4">Mua ngay</button>
-        </div>
-      </div>
-      <div class="features d-flex justify-content-center gap-5 flex-wrap text-center">
-        <div class="product-card text-center p-3 rounded shadow">
-        <img src="Images/case1.png" class="product-img mb-2" alt="Galaxy Watch">
-        <h6 class="fw-bold">Ốp lưng Trong suốt Clear Magnet Case cho Galaxy S25 Edge</h6>
-        <p class="text-muted mb-1">Màu sắc: Trong suốt</p>
-        <div class="color-circle2 mb-2" onclick="selectCircle(this)"></div>
-        <p class="price fw-bold">553.000 VND</p>
-        <span class="text-decoration-line-through">789.000 VND</span>
-        <div class="stars mb-2">⭐⭐⭐⭐☆ <span class="text-muted">(3291)</span></div>
-        <button class="btn btn-dark rounded-pill px-4">Mua ngay</button>
-        </div>
-      </div>
-      <div class="features d-flex justify-content-center gap-5 flex-wrap text-center">
         <div class="product-card text-center p-3 rounded shadow">
           <div class="badge-new">giảm giá</div>
           <img src="Images/case2.png" class="product-img mb-2" alt="Galaxy Watch">
           <h6 class="fw-bold">Ốp lưng Silicone Galaxy S25 Edge</h6>
           <p class="text-muted mb-1">Màu sắc: Sky Blue</p>
-          <div class="circle-container">
-            <div class="color-circle3 mb-2" onclick="selectCircle(this)"></div>
-            <div class="color-circle2 mb-2" onclick="selectCircle(this)"></div>
-          </div>
-          <p class="price fw-bold">990.000 VND</p>
-          <span class="text-decoration-line-through">1.370.000 VND</span>
-          <div class="stars mb-2">⭐⭐⭐⭐☆ <span class="text-muted">(3391)</span></div>
-            <button class="btn btn-dark rounded-pill px-4">Mua ngay</button>
-        </div>
-      </div>
-      <div class="features d-flex justify-content-center gap-5 flex-wrap text-center">
-        <div class="product-card text-center p-3 rounded shadow">
-          <div class="badge-new">Mới</div>
-          <img src="Images/case3.png" class="product-img mb-2" alt="Galaxy Watch">
-          <h6 class="fw-bold">Ốp lưng Flipsuit Galaxy S25 Ultra</h6>
-          <p class="text-muted mb-1">Màu sắc: Đen</p>
-          <div class="color-circle1 mb-2" onclick="selectCircle(this)"></div>
-          <p class="price fw-bold">890.000 VND</p>
-          <span class="text-decoration-line-through">1.270.000 VND</span>
-          <div class="stars mb-2">⭐⭐⭐⭐☆ <span class="text-muted">(3301)</span></div>
+          <div class="color-circle3 mb-2" onclick="selectCircle(this)"></div>
+          <p class="price fw-bold">483.000 VND</p>
+          <span class="text-decoration-line-through">690.000 VND</span>
+          <div class="stars mb-2">⭐⭐⭐⭐☆ <span class="text-muted">(3909)</span></div>
           <button class="btn btn-dark rounded-pill px-4">Mua ngay</button>
         </div>
+        <div class="features d-flex justify-content-center gap-5 flex-wrap text-center">
+          <div class="product-card text-center p-3 rounded shadow">
+            <div class="badge-new">giảm giá</div>
+            <img src="Images/case3.png" class="product-img mb-2" alt="Galaxy Watch">
+            <h6 class="fw-bold">Ốp lưng Flipsuit siêu bảo vệ Galaxy S25 Ultra</h6>
+            <p class="text-muted mb-1">Màu sắc: Đen</p>
+            <div class="color-circle1 mb-2" onclick="selectCircle(this)"></div>
+            <p class="price fw-bold">1.090.000 VND</p>
+            <span class="text-decoration-line-through">1.770.000 VND</span>
+            <div class="stars mb-2">⭐⭐⭐⭐☆ <span class="text-muted">(3391)</span></div>
+            <button class="btn btn-dark rounded-pill px-4">Mua ngay</button>
+          </div>
+        </div>
+        <div class="features d-flex justify-content-center gap-5 flex-wrap text-center">
+          <div class="product-card text-center p-3 rounded shadow">
+            <div class="badge-new">giảm giá</div>
+            <img src="Images/case4.png" class="product-img mb-2" alt="Galaxy Watch">
+            <h6 class="fw-bold">Ốp lưng Flipsuit Galaxy S25 Ultra</h6>
+            <p class="text-muted mb-1">Màu sắc: Trắng</p>
+            <div class="color-circle2 mb-2" onclick="selectCircle(this)"></div>
+            <p class="price fw-bold">545.000 VND</p>
+            <span class="text-decoration-line-through">1.070.000 VND</span>
+            <div class="stars mb-2">⭐⭐⭐⭐☆ <span class="text-muted">(3391)</span></div>
+            <button class="btn btn-dark rounded-pill px-4">Mua ngay</button>
+          </div>
+        </div>
+        <div class="features d-flex justify-content-center gap-5 flex-wrap text-center">
+          <div class="product-card text-center p-3 rounded shadow">
+            <div class="badge-new">giảm giá</div>
+            <img src="Images/case5.png" class="product-img mb-2" alt="Galaxy Watch">
+            <h6 class="fw-bold">Ốp lưng Flipsuit Galaxy S25 Ultra</h6>
+            <p class="text-muted mb-1">Màu sắc: Đen</p>
+            <div class="circle-container">
+              <div class="color-circle1 mb-2" onclick="selectCircle(this)"></div>
+              <div class="color-circle2 mb-2" onclick="selectCircle(this)"></div>
+            </div>
+            <p class="price fw-bold">890.000 VND</p>
+            <span class="text-decoration-line-through">1.270.000 VND</span>
+            <div class="stars mb-2">⭐⭐⭐⭐☆ <span class="text-muted">(3091)</span></div>
+            <button class="btn btn-dark rounded-pill px-4">Mua ngay</button>
+          </div>
+        </div>
+        <div class="features d-flex justify-content-center gap-5 flex-wrap text-center">
+          <div class="product-card text-center p-3 rounded shadow">
+            <img src="Images/case1.png" class="product-img mb-2" alt="Galaxy Watch">
+            <h6 class="fw-bold">Ốp lưng Trong suốt Clear Magnet Case cho Galaxy S25 Edge</h6>
+            <p class="text-muted mb-1">Màu sắc: Trong suốt</p>
+            <div class="color-circle2 mb-2" onclick="selectCircle(this)"></div>
+            <p class="price fw-bold">553.000 VND</p>
+            <span class="text-decoration-line-through">789.000 VND</span>
+            <div class="stars mb-2">⭐⭐⭐⭐☆ <span class="text-muted">(3291)</span></div>
+            <button class="btn btn-dark rounded-pill px-4">Mua ngay</button>
+          </div>
+        </div>
+        <div class="features d-flex justify-content-center gap-5 flex-wrap text-center">
+          <div class="product-card text-center p-3 rounded shadow">
+            <div class="badge-new">giảm giá</div>
+            <img src="Images/case2.png" class="product-img mb-2" alt="Galaxy Watch">
+            <h6 class="fw-bold">Ốp lưng Silicone Galaxy S25 Edge</h6>
+            <p class="text-muted mb-1">Màu sắc: Sky Blue</p>
+            <div class="circle-container">
+              <div class="color-circle3 mb-2" onclick="selectCircle(this)"></div>
+              <div class="color-circle2 mb-2" onclick="selectCircle(this)"></div>
+            </div>
+            <p class="price fw-bold">990.000 VND</p>
+            <span class="text-decoration-line-through">1.370.000 VND</span>
+            <div class="stars mb-2">⭐⭐⭐⭐☆ <span class="text-muted">(3391)</span></div>
+            <button class="btn btn-dark rounded-pill px-4">Mua ngay</button>
+          </div>
+        </div>
+        <div class="features d-flex justify-content-center gap-5 flex-wrap text-center">
+          <div class="product-card text-center p-3 rounded shadow">
+            <div class="badge-new">Mới</div>
+            <img src="Images/case3.png" class="product-img mb-2" alt="Galaxy Watch">
+            <h6 class="fw-bold">Ốp lưng Flipsuit Galaxy S25 Ultra</h6>
+            <p class="text-muted mb-1">Màu sắc: Đen</p>
+            <div class="color-circle1 mb-2" onclick="selectCircle(this)"></div>
+            <p class="price fw-bold">890.000 VND</p>
+            <span class="text-decoration-line-through">1.270.000 VND</span>
+            <div class="stars mb-2">⭐⭐⭐⭐☆ <span class="text-muted">(3301)</span></div>
+            <button class="btn btn-dark rounded-pill px-4">Mua ngay</button>
+          </div>
+        </div>
       </div>
-    </div>
-  </Section>
+    </Section>
 
     <!--Day deo-->
     <section id="watch" class="mt-5">
-    <p class="text-center h1 fw-bold">Dây đeo đồng hồ</p>
-    <p class="text-center text-muted">Thay đổi phong cách của bạn với những dây đeo đồng hồ mới nhất</p>
-    <div class="hotsanpham2-container">
-    </div>
-    <div class="product-list container d-flex flex-wrap justify-content-center gap-4">
+      <p class="text-center h1 fw-bold">Dây đeo đồng hồ</p>
+      <p class="text-center text-muted">Thay đổi phong cách của bạn với những dây đeo đồng hồ mới nhất</p>
+      <div class="hotsanpham2-container">
+      </div>
+      <div class="product-list container d-flex flex-wrap justify-content-center gap-4">
         <div class="product-card text-center p-3 rounded shadow ">
           <img src="Images/day1.png" class="product-img mb-2" alt="Galaxy Watch">
           <h6 class="fw-bold">Dây đeo Galaxy Watch7 Sticky Monster</h6>
           <p class="text-muted mb-1">Màu sắc: Cam</p>
           <div class="color-circlecam mb-2" onclick="selectCircle(this)"></div>
-          <p class="price fw-bold">1.479.000 VND</p>          
+          <p class="price fw-bold">1.479.000 VND</p>
           <div class="stars mb-2">⭐⭐⭐⭐☆ <span class="text-muted">(3484)</span>
           </div>
-            <button class="btn btn-dark rounded-pill px-4">Mua ngay</button>
-          </div>
+          <button class="btn btn-dark rounded-pill px-4">Mua ngay</button>
+        </div>
 
+        <div class="product-card text-center p-3 rounded shadow">
+          <div class="badge-new">giảm giá</div>
+          <img src="Images/day2.png" class="product-img mb-2" alt="Galaxy Watch">
+          <h6 class="fw-bold">Dây lưới kim loại Galaxy Watch7</h6>
+          <p class="text-muted mb-1">Màu sắc: Xám</p>
+          <div class="color-circlexam mb-2" onclick="selectCircle(this)"></div>
+          <p class="price fw-bold">597..000 VND</p>
+          <span class="text-decoration-line-through">1.392.000 VND</span>
+          <div class="stars mb-2">⭐⭐⭐⭐☆ <span class="text-muted">(3909)</span>
+          </div>
+          <button class="btn btn-dark rounded-pill px-4">Mua ngay</button>
+        </div>
+
+        <div class="features d-flex justify-content-center gap-5 flex-wrap text-center">
           <div class="product-card text-center p-3 rounded shadow">
-            <div class="badge-new">giảm giá</div>
-            <img src="Images/day2.png" class="product-img mb-2" alt="Galaxy Watch">
-            <h6 class="fw-bold">Dây lưới kim loại Galaxy Watch7</h6>
-            <p class="text-muted mb-1">Màu sắc: Xám</p>
-            <div class="color-circlexam mb-2" onclick="selectCircle(this)" ></div>
-            <p class="price fw-bold">597..000 VND</p>
-            <span class="text-decoration-line-through">1.392.000 VND</span>
-            <div class="stars mb-2">⭐⭐⭐⭐☆ <span class="text-muted">(3909)</span>
-            </div>
-            <button class="btn btn-dark rounded-pill px-4">Mua ngay</button>
-          </div>
-
-          <div class="features d-flex justify-content-center gap-5 flex-wrap text-center">
-            <div class="product-card text-center p-3 rounded shadow">
             <div class="badge-new">giảm giá</div>
             <img src="Images/day3.png" class="product-img mb-2" alt="Galaxy Watch">
             <h6 class="fw-bold">Dây đeo thể thao Galaxy Watch7</h6>
             <p class="text-muted mb-1">Màu sắc: Cam</p>
             <div class="circle-container">
-            <div class="color-circlecam mb-2" onclick="selectCircle(this)"></div>
-            <div class="color-circle1 mb-2" onclick="selectCircle(this)"></div>
-            <div class="color-circle2 mb-2" onclick="selectCircle(this)"></div>
+              <div class="color-circlecam mb-2" onclick="selectCircle(this)"></div>
+              <div class="color-circle1 mb-2" onclick="selectCircle(this)"></div>
+              <div class="color-circle2 mb-2" onclick="selectCircle(this)"></div>
             </div>
             <p class="price fw-bold">1.990.000 VND</p>
             <span class="text-decoration-line-through">770.000 VND</span>
@@ -188,7 +191,7 @@
           </div>
         </div>
         <div class="features d-flex justify-content-center gap-5 flex-wrap text-center">
-            <div class="product-card text-center p-3 rounded shadow">
+          <div class="product-card text-center p-3 rounded shadow">
             <div class="badge-new">giảm giá</div>
             <img src="Images/day4.png" class="product-img mb-2" alt="Galaxy Watch">
             <h6 class="fw-bold">Dây phong cách Galaxy Watch7</h6>
@@ -202,7 +205,7 @@
           </div>
         </div>
         <div class="features d-flex justify-content-center gap-5 flex-wrap text-center">
-            <div class="product-card text-center p-3 rounded shadow">
+          <div class="product-card text-center p-3 rounded shadow">
             <div class="badge-new">giảm giá</div>
             <img src="Images/day5.png" class="product-img mb-2" alt="Galaxy Watch">
             <h6 class="fw-bold">Dây bứt phá Galaxy Watch7</h6>
@@ -220,11 +223,11 @@
 
     <!--Tai nghe-->
     <section id="buds" class="mt-5">
-    <p class="text-center h1 fw-bold">Phụ kiện tai nghe </p>
-    <p class="text-center text-muted">Tận hưởng âm thanh chất lượng cao với tai nghe Galaxy Buds mới nhất</p>
-    <div class="hotsanpham3-container">
-    </div>
-    <div class="product-list container d-flex flex-wrap justify-content-center gap-4">
+      <p class="text-center h1 fw-bold">Phụ kiện tai nghe </p>
+      <p class="text-center text-muted">Tận hưởng âm thanh chất lượng cao với tai nghe Galaxy Buds mới nhất</p>
+      <div class="hotsanpham3-container">
+      </div>
+      <div class="product-list container d-flex flex-wrap justify-content-center gap-4">
         <div class="product-card text-center p-3 rounded shadow ">
           <div class="badge-new">giảm giá</div>
           <img src="Images/bub1.png" class="product-img mb-2" alt="Galaxy Watch">
@@ -232,27 +235,27 @@
           <p class="text-muted mb-1">Màu sắc: Trong suốt</p>
           <div class="color-circle2 mb-2" onclick="selectCircle(this)"></div>
           <p class="price fw-bold">490.000 VND</p>
-          <span class="text-decoration-line-through">770.000 VND</span>           
+          <span class="text-decoration-line-through">770.000 VND</span>
           <div class="stars mb-2">⭐⭐⭐⭐☆ <span class="text-muted">(3484)</span>
           </div>
-            <button class="btn btn-dark rounded-pill px-4">Mua ngay</button>
-          </div>
+          <button class="btn btn-dark rounded-pill px-4">Mua ngay</button>
+        </div>
 
+        <div class="product-card text-center p-3 rounded shadow">
+          <div class="badge-new">mới</div>
+          <img src="Images/bub2.png" class="product-img mb-2" alt="Galaxy Watch">
+          <h6 class="fw-bold">Hộp đựng tai nghe trong suốt Galaxy Buds3</h6>
+          <p class="text-muted mb-1">Màu sắc: Sky Blue</p>
+          <div class="color-circle3 mb-2" onclick="selectCircle(this)"></div>
+          <p class="price fw-bold">195.000 VND</p>
+          <span class="text-decoration-line-through">380.000 VND</span>
+          <div class="stars mb-2">⭐⭐⭐⭐☆ <span class="text-muted">(3919)</span>
+          </div>
+          <button class="btn btn-dark rounded-pill px-4">Mua ngay</button>
+        </div>
+
+        <div class="features d-flex justify-content-center gap-5 flex-wrap text-center">
           <div class="product-card text-center p-3 rounded shadow">
-            <div class="badge-new">mới</div>
-            <img src="Images/bub2.png" class="product-img mb-2" alt="Galaxy Watch">
-            <h6 class="fw-bold">Hộp đựng tai nghe trong suốt Galaxy Buds3</h6>
-            <p class="text-muted mb-1">Màu sắc: Sky Blue</p>
-            <div class="color-circle3 mb-2" onclick="selectCircle(this)"></div>
-            <p class="price fw-bold">195.000 VND</p>
-            <span class="text-decoration-line-through">380.000 VND</span>
-            <div class="stars mb-2">⭐⭐⭐⭐☆ <span class="text-muted">(3919)</span>
-            </div>
-            <button class="btn btn-dark rounded-pill px-4">Mua ngay</button>
-          </div>
-
-          <div class="features d-flex justify-content-center gap-5 flex-wrap text-center">
-            <div class="product-card text-center p-3 rounded shadow">
             <div class="badge-new">giảm giá</div>
             <img src="Images/bub3.png" class="product-img mb-2" alt="Galaxy Watch">
             <h6 class="fw-bold">Tai nghe có dây 3.5mm(EO-IA500)</h6>
@@ -266,7 +269,7 @@
           </div>
         </div>
         <div class="features d-flex justify-content-center gap-5 flex-wrap text-center">
-            <div class="product-card text-center p-3 rounded shadow">
+          <div class="product-card text-center p-3 rounded shadow">
             <div class="badge-new">Mới</div>
             <img src="Images/bub1.png" class="product-img mb-2" alt="Galaxy Watch">
             <h6 class="fw-bold">Hộp đựng tai nghe kèm móc đeo Galaxy Buds3</h6>
@@ -284,11 +287,11 @@
 
     <!--Sac-->
     <section id="sac" class="mt-5">
-    <p class="text-center h1 fw-bold">Thiết bị sạc</p>
-    <p class="text-center text-muted">Sạc nhanh và hiệu quả với các thiết bị sạc Galaxy mới nhất</p>
-    <div class="hotsanpham4-container">
-    </div>
-    <div class="product-list container d-flex flex-wrap justify-content-center gap-4">
+      <p class="text-center h1 fw-bold">Thiết bị sạc</p>
+      <p class="text-center text-muted">Sạc nhanh và hiệu quả với các thiết bị sạc Galaxy mới nhất</p>
+      <div class="hotsanpham4-container">
+      </div>
+      <div class="product-list container d-flex flex-wrap justify-content-center gap-4">
         <div class="product-card text-center p-3 rounded shadow ">
           <div class="badge-new">Mới</div>
           <img src="Images/sac1.png" class="product-img mb-2" alt="Galaxy Watch">
@@ -296,81 +299,82 @@
           <p class="text-muted mb-1">Màu sắc: Be</p>
           <div class="color-circlebe mb-2" onclick="selectCircle(this)"></div>
           <p class="price fw-bold">2.390.000 VND</p>
-          <span class="text-decoration-line-through">2.770.000 VND</span>           
+          <span class="text-decoration-line-through">2.770.000 VND</span>
           <div class="stars mb-2">⭐⭐⭐⭐☆ <span class="text-muted">(3484)</span>
           </div>
-            <button class="btn btn-dark rounded-pill px-4">Mua ngay</button>
-          </div>
-
-          <div class="product-card text-center p-3 rounded shadow">
-            <div class="badge-new">Mới</div>
-            <img src="Images/sac2.png" class="product-img mb-2" alt="Galaxy Watch">
-            <h6 class="fw-bold">Sạc không dây đôi 2019</h6>
-            <p class="text-muted mb-1">Màu sắc: Trắng</p>
-            <div class="color-circle2 mb-2" onclick="selectCircle(this)"></div>
-            <p class="price fw-bold">1.590.000 VND</p>
-            <span class="text-decoration-line-through">1.770.000 VND</span>
-            <div class="stars mb-2">⭐⭐⭐⭐☆ <span class="text-muted">(3909)</span>
-            </div>
-            <button class="btn btn-dark rounded-pill px-4">Mua ngay</button>
-          </div>
+          <button class="btn btn-dark rounded-pill px-4">Mua ngay</button>
         </div>
-        </section>
 
-        <div class="footer">
-			<div class="row">
-				<div class="col-6">
-					<p class="m-0 p-0">Bản quyền &copy;Samsung bảo lưu mọi quyền.
-						<br>Công ty TNHH Điện Tử Samsung Vina.
-						<br>Giấy CNĐT: 411043002319, do UBND TP HCM cấp ngày 28/8/2007.
-						<br>Địa chỉ: Số 2, đường Hải Triều, Phường Bến Nghé, Quận 1, TP. Hồ Chí Minh.
-						<br>Điện thoại: +84-2839157310
-					</p>
-				</div>
-				<div class="col-2">
+        <div class="product-card text-center p-3 rounded shadow">
+          <div class="badge-new">Mới</div>
+          <img src="Images/sac2.png" class="product-img mb-2" alt="Galaxy Watch">
+          <h6 class="fw-bold">Sạc không dây đôi 2019</h6>
+          <p class="text-muted mb-1">Màu sắc: Trắng</p>
+          <div class="color-circle2 mb-2" onclick="selectCircle(this)"></div>
+          <p class="price fw-bold">1.590.000 VND</p>
+          <span class="text-decoration-line-through">1.770.000 VND</span>
+          <div class="stars mb-2">⭐⭐⭐⭐☆ <span class="text-muted">(3909)</span>
+          </div>
+          <button class="btn btn-dark rounded-pill px-4">Mua ngay</button>
+        </div>
+      </div>
+    </section>
 
-				</div>
-				<div class="col-4 d-flex justify-content-center align-items-center">
-					<img style="height: 60px; width: auto;" src="Images/MAR-2014.png">
-					<img style="height: 60px; width: auto;" src="Images/bocongthuong_11zon.png">
-					<img style="height: 60px; width: auto;" src="Images/bocongthuong2.png">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-2">
-					<p><a>Việt Nam/Tiếng Việt</a> |</p>
-				</div>
-				<div class="col-1">
-					<a>Bảo mật</a>
-				</div>
-				<div class="col-1">
-					<a>Pháp lý</a>
-				</div>
-				<div class="col-4">
+    <div class="footer">
+      <div class="row">
+        <div class="col-6">
+          <p class="m-0 p-0">Bản quyền &copy;Samsung bảo lưu mọi quyền.
+            <br>Công ty TNHH Điện Tử Samsung Vina.
+            <br>Giấy CNĐT: 411043002319, do UBND TP HCM cấp ngày 28/8/2007.
+            <br>Địa chỉ: Số 2, đường Hải Triều, Phường Bến Nghé, Quận 1, TP. Hồ Chí Minh.
+            <br>Điện thoại: +84-2839157310
+          </p>
+        </div>
+        <div class="col-2">
 
-				</div>
-				<div class="col-4 d-flex justify-content-center ">
-					<p class="mx-2">Kết nối với chúng tôi</p>
-					<a class="mx-2" href="https://www.facebook.com/SamsungVietnam" target="_blank">
-						<img style="height: 35px; width: auto;" src="Images/facebook.png">
-					</a>
-					<a class="mx-2" href="https://www.youtube.com/user/samsungvietnam" target="_blank">
-						<img style="height: 35px; width: auto;" src="Images/youtube.png">
-					</a>
-					<a class="mx-2" href="https://www.instagram.com/samsung_vietnam/" target="_blank">
-						<img style="height: 35px; width: auto;" src="Images/instagram.png">
-					</a>
-					<a class="mx-2" href="https://zalo.me/598843366637438151" target="_blank">
-						<img style="height: 35px; width: auto;" src="Images/zalo.png">
-					</a>
+        </div>
+        <div class="col-4 d-flex justify-content-center align-items-center">
+          <img style="height: 35px; width: auto;" src="Images/MAR-2014.png">
+          <img style="height: 35px; width: auto;" src="Images/bocongthuong_11zon.png">
+          <img style="height: 35px; width: auto;" src="Images/bocongthuong2.png">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2">
+          <p><a>Việt Nam/Tiếng Việt</a> |</p>
+        </div>
+        <div class="col-1">
+          <a>Bảo mật</a>
+        </div>
+        <div class="col-1">
+          <a>Pháp lý</a>
+        </div>
+        <div class="col-3">
 
-				</div>
+        </div>
+        <div class="col-5 d-flex justify-content-center ">
+          <p class="mx-2">Kết nối với chúng tôi</p>
+          <a class="mx-2" href="https://www.facebook.com/SamsungVietnam" target="_blank">
+            <img style="height: 25px; width: auto;" src="Images/facebook.png">
+          </a>
+          <a class="mx-2" href="https://www.youtube.com/user/samsungvietnam" target="_blank">
+            <img style="height: 25px; width: auto;" src="Images/youtube.png">
+          </a>
+          <a class="mx-2" href="https://www.instagram.com/samsung_vietnam/" target="_blank">
+            <img style="height: 25px; width: auto;" src="Images/instagram.png">
+          </a>
+          <a class="mx-2" href="https://zalo.me/598843366637438151" target="_blank">
+            <img style="height: 25px; width: auto;" src="Images/zalo.png">
+          </a>
+        </div>
+      </div>
+    </div>
 
-			</div>
-		</div>
-         <script src="JS/navbar.js"></script>
-          <script src="JS/phukien.js"></script>
-          <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
-          <script src="bootstrap-5.0.2-dist/js/bootstrap.js"></script>
-        </body>
+  </div>
+  <script src="JS/navbar.js"></script>
+  <script src="JS/phukien.js"></script>
+  <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+</body>
+
 </html>

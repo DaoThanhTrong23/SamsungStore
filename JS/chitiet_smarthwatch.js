@@ -1,6 +1,7 @@
 
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function (e) {
+    e.preventDefault()
 
     const watchUltra = document.getElementById('click_watchunltra');
     const galaxywatch = document.getElementById('click_galaxywatch');
