@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const display_Classic = document.getElementById('watchclassic');
     const display_Phukien = document.getElementById('phuklienwatch');
     const display_das = document.getElementById('das');
+
     const display_cothebancungthich = document.getElementById('cothebancungthich')
 
     display_das.style.display = "block";
@@ -54,19 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
         display_cothebancungthich.style.display = "block";
     }
 
-    // Này của cái phần có thể bạn cũng thích
 
-    const slider = document.getElementById('product-slider_phu_kien');
-    const btnLeft = document.getElementById('scroll-left_phu_kien');
-    const btnRight = document.getElementById('scroll-right_phu_kien');
-
-    btnLeft.addEventListener('click', () => {
-        slider.scrollBy({ left: -300, behavior: 'smooth' });
-    });
-
-    btnRight.addEventListener('click', () => {
-        slider.scrollBy({ left: 300, behavior: 'smooth' });
-    });
 
 
     const params = new URLSearchParams(window.location.search);
@@ -84,7 +73,8 @@ document.addEventListener("DOMContentLoaded", function () {
             targetLink.click();
         }
     }
-    if (action === 'watchClassic') {
+
+    if (action === 'click_watchClassic') {
         const targetLink = document.getElementById('click_watchclassic');
         if (targetLink) {
             targetLink.click();

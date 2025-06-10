@@ -39,5 +39,30 @@ document.addEventListener("DOMContentLoaded", function () {
         fram_cothebancungthich.style.display = "block";
     }
 
+    const params = new URLSearchParams(window.location.search);
+    const action = params.get('action');
+
+    if (action === 'pro') {
+        const targetLink = document.getElementById('btn_pro');
+        if (targetLink) {
+            targetLink.click();
+        }
+    }
+    if (action === 'buds') {
+        const targetLink = document.getElementById('btn_buds');
+        if (targetLink) {
+            targetLink.click();
+        }
+    }
+
+    if (action === 'fe') {
+        const targetLink = document.getElementById('btn_fe');
+        if (targetLink) {
+            targetLink.click();
+        }
+    }
+
+
+
 
 })
