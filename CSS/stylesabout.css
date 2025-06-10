@@ -257,15 +257,3 @@ h2 {
     height: 200px;
     padding: auto;
 }
-
-.footer {
-    margin-top: 50px;
-    font-size: 14px;
-}
-
-.footer .row {
-    border-top: 1px solid gray;
-    padding: 10px !important;
-    margin: 0px;
-
-}

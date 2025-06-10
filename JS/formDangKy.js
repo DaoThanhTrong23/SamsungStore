@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", function() {
         const termsChecked = document.getElementById("terms-condition").checked;
 
         // Xoá các lỗi cũ
-
         document.getElementById("emailError").textContent = "";
         document.getElementById("passwordError").textContent = "";
         document.getElementById("confirmPasswordError").textContent = "";

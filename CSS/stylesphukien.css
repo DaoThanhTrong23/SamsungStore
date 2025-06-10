@@ -1,4 +1,4 @@
-/* Reset và base styles */
+
 body {
 
   overflow-x: hidden;
@@ -10,7 +10,6 @@ body {
 /* Banner */
 .banner-container {
   background-image: url('../Images/banner.jpg');
-  /* <-- Nếu file CSS nằm trong thư mục CSS */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -52,7 +51,6 @@ h2 {
 .category-container {
   width: 100%;
   max-width: 1200px;
-  /* hoặc tùy kích thước bạn muốn */
   margin: 0 auto;
   overflow-x: auto;
   padding: 30px 0;
@@ -120,7 +118,6 @@ h2 {
 @media (max-width: 1024px) {
   .category-box {
     width: 120px;
-    /* giảm kích thước hộp */
     padding: 10px 8px;
   }
 
@@ -136,7 +133,6 @@ h2 {
   }
 }
 
-/* Nếu muốn nhỏ hơn nữa (ví dụ trên điện thoại) */
 @media (max-width: 600px) {
   .category-box {
     width: 100px;
@@ -198,7 +194,6 @@ h2 {
 /*hot*/
 .hot-container {
   background-image: url('../Images/hot1.jpg');
-  /* <-- Nếu file CSS nằm trong thư mục CSS */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -234,7 +229,6 @@ h2 {
 
 .hot1-container {
   background-image: url('../Images/hot2.jpg');
-  /* <-- Nếu file CSS nằm trong thư mục CSS */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -251,7 +245,6 @@ h2 {
 
 .hot2-container {
   background-image: url('../Images/hot3.jpg');
-  /* <-- Nếu file CSS nằm trong thư mục CSS */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -279,6 +272,12 @@ h2 {
   background-color: white;
   position: relative;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.product-card button {
+  margin-top: 15px;
 }
 
 .product-img {
@@ -291,7 +290,6 @@ h2 {
   top: 10px;
   left: 10px;
   background-color: #2563eb;
-  /* Màu xanh */
   color: white;
   font-size: 12px;
   padding: 2px 8px;
@@ -302,7 +300,6 @@ h2 {
   width: 20px;
   height: 20px;
   background-color: #555;
-  /* màu xanh đồng hồ */
   border-radius: 50%;
   margin: 0 auto;
   border: 1px solid #ccc;
@@ -452,9 +449,7 @@ h2 {
 .promo-text {
   position: absolute;
   top: 10px;
-  /* đưa chữ lên trên cùng */
   left: 10px;
-  /* thụt lề bên trái */
   padding: 8px 12px;
   border-radius: 8px;
   font-size: 14px;
@@ -466,7 +461,6 @@ h2 {
   top: 10px;
   left: 10px;
   background-color: #ec2020;
-  /* Màu xanh */
   color: white;
   font-size: 12px;
   padding: 2px 8px;
@@ -507,21 +501,18 @@ h2 {
   width: 20px;
   height: 20px;
   background-color: white;
-  /* màu trắng */
   border-radius: 50%;
   margin: 0 auto;
   border: 1px solid black;
   cursor: pointer;
   transition: transform 0.2s, border 0.2s;
   border: 1px solid;
-  /* thêm border nhẹ để dễ nhìn */
 }
 
 .color-circle3 {
   width: 20px;
   height: 20px;
   background-color: skyblue;
-  /* xanh trời */
   border-radius: 50%;
   margin: 0 auto;
   border: 1px solid black;
@@ -545,7 +536,6 @@ h2 {
   width: 20px;
   height: 20px;
   background-color: bisque;
-  /* màu đen */
   border-radius: 50%;
   margin: 0 auto;
   border: 1px solid black;
@@ -557,10 +547,8 @@ h2 {
 .circle-container {
   display: flex;
   justify-content: center;
-  /* hoặc 'center' nếu muốn căn giữa */
   align-items: center;
   width: 110px;
-  /* căn giữa theo chiều dọc */
   margin: 0 30px auto;
 }
 
@@ -617,7 +605,6 @@ hr {
 /*Anh sp1 */
 .hotnen1-container {
   background-image: url('../Images/nen1.jpg');
-  /* <-- Nếu file CSS nằm trong thư mục CSS */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -635,7 +622,6 @@ hr {
 .tieudelon {
   text-align: center;
   font-weight: bold;
-  /* Responsive theo chiều rộng màn hình */
   margin: 30px 0;
   line-height: 1.3;
 }
@@ -668,13 +654,11 @@ hr {
   background-color: #f2f2f2;
   /* Nền xám nhạt */
   color: gray;
-  /* Màu chữ đen */
   font-weight: normal;
 }
 
 .hotsanpham1-container {
   background-image: url('../Images/sanpham1.png');
-  /* <-- Nếu file CSS nằm trong thư mục CSS */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -691,7 +675,6 @@ hr {
 
 .hotsanpham2-container {
   background-image: url('../Images/sanpham2.png');
-  /* <-- Nếu file CSS nằm trong thư mục CSS */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -708,7 +691,6 @@ hr {
 
 .hotsanpham3-container {
   background-image: url('../Images/sanpham3.png');
-  /* <-- Nếu file CSS nằm trong thư mục CSS */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -725,7 +707,6 @@ hr {
 
 .hotsanpham4-container {
   background-image: url('../Images/sanpham4.png');
-  /* <-- Nếu file CSS nằm trong thư mục CSS */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -738,17 +719,4 @@ hr {
   color: white;
   width: 100%;
   max-width: 1300px;
-}
-
-
-.footer {
-  margin-top: 50px;
-  font-size: 14px;
-}
-
-.footer .row {
-  border-top: 1px solid gray;
-  padding: 10px !important;
-  margin: 0px;
-
 }

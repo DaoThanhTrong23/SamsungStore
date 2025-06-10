@@ -139,15 +139,3 @@ body {
   width: 40px;
   height: 40px;
 }
-
-.footer
-{
-	margin-top: 50px;
-}
-.footer .row
-{	
-	border-top: 1px solid gray;
-	padding: 10px !important;
-    margin: 0px;
-	
-}

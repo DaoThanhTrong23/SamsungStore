@@ -411,17 +411,7 @@ html
 	right: -25px !important;
 	
 }
-.footer {
-  margin-top: 50px;
-  font-size: 14px;
-}
 
-.footer .row {
-  border-top: 1px solid gray;
-  padding: 10px !important;
-  margin: 0px;
-
-}
 
 @media (max-width: 767.98px) {
     .slogan_text h2
