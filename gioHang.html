@@ -35,7 +35,7 @@
                     <span>Tổng cộng</span>
                     <span id="percent100"></span>
                 </div>
-                <form class="mt-2">
+                <form class="mt-2" id="paymentForm">
                     <label>
                         <input type="radio" name="payment" value="cod">
                         <span><i class="fa-solid fa-truck"></i> Thanh toán khi nhận hàng</span>
@@ -53,12 +53,68 @@
                 </form>
             </div>
         </div>
+
+
         <div id="footer"></div>
     </div>
+    <!-- Modal điền thông tin khách hàng -->
+    <div class="modal fade" id="customerModal" tabindex="-1" aria-labelledby="customerModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="border-radius: 10px;">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="customerModalLabel">Thông tin khách hàng</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="customerForm">
+                        <div class="mb-3">
+                            <label for="customerName" class="form-label">Họ và tên</label>
+                            <input type="text" class="form-control" id="customerName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="customerPhone" class="form-label">Số điện thoại</label>
+                            <input type="tel" class="form-control" id="customerPhone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="province" class="form-label">Thành Phố/Tỉnh</label>
+                            <select class="form-select" id="province" required>
+                                <option value="">-- Chọn Thành Phố/Tỉnh --</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="district" class="form-label">Quận/Huyện</label>
+                            <select class="form-select" id="district" required>
+                                <option value="">-- Chọn Quận/Huyện --</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="ward" class="form-label">Phường/Xã</label>
+                            <select class="form-select" id="ward" required>
+                                <option value="">-- Chọn Phường/Xã --</option>
+                            </select>
+                        </div>
+
+
+                        <div class="mb-3">
+                            <label for="customerAddress" class="form-label">Địa chỉ giao hàng</label>
+                            <textarea class="form-control" id="customerAddress" rows="3" required></textarea>
+                        </div>
+                        <div class="text-end">
+                            <button type="submit" class="btn btn-success">Xác nhận đặt hàng</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="JS/footer.js"></script>
     <script src="JS/gioHang.js"></script>
     <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
     <script src="bootstrap-5.0.2-dist/js/bootstrap.js"></script>
     <script src="JS/navbar.js"></script>
+</body>
 
 </html>
