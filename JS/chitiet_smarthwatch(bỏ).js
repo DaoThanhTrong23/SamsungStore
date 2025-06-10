@@ -56,5 +56,33 @@ document.addEventListener("DOMContentLoaded", function (e) {
     btnRight.addEventListener('click', () => {
         slider.scrollBy({ left: 300, behavior: 'smooth' });
     });
+
+
+
+
+    // này chuyển trang trên nav
+
+    const params = new URLSearchParams(window.location.search);
+    const action = params.get('action');
+
+    if (action === 'click_watchUltra') {
+        const targetLink = document.getElementById('click_watchunltra');
+        if (targetLink) {
+            targetLink.click();
+        }
+    }
+    if (action === 'click_galaxyWatch') {
+        const targetLink = document.getElementById('click_galaxywatch');
+        if (targetLink) {
+            targetLink.click();
+        }
+    }
+    if (action === 'click_watchClassic') {
+        const targetLink = document.getElementById('click_watchclassic');
+        if (targetLink) {
+            targetLink.click();
+        }
+    }
+    
 }
 )

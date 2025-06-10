@@ -10,13 +10,13 @@ function showAllProducts() {
         product.style.display = "block";
     });
 
-   
+
     const notFoundMsg = document.getElementById("notFoundMessage");
     if (notFoundMsg) {
         notFoundMsg.style.display = "none";
     }
 
-    
+
     const searchInput = document.getElementById("searchInput");
     if (searchInput) {
         searchInput.value = "";
@@ -30,13 +30,13 @@ function filterProducts(category) {
         product.style.display = product.dataset.category === category ? "block" : "none";
     });
 
-    
+
     const notFoundMsg = document.getElementById("notFoundMessage");
     if (notFoundMsg) {
         notFoundMsg.style.display = "none";
     }
 
-    
+
     const searchInput = document.getElementById("searchInput");
     if (searchInput) {
         searchInput.value = "";
@@ -44,7 +44,7 @@ function filterProducts(category) {
 }
 
 // Tìm kiếm sản phẩm
-document.getElementById("searchInput")?.addEventListener("keyup", function() {
+document.getElementById("searchInput")?.addEventListener("keyup", function () {
     const filter = this.value.trim().toLowerCase();
     const products = document.querySelectorAll(".card");
     let found = false;
@@ -58,9 +58,33 @@ document.getElementById("searchInput")?.addEventListener("keyup", function() {
         if (isMatch) found = true;
     });
 
-   
+
     const notFoundMsg = document.getElementById("notFoundMessage");
     if (notFoundMsg) {
         notFoundMsg.style.display = found ? "none" : "block";
     }
 });
+
+// này chuyển trang trên nav
+
+const params = new URLSearchParams(window.location.search);
+const action = params.get('action');
+
+if (action === 'click_type_tab_S') {
+    const targetLink = document.getElementById('tabS');
+    if (targetLink) {
+        targetLink.click();
+    }
+}
+if (action === 'click_type_tab_A') {
+    const targetLink = document.getElementById('tabA');
+    if (targetLink) {
+        targetLink.click();
+    }
+}
+if (action === 'click_type_tab_FE') {
+    const targetLink = document.getElementById('tabFE');
+    if (targetLink) {
+        targetLink.click();
+    }
+}

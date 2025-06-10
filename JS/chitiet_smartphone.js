@@ -76,6 +76,46 @@ function setupFilterListeners() {
             applyFilter();
         });
     });
+
+
+    // này chuyển trang trên nav
+
+    const params = new URLSearchParams(window.location.search);
+    const action = params.get('action');
+
+    if (action === 'click_type_Z') {
+        const targetLink = document.getElementById('type_Z');
+        if (targetLink) {
+            targetLink.click();
+        }
+    }
+    if (action === 'click_type_S') {
+        const targetLink = document.getElementById('type_S');
+        if (targetLink) {
+            targetLink.click();
+        }
+    }
+    if (action === 'click_type_A') {
+        const targetLink = document.getElementById('type_A');
+        if (targetLink) {
+            targetLink.click();
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 fetch('smartphone.json')

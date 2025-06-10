@@ -67,5 +67,29 @@ document.addEventListener("DOMContentLoaded", function () {
     btnRight.addEventListener('click', () => {
         slider.scrollBy({ left: 300, behavior: 'smooth' });
     });
+
+
+    const params = new URLSearchParams(window.location.search);
+    const action = params.get('action');
+
+    if (action === 'Ultra') {
+        const targetLink = document.getElementById('click_watchunltra');
+        if (targetLink) {
+            targetLink.click();
+        }
+    }
+    if (action === 'galaxyWatch') {
+        const targetLink = document.getElementById('click_galaxywatch');
+        if (targetLink) {
+            targetLink.click();
+        }
+    }
+    if (action === 'watchClassic') {
+        const targetLink = document.getElementById('click_watchclassic');
+        if (targetLink) {
+            targetLink.click();
+        }
+    }
+
 }
 )
