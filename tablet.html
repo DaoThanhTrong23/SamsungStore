@@ -1,111 +1,123 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tablet Galaxy</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="/CSS/tablet.css">
-    <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tablet Galaxy</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="/CSS/tablet.css">
+	<link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
+
 <body style="display: contents;">
-    <div id="navbar"></div>
-    
-    <!-- Slogan quote -->
-    <div class="container" style="position: relative;">
-        <div class="slogan row mt-3 mb-3">
-            <div class="col-9 slogan-left">
-                <h2><b>Samsung</b></h2>
-            </div>
-            <div class="col-3 slogan-right">
-                <h4><b>Hiệu suất vượt trội, đa nhiệm mượt mà.</b></h4>
-            </div>
-        </div>
-		
+	<div id="navbar"></div>
 
- <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="10000">
-      <img src="/Images/Galaxy_TabS10.webp" class="d-block w-100" alt="Galaxy Tab S10">
-
-      <div class="carousel-caption d-none d-md-block text-start" style="top: 40%; left: 8%; right: auto; bottom: auto; transform: translateY(-20%);">
-        <h1 class="fw-bold" style="font-size: 60px;">Galaxy Tab S10 Ultra</h1>
-        <h5 class="mb-4">Phác thảo thông minh, dễ dàng</h5>
-        
-      </div>
-    </div>
-
-    <div class="carousel-item" data-bs-interval="5000">
-      <img src="/Images/galaxytab_panel.avif" class="d-block w-100" alt="Galaxy Tab Panel 1">
-
-      <div class="carousel-caption d-none d-md-block text-start" style="top: 40%; left: 8%; right: auto; bottom: auto; transform: translateY(-20%);">
-        <h1 class="fw-bold" style="font-size: 50px;">Galaxy AI ✨ is here</h1>
-        <h5 class="mb-4">Nâng cấp trải nghiệm tablet với AI</h5>
-      
-      </div>
-    </div>
-
-    <div class="carousel-item" data-bs-interval="5000">
-      <img src="/Images/galaxytab_panel2.avif" class="d-block w-100" alt="Galaxy Tab Panel 2">
-
-      <div class="carousel-caption d-none d-md-block text-start" style="top: 40%; left: 8%; right: auto; bottom: auto; transform: translateY(-20%);">
-        <h1 class="fw-bold" style="font-size: 50px;">Đột phá đa nhiệm</h1>
-        <h5 class="mb-4">Chia đôi màn hình, mở nhiều ứng dụng mượt mà</h5>
-     
-      </div>
-    </div>
-  
-
-  <!-- Nút điều hướng -->
- 
-</div>
-
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+	<!-- Slogan quote -->
+	<div class="container" style="position: relative;">
+		<div class="slogan row mt-3 mb-3">
+			<div class="col-9 slogan-left">
+				<h2><b>Samsung</b></h2>
+			</div>
+			<div class="col-3 slogan-right">
+				<h4><b>Hiệu suất vượt trội, đa nhiệm mượt mà.</b></h4>
+			</div>
+		</div>
 
 
-        
-        <!-- Slogan button -->
-        <div class="slogan-slide d-flex justify-content-center">
-            <div class="product-btn">
-                <button id="tabA" class="tablet">
-                    <div class="tablet-content">
-                        <img src="Images/a_series.webp" alt="Galaxy Tab A"><br>
-                        <span>Galaxy Tab A</span>
-                    </div>
-                </button>
-                <button id="tabS" class="tablet">
-                    <div class="tablet-content">
-                        <img src="Images/s_series.avif" alt="Galaxy Tab S"><br>
-                        <span>Galaxy Tab S</span>
-                    </div>
-                </button>
-                <button id="tabFE" class="tablet">
-                    <div class="tablet-content">
-                        <img src="Images/fe_series.avif" alt="Galaxy Tab FE"><br>
-                        <span>Galaxy Tab FE</span>
-                    </div>
-                </button>
-            </div>
-        </div>
-        <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm..." class="form-control w-50 mx-auto my-4">
-<div id="notFoundMessage" class="text-center my-4 text-danger fw-bold" style="display:none;">
-    Không tìm thấy sản phẩm nào phù hợp.
-</div>
-      <div class="row p-3" style="background-color: rgb(244,244,244);">
+		<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+					aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+					aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+					aria-label="Slide 3"></button>
+			</div>
+
+			<div class="carousel-inner">
+				<div class="carousel-item active" data-bs-interval="10000">
+					<img src="/Images/Galaxy_TabS10.webp" class="d-block w-100" alt="Galaxy Tab S10">
+
+					<div class="carousel-caption d-none d-md-block text-start"
+						style="top: 40%; left: 8%; right: auto; bottom: auto; transform: translateY(-20%);">
+						<h1 class="fw-bold" style="font-size: 60px;">Galaxy Tab S10 Ultra</h1>
+						<h5 class="mb-4">Phác thảo thông minh, dễ dàng</h5>
+
+					</div>
+				</div>
+
+				<div class="carousel-item" data-bs-interval="5000">
+					<img src="/Images/galaxytab_panel.avif" class="d-block w-100" alt="Galaxy Tab Panel 1">
+
+					<div class="carousel-caption d-none d-md-block text-start"
+						style="top: 40%; left: 8%; right: auto; bottom: auto; transform: translateY(-20%);">
+						<h1 class="fw-bold" style="font-size: 50px;">Galaxy AI ✨ is here</h1>
+						<h5 class="mb-4">Nâng cấp trải nghiệm tablet với AI</h5>
+
+					</div>
+				</div>
+
+				<div class="carousel-item" data-bs-interval="5000">
+					<img src="/Images/galaxytab_panel2.avif" class="d-block w-100" alt="Galaxy Tab Panel 2">
+
+					<div class="carousel-caption d-none d-md-block text-start"
+						style="top: 40%; left: 8%; right: auto; bottom: auto; transform: translateY(-20%);">
+						<h1 class="fw-bold" style="font-size: 50px;">Đột phá đa nhiệm</h1>
+						<h5 class="mb-4">Chia đôi màn hình, mở nhiều ứng dụng mượt mà</h5>
+
+					</div>
+				</div>
+
+
+				<!-- Nút điều hướng -->
+
+			</div>
+
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+				data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+				data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+
+
+
+		<!-- Slogan button -->
+		<div class="slogan-slide d-flex justify-content-center">
+			<div class="product-btn">
+				<button id="tabA" class="tablet">
+					<div class="tablet-content">
+						<img src="Images/a_series.webp" alt="Galaxy Tab A"><br>
+						<span>Galaxy Tab A</span>
+					</div>
+				</button>
+				<button id="tabS" class="tablet">
+					<div class="tablet-content">
+						<img src="Images/s_series.avif" alt="Galaxy Tab S"><br>
+						<span>Galaxy Tab S</span>
+					</div>
+				</button>
+				<button id="tabFE" class="tablet">
+					<div class="tablet-content">
+						<img src="Images/fe_series.avif" alt="Galaxy Tab FE"><br>
+						<span>Galaxy Tab FE</span>
+					</div>
+				</button>
+			</div>
+		</div>
+		<input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm..." class="form-control w-50 mx-auto my-4">
+		<div id="notFoundMessage" class="text-center my-4 text-danger fw-bold" style="display:none;">
+			Không tìm thấy sản phẩm nào phù hợp.
+		</div>
+		<div class="row p-3" style="background-color: rgb(244,244,244);">
 			<div class="col-12 position-relative">
 				<!-- Khu vực slider -->
 				<div class="d-flex overflow-hidden px-5" id="product-slider_tablet"
@@ -199,7 +211,7 @@
 							<button class="btn_mua_ngay">Mua ngay</button>
 						</div>
 					</a>
-					
+
 					<a class="card mx-4" data-category="A"
 						style="flex: 0 0 auto; scroll-snap-align: start; width: 250px; text-align: center;">
 						<div class="card-header" style="height: 270px;">
@@ -280,114 +292,121 @@
 					</a>
 
 				</div>
-                <div class="d-flex justify-content-center mt-3" >
+				<div class="d-flex justify-content-center mt-3">
 					<a class="btn xem_tat_ca_tablet px-3" id="tabAll">Xóa lọc</a>
 					<a class="btn xem_tat_ca_tablet px-3" href="tablet.all.html">Xem tất cả</a>
 				</div>
-                <button id="scroll-left_tablet"
+				<button id="scroll-left_tablet"
 					class="btn btn-light position-absolute start-0 top-50 translate-middle-y z-10">&#10094;</button>
 
 				<!-- Nút phải -->
 				<button id="scroll-right_tablet"
 					class="btn btn-light position-absolute end-0 top-50 translate-middle-y z-3">&#10095;</button>
-                    
-            </div>
-            
-        </div>
-        
-        <!-- Chi tiết sản phẩm -->
-        <div class="main-content">
-            <div class="intro">
-                <p align="center" class="m-5"><span class="color-explore">Trải nghiệm</span> thế giới giải trí và làm việc trên <span class="color-galaxy">Tablet Galaxy</span></p>
-            </div>
-            
-            <div class="detail-button-group d-flex justify-content-center mb-5">
-                <div class="detail-button">
-                    <button class="btn" onclick="changeTabletContent('spen',this)" data-video="mp4/-spenn.mp4"><b>S Pen</b></button>
-                </div>
-                <div class="detail-button">
-                    <button class="btn" onclick="changeTabletContent('dex',this)" data-video="mp4/-dex.mp4"><b>DeX Mode</b></button>
-                </div>
-                <div class="detail-button">
-                    <button class="btn" onclick="changeTabletContent('screen',this)" data-video="mp4/tablet_screen.webm"><b>Màn hình</b></button>
-                </div>
-                <div class="detail-button">
-                    <button class="btn" onclick="changeTabletContent('multitasking',this)" data-video="mp4/multitasking.webm"><b>Đa nhiệm</b></button>
-                </div>
-            </div>
 
-            <div class="video-marketing-container position-relative mb-5">
-                <video class="mx-auto d-block" id="tablet-marketing" width="100%" height="auto" muted autoplay>
-                    <source id="tablet-marketing-source" src="mp4/-spen.mp4" type="video/mp4">
-                    Trình duyệt của bạn không hỗ trợ video.
-                </video>
-                <div class="video-marketing-overlay" id="tablet-marketing-overlay">
-                    
-                </div>
-            </div>
+			</div>
 
-            <div id="tablet-detail-info" class="detail-info mt-5">
-               
-            </div>
-        </div>
-    </div>
-	<div class="footer w-75 m-auto mt-5 border-top">
-			<div class="row">
-				<div class="col-6">
-					<p class="m-0 p-0">Bản quyền &copy;Samsung bảo lưu mọi quyền.
-						<br>Công ty TNHH Điện Tử Samsung Vina.
-						<br>Giấy CNĐT: 411043002319, do UBND TP HCM cấp ngày 28/8/2007.
-						<br>Địa chỉ: Số 2, đường Hải Triều, Phường Bến Nghé, Quận 1, TP. Hồ Chí Minh.
-						<br>Điện thoại: +84-2839157310
-					</p>
+		</div>
+
+		<!-- Chi tiết sản phẩm -->
+		<div class="main-content">
+			<div class="intro">
+				<p align="center" class="m-5"><span class="color-explore">Trải nghiệm</span> thế giới giải trí và làm
+					việc trên <span class="color-galaxy">Tablet Galaxy</span></p>
+			</div>
+
+			<div class="detail-button-group d-flex justify-content-center mb-5">
+				<div class="detail-button">
+					<button class="btn" onclick="changeTabletContent('spen',this)" data-video="mp4/-spenn.mp4"><b>S
+							Pen</b></button>
 				</div>
-				<div class="col-2">
-
+				<div class="detail-button">
+					<button class="btn" onclick="changeTabletContent('dex',this)" data-video="mp4/-dex.mp4"><b>DeX
+							Mode</b></button>
 				</div>
-				<div class="col-4 d-flex justify-content-center align-items-center">
-					<img style="height: 60px; width: auto;" src="Images/MAR-2014.png">
-					<img style="height: 60px; width: auto;" src="Images/bocongthuong_11zon.png">
-					<img style="height: 60px; width: auto;" src="Images/bocongthuong2.png">
+				<div class="detail-button">
+					<button class="btn" onclick="changeTabletContent('screen',this)"
+						data-video="mp4/tablet_screen.webm"><b>Màn hình</b></button>
+				</div>
+				<div class="detail-button">
+					<button class="btn" onclick="changeTabletContent('multitasking',this)"
+						data-video="mp4/multitasking.webm"><b>Đa nhiệm</b></button>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-2">
-					<p><a>Việt Nam/Tiếng Việt</a> |</p>
-				</div>
-				<div class="col-1">
-					<a>Bảo mật</a>
-				</div>
-				<div class="col-1">
-					<a>Pháp lý</a>
-				</div>
-				<div class="col-4">
+
+			<div class="video-marketing-container position-relative mb-5">
+				<video class="mx-auto d-block" id="tablet-marketing" width="100%" height="auto" muted autoplay>
+					<source id="tablet-marketing-source" src="mp4/-spen.mp4" type="video/mp4">
+					Trình duyệt của bạn không hỗ trợ video.
+				</video>
+				<div class="video-marketing-overlay" id="tablet-marketing-overlay">
 
 				</div>
-				<div class="col-4 d-flex justify-content-center ">
-					<p class="mx-2">Kết nối với chúng tôi</p>
-					<a class="mx-2" href="https://www.facebook.com/SamsungVietnam" target="_blank">
-						<img style="height: 35px; width: auto;" src="Images/facebook.png">
-					</a>
-					<a class="mx-2" href="https://www.youtube.com/user/samsungvietnam" target="_blank">
-						<img style="height: 35px; width: auto;" src="Images/youtube.png">
-					</a>
-					<a class="mx-2" href="https://www.instagram.com/samsung_vietnam/" target="_blank">
-						<img style="height: 35px; width: auto;" src="Images/instagram.png">
-					</a>
-					<a class="mx-2" href="https://zalo.me/598843366637438151" target="_blank">
-						<img style="height: 35px; width: auto;" src="Images/zalo.png">
-					</a>
+			</div>
 
-				</div>
+			<div id="tablet-detail-info" class="detail-info mt-5">
 
 			</div>
 		</div>
-    
-	
+	</div>
+	<div class="footer w-75 m-auto mt-5 border-top">
+		<div class="row">
+			<div class="col-6">
+				<p class="m-0 p-0">Bản quyền &copy;Samsung bảo lưu mọi quyền.
+					<br>Công ty TNHH Điện Tử Samsung Vina.
+					<br>Giấy CNĐT: 411043002319, do UBND TP HCM cấp ngày 28/8/2007.
+					<br>Địa chỉ: Số 2, đường Hải Triều, Phường Bến Nghé, Quận 1, TP. Hồ Chí Minh.
+					<br>Điện thoại: +84-2839157310
+				</p>
+			</div>
+			<div class="col-2">
 
-    <script src="JS/navbar.js"></script>
-    <script src="JS/tablet.js"></script>
-    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+			</div>
+			<div class="col-4 d-flex justify-content-center align-items-center">
+				<img style="height: 60px; width: auto;" src="Images/MAR-2014.png">
+				<img style="height: 60px; width: auto;" src="Images/bocongthuong_11zon.png">
+				<img style="height: 60px; width: auto;" src="Images/bocongthuong2.png">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-2">
+				<p><a>Việt Nam/Tiếng Việt</a> |</p>
+			</div>
+			<div class="col-1">
+				<a>Bảo mật</a>
+			</div>
+			<div class="col-1">
+				<a>Pháp lý</a>
+			</div>
+			<div class="col-4">
+
+			</div>
+			<div class="col-4 d-flex justify-content-center ">
+				<p class="mx-2">Kết nối với chúng tôi</p>
+				<a class="mx-2" href="https://www.facebook.com/SamsungVietnam" target="_blank">
+					<img style="height: 35px; width: auto;" src="Images/facebook.png">
+				</a>
+				<a class="mx-2" href="https://www.youtube.com/user/samsungvietnam" target="_blank">
+					<img style="height: 35px; width: auto;" src="Images/youtube.png">
+				</a>
+				<a class="mx-2" href="https://www.instagram.com/samsung_vietnam/" target="_blank">
+					<img style="height: 35px; width: auto;" src="Images/instagram.png">
+				</a>
+				<a class="mx-2" href="https://zalo.me/598843366637438151" target="_blank">
+					<img style="height: 35px; width: auto;" src="Images/zalo.png">
+				</a>
+
+			</div>
+
+		</div>
+	</div>
+
+
+
+	<script src="JS/navbar.js"></script>
+	<script src="JS/tablet.js"></script>
+	<script src="JS/themGioHang.js"></script>
+	<script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+	<script src="bootstrap-5.0.2-dist/js/bootstrap.js"></script>
 </body>
+
 </html>
