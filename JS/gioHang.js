@@ -89,131 +89,72 @@ document.addEventListener("DOMContentLoaded", () => {
     const districtSelect = document.getElementById('district');
     const wardSelect = document.getElementById('ward');
 
-    // Dữ liệu mẫu (chỉ vài dòng, Trọng có thể thêm tiếp)
-    const locations = {
-        "Đồng Tháp": {
-        "Cao Lãnh": ["Phường 1", "Phường 2", "Phường 3"],
-        "Sa Đéc": ["Tân Quy Đông", "Tân Phú Đông", "An Hòa"],
-        "Hồng Ngự": ["An Bình A", "An Bình B", "An Lạc"],
-        "Tam Nông": ["Phú Thành A", "Phú Thọ", "Phú Thành B"],
-        "Thanh Bình": ["Thanh Bình", "Tân Bình", "Tân Quới"],
-        "Lấp Vò": ["Lấp Vò", "Mỹ An Hưng A", "Mỹ An Hưng B"]
-        },
-        "Hà Nội": {
-            "Ba Đình": ["Phúc Xá", "Trúc Bạch", "Vĩnh Phúc"],
-            "Hoàn Kiếm": ["Chương Dương", "Hàng Bạc", "Hàng Buồm"],
-            "Đống Đa": ["Cát Linh", "Văn Miếu", "Quốc Tử Giám"],
-            "Cầu Giấy": ["Dịch Vọng", "Quan Hoa", "Nghĩa Đô"]
-        },
-        "Hồ Chí Minh": {
-            "Quận 1": ["Bến Nghé", "Bến Thành", "Đa Kao"],
-            "Quận 3": ["Phường 1", "Phường 3", "Phường 5"],
-            "Gò Vấp": ["Phường 6", "Phường 7", "Phường 10"],
-            "Tân Bình": ["Phường 2", "Phường 4", "Phường 6"]
-        },
-        "Đà Nẵng": {
-            "Hải Châu": ["Phước Ninh", "Nam Dương", "Hòa Thuận Đông"],
-            "Thanh Khê": ["Xuân Hà", "Thanh Khê Đông", "Thạc Gián"],
-            "Sơn Trà": ["Phước Mỹ", "An Hải Bắc", "An Hải Đông"]
-        },
-        "Hải Phòng": {
-            "Ngô Quyền": ["Máy Tơ", "Lạc Viên", "Lê Lợi"],
-            "Hồng Bàng": ["Quang Trung", "Hạ Lý", "Phạm Hồng Thái"],
-            "Lê Chân": ["An Biên", "Niệm Nghĩa", "Trại Cau"]
-        },
-        "Cần Thơ": {
-            "Ninh Kiều": ["Tân An", "An Cư", "Xuân Khánh"],
-            "Bình Thủy": ["Bình Thủy", "Trà Nóc", "Long Hòa"],
-            "Cái Răng": ["Hưng Phú", "Lê Bình", "Thường Thạnh"]
-        },
-        "Thừa Thiên Huế": {
-            "TP Huế": ["Thuận Thành", "Phú Cát", "Vĩnh Ninh"],
-            "Hương Trà": ["Tứ Hạ", "Hương Vân", "Hương Xuân"]
-        },
-        "Bình Dương": {
-            "Thủ Dầu Một": ["Phú Cường", "Hiệp Thành", "Phú Hòa"],
-            "Dĩ An": ["Dĩ An", "Tân Đông Hiệp", "Bình An"]
-        },
-        "Đồng Nai": {
-            "Biên Hòa": ["Tân Hiệp", "Tân Phong", "Trảng Dài"],
-            "Long Khánh": ["Xuân Trung", "Xuân Lập", "Bàu Sen"]
-        },
-        "Nghệ An": {
-            "Vinh": ["Hưng Dũng", "Hưng Bình", "Quang Trung"],
-            "Cửa Lò": ["Nghi Thu", "Nghi Tân", "Thu Thuỷ"]
-        },
-        "Thanh Hóa": {
-            "TP Thanh Hóa": ["Ba Đình", "Điện Biên", "Trường Thi"],
-            "Sầm Sơn": ["Quảng Tiến", "Quảng Châu", "Trường Sơn"]
-        },
-        "Quảng Ninh": {
-            "Hạ Long": ["Bãi Cháy", "Yết Kiêu", "Hồng Gai"],
-            "Uông Bí": ["Phương Đông", "Trưng Vương", "Thanh Sơn"]
-        }
-    };
-
-
-    // Load Tỉnh/Thành
-    Object.keys(locations).forEach(province => {
-        const opt = document.createElement('option');
-        opt.value = province;
-        opt.textContent = province;
-        provinceSelect.appendChild(opt);
-    });
-
-    // Khi chọn Tỉnh thì load Quận
-    provinceSelect.addEventListener('change', function () {
-        districtSelect.innerHTML = '<option value="">-- Quận/Huyện --</option>';
-        wardSelect.innerHTML = '<option value="">-- Phường/Xã --</option>';
-        const selectedProvince = this.value;
-        if (locations[selectedProvince]) {
-            Object.keys(locations[selectedProvince]).forEach(district => {
+    fetch('locations.json')
+        .then(response => response.json())
+        .then(locations => {
+            Object.keys(locations).forEach(province => {
                 const opt = document.createElement('option');
-                opt.value = district;
-                opt.textContent = district;
-                districtSelect.appendChild(opt);
+                opt.value = province;
+                opt.textContent = province;
+                provinceSelect.appendChild(opt);
             });
-        }
-    });
 
-    // Khi chọn Quận thì load Phường
-    districtSelect.addEventListener('change', function () {
-        wardSelect.innerHTML = '<option value="">-- Phường/Xã --</option>';
-        const selectedProvince = provinceSelect.value;
-        const selectedDistrict = this.value;
-        const wards = locations[selectedProvince]?.[selectedDistrict] || [];
-        wards.forEach(ward => {
-            const opt = document.createElement('option');
-            opt.value = ward;
-            opt.textContent = ward;
-            wardSelect.appendChild(opt);
+            provinceSelect.addEventListener('change', function () {
+                districtSelect.innerHTML = '<option value="">-- Quận/Huyện --</option>';
+                wardSelect.innerHTML = '<option value="">-- Phường/Xã --</option>';
+                const selectedProvince = this.value;
+                if (locations[selectedProvince]) {
+                    Object.keys(locations[selectedProvince]).forEach(district => {
+                        const opt = document.createElement('option');
+                        opt.value = district;
+                        opt.textContent = district;
+                        districtSelect.appendChild(opt);
+                    });
+                }
+            });
+
+            districtSelect.addEventListener('change', function () {
+                wardSelect.innerHTML = '<option value="">-- Phường/Xã --</option>';
+                const selectedProvince = provinceSelect.value;
+                const selectedDistrict = this.value;
+                const wards = locations[selectedProvince]?.[selectedDistrict] || [];
+                wards.forEach(ward => {
+                    const opt = document.createElement('option');
+                    opt.value = ward;
+                    opt.textContent = ward;
+                    wardSelect.appendChild(opt);
+                });
+            });
+        })
+        .catch(error => {
+            console.error('Lỗi khi tải dữ liệu địa phương:', error);
         });
-    });
-
-
-
-
-
-
 
 
 
     document.getElementById('paymentForm').addEventListener('submit', function (e) {
-        e.preventDefault(); // Ngăn reload trang
+        e.preventDefault();
 
-        // Kiểm tra người dùng đã chọn phương thức thanh toán chưa
+        const dataLogin = localStorage.getItem("loggedInUser");
+
+        if (dataLogin) {
+            const user = JSON.parse(dataLogin);
+            const email_user = user.email;
+
+            document.getElementById('customerEmail').value = email_user;
+        } else {
+            alert("Vui lòng đăng nhập tài khoản Samsung Account");
+        }
+
         const selectedPayment = document.querySelector('input[name="payment"]:checked');
         if (!selectedPayment) {
             alert("Vui lòng chọn phương thức thanh toán.");
             return;
         }
-
-        // Hiện modal nhập thông tin khách hàng
         const modal = new bootstrap.Modal(document.getElementById('customerModal'));
         modal.show();
     });
 
-    // Xử lý gửi form thông tin khách hàng
     document.getElementById('customerForm').addEventListener('submit', function (e) {
         e.preventDefault();
 
@@ -221,19 +162,28 @@ document.addEventListener("DOMContentLoaded", () => {
         const phone = document.getElementById('customerPhone').value.trim();
         const address = document.getElementById('customerAddress').value.trim();
 
+
+
         if (!name || !phone || !address) {
             alert("Vui lòng điền đầy đủ thông tin.");
             return;
         }
 
-        // Ở đây bạn có thể gửi dữ liệu đến server hoặc xử lý đơn hàng
-        alert(`Đặt hàng thành công!\nTên: ${name}\nSĐT: ${phone}\nĐịa chỉ: ${address}`);
 
-        // Ẩn modal sau khi xác nhận
+        document.getElementById('alertContent').innerText = `Tên: ${name}\nSĐT: ${phone}\nĐịa chỉ: ${address}`;
+        const successAlert = document.getElementById('successAlert');
+        successAlert.classList.remove('d-none');
+
+
+        setTimeout(() => {
+            successAlert.classList.add('d-none');
+            localStorage.removeItem("cart");
+            location.reload();
+        }, 3000);
+
         const modal = bootstrap.Modal.getInstance(document.getElementById('customerModal'));
         modal.hide();
 
-        // Reset form nếu cần
         document.getElementById('customerForm').reset();
     });
 

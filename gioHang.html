@@ -57,7 +57,7 @@
 
         <div id="footer"></div>
     </div>
-    <!-- Modal điền thông tin khách hàng -->
+    <!-- form điền thông tin khách hàng nhaaaa -->
     <div class="modal fade" id="customerModal" tabindex="-1" aria-labelledby="customerModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content" style="border-radius: 10px;">
@@ -75,6 +75,11 @@
                             <label for="customerPhone" class="form-label">Số điện thoại</label>
                             <input type="tel" class="form-control" id="customerPhone" required>
                         </div>
+                        <div class="mb-3">
+                            <label for="customerEmail" class="form-label">Email: </label>
+                            <input type="mail" class="form-control" id="customerEmail" readonly>
+                        </div>
+                        
                         <div class="mb-3">
                             <label for="province" class="form-label">Thành Phố/Tỉnh</label>
                             <select class="form-select" id="province" required>
@@ -101,7 +106,7 @@
                             <label for="customerAddress" class="form-label">Địa chỉ giao hàng</label>
                             <textarea class="form-control" id="customerAddress" rows="3" required></textarea>
                         </div>
-                        <div class="text-end">
+                        <div class="text-center">
                             <button type="submit" class="btn btn-success">Xác nhận đặt hàng</button>
                         </div>
                     </form>
@@ -109,6 +114,16 @@
             </div>
         </div>
     </div>
+    
+    <!-- thông bao đặt hàn thành công -->
+    <div id="successAlert"
+        class="alert alert-success alert-dismissible fade show position-fixed bottom-0 end-0 m-4 d-none" role="alert"
+        style="z-index: 9999;">
+        <strong>Đặt hàng thành công!</strong><br>
+        <span id="alertContent"></span>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Đóng"></button>
+    </div>
+
 
     <script src="JS/footer.js"></script>
     <script src="JS/gioHang.js"></script>

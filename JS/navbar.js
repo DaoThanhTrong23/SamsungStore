@@ -4,6 +4,16 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(data => {
             document.getElementById("navbar").innerHTML = data;
 
+
+            // đăng xuát tài khoản
+            document.getElementById("click_dangxuat").addEventListener("click", function (e) {
+                const confirmLogout = confirm("Bạn muốn tiếp tục đăng xuất?");
+                if (confirmLogout) {
+                    localStorage.removeItem("loggedInUser");
+                    location.reload()
+                }
+            });
+
             // Hiển thị tên người dùng nếu đã đăng nhập
             const loggedUser = JSON.parse(localStorage.getItem("loggedInUser"));
             const tenDangNhapEl = document.getElementById("ten_dang_nhap");
@@ -58,6 +68,12 @@ document.addEventListener("DOMContentLoaded", function () {
             window.capNhatSoLuongGioHang();
         })
         .catch(error => console.error("Lỗi tải navbar:", error));
+
+
+
+
+
+
 });
 
 window.capNhatSoLuongGioHang = function () {

@@ -124,3 +124,11 @@ Frontend: HTML5, CSS3, Bootstrap 5, JavaScript (thuần)
 Công cụ phát triển: Visual Studio Code
 
 Dữ liệu mẫu: lưu bằng localStorage, không cần backend
+
+
+
+
+
+
+
+api: https://provinces.open-api.vn/api/?depth=3
