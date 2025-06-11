@@ -82,9 +82,6 @@ document.addEventListener("DOMContentLoaded", () => {
     percent10.innerText = (total * 0.1).toLocaleString() + " VNĐ";
 
 
-
-
-
     const provinceSelect = document.getElementById('province');
     const districtSelect = document.getElementById('district');
     const wardSelect = document.getElementById('ward');
