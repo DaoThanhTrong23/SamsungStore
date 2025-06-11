@@ -11,6 +11,15 @@ a:hover {
     transform: scale(1.03);
 }
 
+.option_buds .card
+{
+    border: 1px solid none;
+}
+.option_buds .card:hover
+{
+    border: 1px solid black;
+}
+
 .btn-dark {
     border: 2px solid black !important;
     border-radius: 20px !important;
