@@ -8,12 +8,6 @@ a:hover {
     color: black !important;
 }
 
-/* .container h1 {
-    font-weight: 600;
-    position: relative;
-    margin-top: 50px;
-} */
-
 .row {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -241,11 +235,6 @@ a:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
-.btn_mua_ngay {
-    padding: 3px !important;
-    width: 70%;
-}
-
 @keyframes expandLine {
     0% {
         transform: translateX(-50%) scaleX(0);
@@ -253,5 +242,51 @@ a:hover {
 
     100% {
         transform: translateX(-50%) scaleX(1);
+    }
+}
+
+
+
+@media (max-width: 767.98px) {
+
+	.carousel-item a
+    {
+        font-size: 10px !important;
+        
+    }
+    .carousel-item h1 {
+        font-size: 20px;
+        margin-bottom: 15px !important;
+        
+        
+    }
+    .text1
+    {
+        font-size: 25px !important;
+
+    }
+    .text2
+    {
+        font-size: 8px !important;
+    }
+    .text3
+    {
+        font-size: 10px !important;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1024px){
+    .carousel-item a
+    {
+        font-size: 12px !important;
+    }
+
+    .carousel-item h1 {
+        font-size: 22px;
+        margin-bottom: 16px !important;
+    }
+    .text1
+    {
+        font-size: 22px;
     }
 }

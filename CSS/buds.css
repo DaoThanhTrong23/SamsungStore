@@ -3,13 +3,13 @@
     box-shadow: 2px 3px 5px rgba(158, 158, 158, 0.267);
 }
 
-a {
+/* a {
     transition: transform 0.3s ease;
 }
 
 a:hover {
     transform: scale(1.03);
-}
+} */
 
 .option_buds .card
 {

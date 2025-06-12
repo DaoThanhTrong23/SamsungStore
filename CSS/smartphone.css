@@ -94,7 +94,8 @@ video {
     padding: 10px 20px;
     font-size: 15px;
     font-weight: bold;
-    border-radius: 15px;
+    border-radius: 20px;
+
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
@@ -209,11 +210,18 @@ video {
     padding: 10px 20px;
     font-size: 15px;
     font-weight: bold;
-    border-radius: 15px;
+    border-radius: 23px;
+    background-color: black;
+    color: white;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
-
+/*Nút vs bg trắng*/
+.bg-white:hover
+{
+    background-color: black !important;
+    color: white !important;
+}
 /* ===== "MUA NGAY" BUTTON ===== */
 .picture-overlay button.buy-now {
     background-color: black;
