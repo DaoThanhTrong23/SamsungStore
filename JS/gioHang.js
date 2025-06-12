@@ -1,15 +1,16 @@
 document.addEventListener("DOMContentLoaded", () => {
     const cart = JSON.parse(localStorage.getItem("cart")) || [];
     const items = document.getElementById("items");
-
+    // đọc localStorage nếu == 0 thì trống
     if (cart.length === 0) {
         items.innerHTML = "<p>Giỏ hàng trống.</p>";
         return;
     }
-
+    // cho biến total để tính tổng giá trị đơn hàng
     let total = 0;
-
+    // duyệt qua từng phần từ trong localStorage để render các sản phẩm
     cart.forEach((item, index) => {
+        // cộng dồn cho total 
         total += item.price * item.quantity;
 
         const itemDiv = document.createElement("div");
@@ -40,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
         items.appendChild(itemDiv);
     });
 
-    // Gắn sự kiện xoá
+    // Gắn sự kiện xoá sản phẩm khỏi cart
     document.querySelectorAll(".delete-btn").forEach(btn => {
         btn.addEventListener("click", function () {
             const index = this.dataset.index;
@@ -50,19 +51,19 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Gắn tăng/giảm số lượng
+    // Gắn tăng/giảm số lượng của sản phẩm trực tiếp trên localStorage bằng button 
     document.querySelectorAll(".cart-item").forEach((wrapper, i) => {
         const input = wrapper.querySelector(".quantity");
         const btnUp = wrapper.querySelector(".increase");
         const btnDown = wrapper.querySelector(".decrease");
-
+        // button tăng số lượng
         btnUp.addEventListener("click", () => {
             input.stepUp();
             cart[i].quantity = parseInt(input.value);
             localStorage.setItem("cart", JSON.stringify(cart));
             location.reload();
         });
-
+        // button giảm số lượng
         btnDown.addEventListener("click", () => {
             input.stepDown();
             cart[i].quantity = parseInt(input.value);

@@ -3,7 +3,7 @@ document.addEventListener("click", function (e) {
     if (e.target.classList.contains("btn_mua_ngay")) {
         e.preventDefault()
         const card = e.target.closest(".card");
-
+        // chỗ này đọc các value từ lấy từ card (cần tối ưu hơn)
         const img = card.parentElement.querySelector("img")?.getAttribute("src") || "";
         const name = card.querySelector("h5 strong")?.innerText.trim() || "Không rõ tên";
         const color = card.querySelector("p")?.innerText.replace("Màu sắc:", "").trim() || "Không rõ màu";
@@ -21,6 +21,7 @@ document.addEventListener("click", function (e) {
         };
 
         const cart = JSON.parse(localStorage.getItem("cart")) || [];
+        // kiểm tra nếu trùng thì tăng quantity, không thì thêm vào localStorage
         const existing = cart.find(item => item.name === product.name && item.color === product.color);
         if (existing) {
             existing.quantity += 1;
@@ -39,6 +40,8 @@ document.addEventListener("click", function (e) {
     }
 });
 
+
+// thông báo mỗi khi bỏ vào giỏ hàng và tắt sau 3s
 function showToast(message) {
     const toast = document.createElement("div");
     toast.innerHTML = `

@@ -2,7 +2,7 @@
 let sanPhamGoc = [];
 let filterLoai = null;
 let filterGia = null;
-
+// in card sản phẩm được load từ json 
 function renderSanPham(danhSach) {
     const container = document.getElementById('danhSachSanPham');
     container.innerHTML = '';
@@ -26,7 +26,7 @@ function renderSanPham(danhSach) {
         container.appendChild(theCard);
     });
 }
-
+// áp filter vào json
 function applyFilter() {
     let filtered = [...sanPhamGoc];
 
@@ -41,7 +41,7 @@ function applyFilter() {
 
     renderSanPham(filtered);
 }
-
+// setup filter lọc json theo loại và khoảng giá
 function setupFilterListeners() {
     document.querySelectorAll('[data-loai]').forEach(link => {
         link.addEventListener('click', e => {
@@ -101,23 +101,8 @@ function setupFilterListeners() {
             targetLink.click();
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
-
+// load sản phẩm từ json
 fetch('smartphone.json')
     .then(res => res.json())
     .then(data => {
