@@ -17,25 +17,37 @@ document.addEventListener("DOMContentLoaded", () => {
         itemDiv.className = "d-flex justify-content-around mt-5 cart-item";
 
         itemDiv.innerHTML = `
-            <img class="col-4 img-fluid" style="max-width: 25%;" src="${item.img}">
-            <div class="col-8 d-flex justify-content-between">
-                <div>
-                    <span><strong>${item.name}</strong></span><br>
-                    <span>Màu: ${item.color}</span><br>
-                </div> 
-                <div>
-                    <span>Giá: ${(item.price * item.quantity).toLocaleString()} VND</span><br>
-                    <button class="delete-btn mt-3" data-index="${index}" aria-label="Xoá sản phẩm">
-                        <i class="fas fa-trash"></i>
-                    </button>
-                    <br>
-                    <div class="number-input mt-4">
-                        <button class="decrease">-</button>
-                        <input type="number" class="quantity" value="${item.quantity}" step="1" min="1" style="width: 50px; text-align:center;">
-                        <button class="increase">+</button>
+            <div class="row g-2 py-2" style="border-radius: 10px;box-shadow: 2px 2px 5px rgba(190, 190, 190, 0.29)"> 
+                <div class="col-6 col-md-6 col-lg-2">
+                    <img  style="width: 100%; " src="${item.img}">
+                </div>
+                <div class="col-6 col-md-6 col-lg-4 px-2">
+                    <div class="d-flex" style="flex-direction: column;margin: auto; ">
+                        <span><strong>${item.name}</strong></span><br>
+                        <span>Màu: ${item.color}</span><br>
                     </div>
                 </div>
+                <div class="col-6 col-md-6 col-lg-2 d-flex justify-content-center align-items-center" style="flex-direction: column; ">
+                     
+                    <div class="number-input">
+                        <button class="decrease">-</button>
+                            <input type="number" class="quantity" value="${item.quantity}" step="1" min="1" style="width: 30px; text-align:center;">
+                        <button class="increase">+</button>
+                    </div>
+        
+                </div>
+
+                <div class="col-6 col-md-6 col-lg-4 d-flex justify-content-center align-items-center">
+                    <span>Giá: ${(item.price * item.quantity).toLocaleString()} VND</span><br>
+                    <button class="delete-btn px-3" data-index="${index}" aria-label="Xoá sản phẩm">
+                        <i class="fas fa-trash"></i>
+                    </button>
+                </div>
+                
             </div>
+            
+            
+
         `;
 
         items.appendChild(itemDiv);
@@ -81,9 +93,6 @@ document.addEventListener("DOMContentLoaded", () => {
     percent100.innerText = total.toLocaleString() + " VNĐ";
     percent90.innerText = (total * 0.9).toLocaleString() + " VNĐ";
     percent10.innerText = (total * 0.1).toLocaleString() + " VNĐ";
-
-
-
 
 
     const provinceSelect = document.getElementById('province');
@@ -133,10 +142,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+
+
+
     document.getElementById('paymentForm').addEventListener('submit', function (e) {
         e.preventDefault();
 
         const dataLogin = localStorage.getItem("loggedInUser");
+        const datacart = localStorage.getItem("cart");
+
+        if (datacart === "" || !datacart) {
+            alert("Giỏ hàng trống!");
+            return;
+        }
 
         if (dataLogin) {
             const user = JSON.parse(dataLogin);
@@ -145,6 +163,7 @@ document.addEventListener("DOMContentLoaded", () => {
             document.getElementById('customerEmail').value = email_user;
         } else {
             alert("Vui lòng đăng nhập tài khoản Samsung Account");
+            return;
         }
 
         const selectedPayment = document.querySelector('input[name="payment"]:checked');
@@ -171,7 +190,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
 
-        document.getElementById('alertContent').innerText = `Tên: ${name}\nSĐT: ${phone}\nĐịa chỉ: ${address}`;
+        document.getElementById('alertContent').innerText = `Tên: ${name}\nSĐT: ${phone}`;
         const successAlert = document.getElementById('successAlert');
         successAlert.classList.remove('d-none');
 

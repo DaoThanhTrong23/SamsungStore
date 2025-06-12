@@ -3,15 +3,10 @@ body {
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-a:hover
-{
+
+a:hover {
     color: black !important;
 }
-/* .container h1 {
-    font-weight: 600;
-    position: relative;
-    margin-top: 50px;
-} */
 
 .row {
     margin-top: 10px;
@@ -143,9 +138,11 @@ a:hover
     padding-bottom: 35px;
     text-decoration: none;
     color: black;
+    border: 1px solid none !important;
+    box-shadow: 2px 2px 5px rgba(88, 88, 88, 0.226);
 }
-.card:hover
-{
+
+.card:hover {
     color: black;
 }
 
@@ -193,8 +190,7 @@ a:hover
     opacity: 1;
 }
 
-.card button:hover
-{
+.card button:hover {
     background-color: white;
     color: black;
 }
@@ -204,12 +200,20 @@ a:hover
     transition: transform 0.5s;
 }
 
+.option_watch .card:hover img {
+    transform: scale(1);
+    transition: transform;
+}
+
+.option_watch .card:hover {
+    border: 1px solid black !important;
+}
+
 .card h3 {
     font-weight: 600;
 }
 
-.card-body button
-{
+.card-body button {
     transform: translateY(0);
     opacity: 1;
     margin: 0;
@@ -219,21 +223,16 @@ a:hover
 }
 
 .product-card {
-  width: 250px;
-  scroll-snap-align: start;
-  transition: transform 0.2s ease-in-out;
-  border: none;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    width: 250px;
+    scroll-snap-align: start;
+    transition: transform 0.2s ease-in-out;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 .product-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-}
-.btn_mua_ngay
-{
-    padding: 3px !important;
-    width: 70%;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 @keyframes expandLine {
@@ -243,5 +242,51 @@ a:hover
 
     100% {
         transform: translateX(-50%) scaleX(1);
+    }
+}
+
+
+
+@media (max-width: 767.98px) {
+
+	.carousel-item a
+    {
+        font-size: 10px !important;
+        
+    }
+    .carousel-item h1 {
+        font-size: 20px;
+        margin-bottom: 15px !important;
+        
+        
+    }
+    .text1
+    {
+        font-size: 25px !important;
+
+    }
+    .text2
+    {
+        font-size: 8px !important;
+    }
+    .text3
+    {
+        font-size: 10px !important;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1024px){
+    .carousel-item a
+    {
+        font-size: 12px !important;
+    }
+
+    .carousel-item h1 {
+        font-size: 22px;
+        margin-bottom: 16px !important;
+    }
+    .text1
+    {
+        font-size: 22px;
     }
 }
