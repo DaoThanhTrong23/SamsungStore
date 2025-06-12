@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
     const heroVideo = document.getElementById("Video");
-
+    // theo dõi xem video có nằm trong vùng nhìn thấy của người dùng hay không
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
-            if (entry.isIntersecting) {
+            if (entry.isIntersecting) { //nếu nằm trong vùng hiển thị thì chạy video
                 heroVideo.play().catch(error => {
                     console.error("Video autoplay failed:", error);
                 });
@@ -11,16 +11,16 @@ document.addEventListener("DOMContentLoaded", () => {
                 heroVideo.pause();
             }
         });
-    }, { threshold: 0.5 });
+    }, { threshold: 0.5 }); // ít nhất 50% nhìn thấy
 
     observer.observe(heroVideo);
-
+    // lặp lại video khi kết thúc
     heroVideo.addEventListener("ended", () => {
         heroVideo.currentTime = 0;
         heroVideo.play();
     });
 
-    // Gọi mặc định khi load
+    // Gọi mặc định camera khi load
     const defaultBtn = document.querySelector("[onclick*='camera']");
     changeContent('camera', defaultBtn);
 });
