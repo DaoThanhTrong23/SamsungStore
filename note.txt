@@ -132,3 +132,5 @@ Dữ liệu mẫu: lưu bằng localStorage, không cần backend
 
 
 api: https://provinces.open-api.vn/api/?depth=3
+
+https://provinces.open-api.vn/api/p/

@@ -234,6 +234,10 @@ a:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
+.tht:hover
+{
+    color: white !important;
+}
 
 @keyframes expandLine {
     0% {
