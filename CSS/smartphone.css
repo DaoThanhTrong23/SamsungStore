@@ -101,14 +101,14 @@ video {
 }
 
 /* ===== "MUA NGAY" BUTTON ===== */
-.video-overlay button.buy-now, .picture-overlay-right button.buy-now{
+.video-overlay button.btn_mua_ngay, .picture-overlay-right button.btn_mua_ngay{
     background-color: white;
     color: black;
     border: 1px solid transparent;
     border-radius: 25px;
 }
 
-.video-overlay button.buy-now:hover, .picture-overlay-right button.buy-now:hover {
+.video-overlay button.btn_mua_ngay:hover, .picture-overlay-right button.btn_mua_ngay:hover {
     background-color: black;
     color: white;
     border: 1px solid white;
@@ -223,14 +223,14 @@ video {
     color: white !important;
 }
 /* ===== "MUA NGAY" BUTTON ===== */
-.picture-overlay button.buy-now {
+.picture-overlay button.btn_mua_ngay {
     background-color: black;
     color: white;
     border: 1px solid transparent;
     border-radius: 25px;
 }
 
-.picture-overlay button.buy-now:hover {
+.picture-overlay button.btn_mua_ngay:hover {
     background-color: white;
     color: black;
     border: 1px solid black;
