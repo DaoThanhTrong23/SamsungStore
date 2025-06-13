@@ -88,3 +88,31 @@ if (action === 'click_type_tab_FE') {
         targetLink.click();
     }
 }
+
+document.getElementById("sortSelect")?.addEventListener("change", function () {
+    const order = this.value;
+    if (order) {
+        sortProducts(order);
+    }
+});
+
+function sortProducts(order) {
+    const productContainer = document.querySelector("#link_ds_sanpham .row");
+    const products = Array.from(productContainer.querySelectorAll(".card"))
+        .filter(card => card.style.display !== "none");
+
+    products.sort((a, b) => {
+        const priceA = getPriceFromCard(a);
+    const priceB = getPriceFromCard(b);
+    return order === "asc" ? priceA - priceB : priceB - priceA;
+});
+
+
+products.forEach(product => productContainer.appendChild(product));
+}
+
+function getPriceFromCard(card) {
+    const priceText = card.querySelector("h5.gia strong").innerText || "";
+    const price = parseFloat(priceText.replace(/[^\d]/g, ""));
+    return isNaN(price) ? 0 : price;
+}

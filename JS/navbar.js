@@ -70,10 +70,6 @@ document.addEventListener("DOMContentLoaded", function () {
         .catch(error => console.error("Lỗi tải navbar:", error));
 
 
-
-
-
-
 });
 
 // hàm cập nhật số lượng sản phẩm trong giỏ hàng
