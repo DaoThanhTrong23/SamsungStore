@@ -3,6 +3,12 @@ document.getElementById("tabS")?.addEventListener("click", () => filterProducts(
 document.getElementById("tabFE")?.addEventListener("click", () => filterProducts("FE"));
 document.getElementById("tabAll")?.addEventListener("click", showAllProducts);
 
+document.getElementById("sortSelect")?.addEventListener("change", function () {
+    const order = this.value;
+    if (order) {
+        sortProducts(order);
+    }
+});
 // Hàm hiển thị tất cả sản phẩm
 function showAllProducts() {
     const products = document.querySelectorAll('.card');
