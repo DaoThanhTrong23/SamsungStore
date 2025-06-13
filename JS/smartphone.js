@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
     const heroVideo = document.getElementById("Video");
-
+    // theo dõi xem video có nằm trong vùng nhìn thấy của người dùng hay không
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
-            if (entry.isIntersecting) {
+            if (entry.isIntersecting) { //nếu nằm trong vùng hiển thị thì chạy video
                 heroVideo.play().catch(error => {
                     console.error("Video autoplay failed:", error);
                 });
@@ -11,20 +11,21 @@ document.addEventListener("DOMContentLoaded", () => {
                 heroVideo.pause();
             }
         });
-    }, { threshold: 0.5 });
+    }, { threshold: 0.5 }); // ít nhất 50% nhìn thấy
 
     observer.observe(heroVideo);
-
+    // lặp lại video khi kết thúc
     heroVideo.addEventListener("ended", () => {
         heroVideo.currentTime = 0;
         heroVideo.play();
     });
 
-    // ✅ Gọi mặc định khi load
+    // Gọi mặc định camera khi load
     const defaultBtn = document.querySelector("[onclick*='camera']");
     changeContent('camera', defaultBtn);
 });
 
+// làm dataMap để bên html load nội dung cho dễ
 
 const dataMap = {
     camera: {
@@ -72,19 +73,19 @@ const dataMap = {
 }
 
 
-
-
+// hàm thay đổi nội dung html khi click vào
+// mỗi khi click vào sẽ lấy key của button đó ra 
 function changeContent(key, button = null) {
     const data = dataMap[key];
     const video = document.getElementById("video-marketing");
     const videoSource = document.getElementById("video-marketing-source");
 
-    // Cập nhật video
+    // cập nhật video theo key
     videoSource.src = data.video;
     video.load();
     video.play();
 
-    // ✅ Tránh gán nhiều lần sự kiện "ended"
+    // để video tự load lần đầu
     if (!video.dataset.listenerAdded) {
         video.addEventListener("ended", () => {
             video.currentTime = 0;
@@ -95,10 +96,11 @@ function changeContent(key, button = null) {
     const overlay = document.getElementById("video-marketing-overlay");
     overlay.innerText = data.overlay;
 
-    // Cập nhật nội dung
+    // cập nhật nội dung
     const info = document.getElementById("detail-info");
     info.innerHTML = "";
 
+    // bước này tạo các thẻ và append vào html
     for (let i = 0; i < data.image.length; i++) {
         const section = document.createElement("div");
         section.className = "row mt-5 align-items-center";
@@ -114,7 +116,7 @@ function changeContent(key, button = null) {
         textCol.className = "col-md-6";
         textCol.style.textAlign = "justify";
         textCol.innerHTML = data.text[i];
-
+        // chỗ này làm cho nội dung so le nhau
         if (i % 2 === 0) {
             section.appendChild(imgCol);
             section.appendChild(textCol);
@@ -126,7 +128,7 @@ function changeContent(key, button = null) {
         info.appendChild(section);
     }
 
-    // Cập nhật trạng thái active cho nút
+    // cập nhật trạng thái active cho nút
     document.querySelectorAll(".detail-button .btn").forEach(btn => {
         btn.classList.remove("active");
     });

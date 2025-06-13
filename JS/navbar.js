@@ -76,12 +76,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+// hàm cập nhật số lượng sản phẩm trong giỏ hàng
+// nếu total = 0 thì không hiện, khác 0 thì hiện bubble
+
 window.capNhatSoLuongGioHang = function () {
     const cartCount = document.getElementById("cart-count");
     if (!cartCount) return;
 
     try {
         const cart = JSON.parse(localStorage.getItem("cart")) || [];
+        // hàm reduce sẽ theo dõi các sum qua từng vòng lặp và cộng dồn với item.quantity
+        // nếu không đọc được quantity sẽ mặc định +0 cho sum
         const totalQuantity = cart.reduce((sum, item) => sum + (item.quantity || 0), 0);
 
         if (totalQuantity > 0) {
